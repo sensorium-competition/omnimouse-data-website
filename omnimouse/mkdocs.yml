@@ -1,0 +1,80 @@
+site_name: "OmniMouse"
+
+site_url: https://omnimouse.github.org
+
+site_description: "Landing page for the OmniMouse project."
+
+theme:
+  name: material
+  # custom_dir: docs/overrides
+
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+  logo: assets/logo.jpg
+  favicon: assets/logo.jpg
+
+  icon:
+    repo: fontawesome/brands/github
+
+  features:
+    - search.suggest
+    - navigation.tabs
+    - navigation.path
+    - navigation.prune
+    - navigation.top
+    - navigation.indexes
+    - navigation.footer
+
+plugins:
+  # - search
+  # - mkdocstrings            # Uncomment if generating API docs from docstrings
+  # - social                  # Uncomment if using social cards
+  # - glightbox               # Uncomment if using image lightbox
+  # - mkdocs-jupyter:         # Uncomment if rendering notebooks
+  #     execute: false
+  #     include_source: true
+
+# hooks:
+#   - docs/mkdocs_hooks.py    # Uncomment if using custom hooks
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+
+nav:
+  - Home: index.md
+  - Metadata Query: metadata_query.md
+  - FAQs: faq.md
+  - How to cite: cite.md
+
+extra_css:
+  - assets/stylesheets/extra.css

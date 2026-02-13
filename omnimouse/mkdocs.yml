@@ -6,7 +6,7 @@ site_description: "Landing page for the OmniMouse project."
 
 theme:
   name: material
-  # custom_dir: docs/overrides
+  # custom_dir: docs/overrides  # Uncomment if we want same home page as openretina
 
   palette:
     - media: "(prefers-color-scheme)"

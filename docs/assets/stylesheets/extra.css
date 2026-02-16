@@ -34,3 +34,86 @@
 .md-typeset h2 {
   font-weight: bold;
 }
+
+#logo_light_mode {
+    display: var(--md-footer-logo-light-mode);
+}
+
+#logo_dark_mode {
+    display: var(--md-footer-logo-dark-mode);
+}
+
+[data-md-color-scheme="default"] {
+    --md-footer-logo-dark-mode:         none;
+    --md-footer-logo-light-mode:         block;
+}
+
+[data-md-color-scheme="slate"] {
+    --md-footer-logo-dark-mode:         block;
+    --md-footer-logo-light-mode:         none;
+}
+
+/* ==========================================================================
+   LIGHT MODE (Default) - Hand-Crafted
+   ========================================================================== */
+[data-md-color-scheme="default"] {
+  /* Main Canvas */
+  --md-default-bg-color:             #ffffff; 
+  
+  /* Header UI: Black Bar with White Text/Logo */
+  --md-primary-bg-color:             #000000; /* Header background color */
+  --md-primary-fg-color:             #ffffff; /* Header text/logo color */
+
+  /* Typography */
+  --md-typeset-color:                #000000; /* Main body and title color */
+  --md-typeset-a-color:              #141218; /* Link color */
+
+  /* Borders and Accents */
+  --md-accent-fg-color:              #7886c4; /* Lavender hover color */
+  --md-accent-bg-color:              rgba(120, 134, 196, 0.1); /* Soft lavender tint */
+  --md-border-color:                 #616161; 
+
+  /* Surfaces */
+  --md-code-bg-color:                #f5f5f5; 
+  --md-nav-bg-color:                 #ffffff; 
+  --md-secondary-bg-color:           #f8f8f8; 
+
+}
+
+/* ==========================================================================
+   DARK MODE (Slate) - Hand-Crafted Inversion
+   ========================================================================== */
+[data-md-color-scheme="slate"] {
+  /* Main Canvas: Deep Charcoal (Smooth) */
+  --md-default-bg-color:             #000000; 
+
+  /* Header UI: White Bar with Black Text/Logo */
+  --md-primary-bg-color:             #ffffff; /* Header background color */
+  --md-primary-fg-color:             #262626; /* Header text/logo color */
+
+  /* Typography */
+  --md-typeset-color:                #e0e0e0; /* Off-white text */
+  --md-typeset-a-color:              #ffffff; /* Links */
+
+  /* Borders and Accents */
+  --md-accent-fg-color:              #7886c4; 
+  --md-accent-bg-color:              rgba(120, 134, 196, 0.15); 
+  --md-border-color:                 #424242; 
+
+  /* Surfaces */
+  --md-code-bg-color:                #242424; 
+  --md-nav-bg-color:                 #19191f; 
+  --md-secondary-bg-color:           #212129; 
+
+}
+
+/* ==========================================================================
+   SYSTEM INTEGRATION
+   ========================================================================== */
+:root {
+  --md-text-color: var(--md-typeset-color);
+}
+
+.md-header {
+  border-bottom: 1px solid var(--md-border-color);
+}

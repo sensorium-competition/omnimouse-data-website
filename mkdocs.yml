@@ -1,4 +1,4 @@
-site_name: "OmniMouse"
+site_name: "omnimouse docs"
 
 site_url: https://omnimouse.github.org
 
@@ -6,7 +6,7 @@ site_description: "Landing page for the OmniMouse project."
 
 theme:
   name: material
-  # custom_dir: docs/overrides  # Uncomment if we want same home page as openretina
+  custom_dir: docs/overrides
 
   palette:
     - media: "(prefers-color-scheme)"
@@ -16,20 +16,22 @@ theme:
 
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: white
+      primary: custom
       toggle:
-        icon: material/brightness-7
+        icon: material/toggle-switch
         name: Switch to dark mode
 
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: black
+      primary: custom
       toggle:
-        icon: material/brightness-4
+        icon: material/toggle-switch-off-outline
         name: Switch to system preference
 
-  logo: assets/logo.jpg
-  favicon: assets/logo.jpg
+  logo_dark_mode: 'assets/sensorium_logo_light.svg'
+  logo_light_mode: 'assets/sensorium_logo_dark.svg'
+
+  favicon: assets/sensorium_bildmarke.svg
 
   icon:
     repo: fontawesome/brands/github
@@ -44,7 +46,7 @@ theme:
     - navigation.footer
 
 plugins:
-  # - search
+  - search
   # - mkdocstrings            # Uncomment if generating API docs from docstrings
   # - social                  # Uncomment if using social cards
   # - glightbox               # Uncomment if using image lightbox

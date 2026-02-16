@@ -1,13 +1,11 @@
 ---
-title: OmniMouse
+title: omnimouse docs
 homepage: true
 hide:
   - navigation
   - toc
   - footer
 ---
-
-## Welcome!
 
 `OmniMouse` is an ... lirum larum.
 

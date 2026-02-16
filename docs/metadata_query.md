@@ -158,25 +158,30 @@ function renderDynamicTable(dataObj) {
         return;
     }
 
-    const firstId = keys[0];
-    const dataFields = Object.keys(dataObj[firstId]);
-    
+    const importantFields = ["date", "subject", "status"];  // fields to show
+
+    // Table header
     let headHtml = `<tr><th>Experiment ID</th>`;
-    dataFields.forEach(field => { headHtml += `<th>${field}</th>`; });
-    headHtml += `</tr>`;
+    importantFields.forEach(field => { headHtml += `<th>${field}</th>`; });
+    headHtml += `<th>Details</th></tr>`;
     head.innerHTML = headHtml;
 
+    // Table body
     let bodyHtml = "";
     keys.forEach(id => {
+        const expData = dataObj[id];
         bodyHtml += `<tr><td><strong>${id}</strong></td>`;
-        dataFields.forEach(field => {
-            let val = dataObj[id][field] !== undefined ? dataObj[id][field] : "-";
+        importantFields.forEach(field => {
+            const val = expData[field] !== undefined ? expData[field] : "-";
             bodyHtml += `<td>${val}</td>`;
         });
+        // Pass the entire experiment object as JSON in the URL using encodeURIComponent
+        const expJson = encodeURIComponent(JSON.stringify(expData));
+        bodyHtml += `<td><a href="../experiments.html?id=EXP001">View full metadata</a></td>`;
         bodyHtml += `</tr>`;
     });
-    body.innerHTML = bodyHtml;
 
+    body.innerHTML = bodyHtml;
     wrapper.style.display = "block";
     status.textContent = `Showing ${keys.length} result(s).`;
 }

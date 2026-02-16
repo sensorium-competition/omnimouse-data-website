@@ -1,5 +1,5 @@
 {
-  "001": {"name": "Experiment 1", "type": "visual", "date": "2026-01-01"},
-  "002": {"name": "Experiment 2", "type": "auditory", "date": "2026-01-02"},
-  "003": {"name": "Experiment 3", "type": "visual", "date": "2026-01-03"}
+  "EXP001": {"name": "Experiment 1", "type": "visual", "date": "2026-01-01"},
+  "EXP002": {"name": "Experiment 2", "type": "auditory", "date": "2026-01-02"},
+  "EXP003": {"name": "Experiment 3", "type": "visual", "date": "2026-01-03"}
 }

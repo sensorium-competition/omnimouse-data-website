@@ -1,0 +1,81 @@
+<!-- experiments.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Experiment Details</title>
+<style>
+body { font-family: Arial; margin: 2rem; }
+table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+th, td { border: 1px solid #ccc; padding: 0.5rem; text-align: left; }
+th { background: #f2f2f2; }
+.status { margin-top: 1rem; font-weight: bold; }
+a { text-decoration: none; color: blue; }
+</style>
+</head>
+<body>
+
+<h1 id="exp-id">Experiment</h1>
+<p><strong>Date:</strong> <span id="exp-date"></span></p>
+<p><strong>Subject:</strong> <span id="exp-subject"></span></p>
+<p><strong>Status:</strong> <span id="exp-status"></span></p>
+
+<h2>Full Metadata</h2>
+<table id="exp-table">
+  <thead><tr><th>Key</th><th>Value</th></tr></thead>
+  <tbody></tbody>
+</table>
+
+<p class="status" id="status">Loading experiment data…</p>
+<p><a href="metadata_query/">Back to table</a></p>
+
+<script>
+function getQueryParam(name) {
+    const params = new URLSearchParams(window.location.search);
+    return params.get(name);
+}
+
+const experimentId = getQueryParam('id');
+if (!experimentId) {
+    document.body.innerHTML = "<p>No experiment ID provided in the URL.</p>";
+} else {
+    // Adjust this baseURL if needed
+    const baseURL = window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '');
+    const jsonPath = `${baseURL}/experiment_metadata/combined_metadata.json`;
+
+    fetch(jsonPath)
+      .then(response => {
+        if (!response.ok) throw new Error('File not found');
+        return response.json();
+      })
+      .then(data => {
+        const expData = data[experimentId];
+        if (!expData) {
+            document.getElementById('status').textContent = "⚠️ Experiment not found.";
+            return;
+        }
+
+        // Populate key fields
+        document.getElementById('exp-id').textContent = experimentId;
+        document.getElementById('exp-date').textContent = expData.date || "-";
+        document.getElementById('exp-subject').textContent = expData.subject || "-";
+        document.getElementById('exp-status').textContent = expData.status || "-";
+
+        // Populate full metadata table
+        const tbody = document.getElementById('exp-table').querySelector('tbody');
+        tbody.innerHTML = "";
+        for (const key in expData) {
+            tbody.innerHTML += `<tr><td>${key}</td><td>${expData[key]}</td></tr>`;
+        }
+
+        document.getElementById('status').textContent = "Experiment data loaded.";
+      })
+      .catch(err => {
+        document.getElementById('status').textContent = "⚠️ Error: Metadata file not found.";
+        console.error(err);
+      });
+}
+</script>
+
+</body>
+</html>

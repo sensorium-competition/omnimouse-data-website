@@ -89,7 +89,7 @@
 
   /* Header UI: White Bar with Black Text/Logo */
   --md-primary-bg-color:             #ffffff; /* Header background color */
-  --md-primary-fg-color:             #262626; /* Header text/logo color */
+  --md-primary-fg-color:             #000000; /* Header text/logo color */
 
   /* Typography */
   --md-typeset-color:                #e0e0e0; /* Off-white text */

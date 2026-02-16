@@ -126,7 +126,7 @@ hide:
 <script>
 let metadata = {};
 
-fetch('/experiment_metadata/combined_metadata.json')
+fetch(`${window.location.origin}/experiment_metadata/combined_metadata.json`)
   .then(response => {
     if (!response.ok) throw new Error('File not found');
     return response.json();

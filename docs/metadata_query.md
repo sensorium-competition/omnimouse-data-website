@@ -125,8 +125,13 @@ hide:
 
 <script>
 let metadata = {};
+// Get the base URL of the site (without the current page or subfolder)
+const baseURL = window.location.origin + window.location.pathname.replace(/\/[^\/]*\/?$/, '');
 
-fetch(`${window.location.origin}/experiment_metadata/combined_metadata.json`)
+// Build the path to your JSON
+const json_path = `${baseURL}/experiment_metadata/combined_metadata.json`;
+
+fetch(json_path)
   .then(response => {
     if (!response.ok) throw new Error('File not found');
     return response.json();

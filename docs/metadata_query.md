@@ -129,7 +129,7 @@ let metadata = {};
 const baseURL = window.location.origin + window.location.pathname.replace(/\/[^\/]*\/?$/, '');
 
 // Build the path to your JSON
-const json_path = `${baseURL}/experiment_metadata/combined_metadata.json`;
+const json_path = `${baseURL}/experiment_metadata/full_combined_meta.json`;
 
 fetch(json_path)
   .then(response => {
@@ -158,7 +158,7 @@ function renderDynamicTable(dataObj) {
         return;
     }
 
-    const importantFields = ["date", "subject", "status"];  // fields to show
+    const importantFields = ["animal_id", "session", "scan_idx", "include_behaviour"];  // fields to show
 
     // Table header
     let headHtml = `<tr><th>Experiment ID</th>`;
@@ -169,15 +169,24 @@ function renderDynamicTable(dataObj) {
     // Table body
     let bodyHtml = "";
     keys.forEach(id => {
-        const expData = dataObj[id];
-        bodyHtml += `<tr><td><strong>${id}</strong></td>`;
-        importantFields.forEach(field => {
-            const val = expData[field] !== undefined ? expData[field] : "-";
-            bodyHtml += `<td>${val}</td>`;
-        });
-        // Pass the entire experiment object as JSON in the URL using encodeURIComponent
-        const expJson = encodeURIComponent(JSON.stringify(expData));
-        bodyHtml += `<td><a href="../experiments.html?id=EXP001">View full metadata</a></td>`;
+        const expData = dataObj[id] || {};
+        const scan = expData.scan_key || {};
+        const config = expData.config || {};
+
+        const animal = scan.animal_id ?? "-";
+        const session = scan.session ?? "-";
+        const scanIdx = scan.scan_idx ?? "-";
+        const includeBehaviour = (config.include_eye || config.include_treadmill) ? "Yes" : "No";
+
+        bodyHtml += `<tr>`;
+        bodyHtml += `<td><strong>${id}</strong></td>`;
+        bodyHtml += `<td>${animal}</td>`;
+        bodyHtml += `<td>${session}</td>`;
+        bodyHtml += `<td>${scanIdx}</td>`;
+        bodyHtml += `<td>${includeBehaviour}</td>`;
+
+        const encodedId = encodeURIComponent(id);
+        bodyHtml += `<td><a href="../experiments.html?id=${encodedId}">View full metadata</a></td>`;
         bodyHtml += `</tr>`;
     });
 

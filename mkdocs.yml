@@ -74,9 +74,11 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - OmniMouse Model: model.md
+  - Neurophysiological experiments: dataset.md
   - Metadata Query: metadata_query.md
-  - FAQs: faq.md
   - How to cite: cite.md
+# - FAQs: faq.md
 
 extra_css:
   - assets/stylesheets/extra.css

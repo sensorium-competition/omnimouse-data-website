@@ -4,9 +4,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Experiment Details</title>
-<link rel="icon" href="/assets/favicon.png" type="image/png"> <!-- adjust path -->
+<link rel="icon" href="/assets/favicon.png" type="image/png">
 <style>
-/* Material-like styles */
 body { font-family: Roboto, sans-serif; margin: 2rem; background: #fff; color: #222; }
 .md-typeset h1, .md-typeset h2 { margin-top: 1.5rem; }
 .md-typeset p { margin: 0.5rem 0; }
@@ -21,12 +20,12 @@ a:hover { text-decoration: underline; }
 <body>
 
 <div class="md-typeset">
-  <h1 id="exp-id">Experiment</h1>
-  <p><strong>Date:</strong> <span id="exp-date"></span></p>
-  <p><strong>Subject:</strong> <span id="exp-subject"></span></p>
-  <p><strong>Status:</strong> <span id="exp-status"></span></p>
+  <h1>Experiment Metadata</h1>
+  <h2><strong>experiment_id:</strong> <span id="exp-id"></span></h2>
+  <p><strong>animal_id:</strong> <span id="exp-animal"></span></p>
+  <p><strong>session:</strong> <span id="exp-session"></span></p>
+  <p><strong>scan_idx:</strong> <span id="exp-scan"></span></p>
 
-  <h2>Full Metadata</h2>
   <table class="md-table" id="exp-table">
     <thead><tr><th>Key</th><th>Value</th></tr></thead>
     <tbody></tbody>
@@ -50,9 +49,8 @@ a:hover { text-decoration: underline; }
         return;
     }
 
-    // Base path to JSON (adjust if necessary)
     const baseURL = window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '');
-    const jsonPath = `${baseURL}/experiment_metadata/combined_metadata.json`;
+    const jsonPath = `${baseURL}/experiment_metadata/full_combined_meta.json`;
 
     fetch(jsonPath)
       .then(response => {
@@ -66,20 +64,88 @@ a:hover { text-decoration: underline; }
             return;
         }
 
-        // Populate key fields
+        const scan = expData.scan_key || {};
+
         document.getElementById('exp-id').textContent = experimentId;
-        document.getElementById('exp-date').textContent = expData.date || "-";
-        document.getElementById('exp-subject').textContent = expData.subject || "-";
-        document.getElementById('exp-status').textContent = expData.status || "-";
+        document.getElementById('exp-animal').textContent = scan.animal_id || "-";
+        document.getElementById('exp-session').textContent = scan.session ?? "-";
+        document.getElementById('exp-scan').textContent = scan.scan_idx ?? "-";
 
-        // Populate full metadata table
-        const tbody = document.getElementById('exp-table').querySelector('tbody');
-        tbody.innerHTML = "";
+        const container = document.getElementById('exp-table').parentElement;
+        document.getElementById('exp-table').remove(); // remove default table
+
         for (const key in expData) {
-            tbody.innerHTML += `<tr><td>${key}</td><td>${expData[key]}</td></tr>`;
-        }
+            if (key === "scan_key") continue;
 
-        statusEl.textContent = "Experiment data loaded.";
+            const sectionData = expData[key];
+            if (typeof sectionData !== "object" || sectionData === null) continue;
+
+            // Section title
+            const title = document.createElement("h3");
+            title.textContent = key;
+            container.appendChild(title);
+
+            // Create table
+            const table = document.createElement("table");
+            table.className = "md-table";
+
+            const thead = document.createElement("thead");
+            thead.innerHTML = "<tr><th>Key</th><th>Value</th></tr>";
+
+            const tbody = document.createElement("tbody");
+
+            Object.entries(sectionData).forEach(([subKey, value]) => {
+                function renderValue(value, container) {
+                    if (value === null) {
+                        container.textContent = "null";
+                        return;
+                    }
+
+                    if (typeof value !== "object") {
+                        container.textContent = value;
+                        return;
+                    }
+
+                    const table = document.createElement("table");
+                    table.className = "md-table";
+
+                    const tbody = document.createElement("tbody");
+
+                    Object.entries(value).forEach(([k, v]) => {
+                        const row = document.createElement("tr");
+
+                        const keyCell = document.createElement("td");
+                        keyCell.textContent = k;
+
+                        const valueCell = document.createElement("td");
+                        renderValue(v, valueCell);
+
+                        row.appendChild(keyCell);
+                        row.appendChild(valueCell);
+                        tbody.appendChild(row);
+                    });
+
+                    table.appendChild(tbody);
+                    container.appendChild(table);
+                }
+                const row = document.createElement("tr");
+
+                const keyCell = document.createElement("td");
+                keyCell.textContent = subKey;
+
+                const valueCell = document.createElement("td");
+                renderValue(value, valueCell);
+
+                row.appendChild(keyCell);
+                row.appendChild(valueCell);
+                tbody.appendChild(row);
+            });
+
+            table.appendChild(thead);
+            table.appendChild(tbody);
+            container.appendChild(table);
+        }
+        statusEl.remove();
       })
       .catch(err => {
         statusEl.textContent = "⚠️ Error: Metadata file not found.";
@@ -87,8 +153,8 @@ a:hover { text-decoration: underline; }
       });
 })();
 </script>
+
 <script>
-// Use the user's system preference or manual class
 const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
 if (prefersDark) {
@@ -101,6 +167,32 @@ if (prefersDark) {
 </script>
 
 <style>
+.md-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    table-layout: fixed;   /* forces identical column widths */
+}
+
+.md-table th,
+.md-table td {
+    border: 1px solid var(--table-border);
+    padding: 0.5rem;
+    text-align: left;
+    vertical-align: top;
+    word-break: break-word;      /* wrap long strings */
+    overflow-wrap: anywhere;     /* prevent overflow */
+}
+
+.md-table th {
+    background: var(--table-header-bg);
+    width: 30%;   /* fixed width for Key column */
+}
+
+.md-table td {
+    width: 70%;   /* fixed width for Value column */
+}
+
 :root {
     --bg-color: #ffffff;
     --text-color: #222222;
@@ -126,7 +218,6 @@ a:hover { text-decoration: underline; }
 .status { margin-top: 1rem; font-weight: bold; }
 .md-typeset h1, .md-typeset h2 { margin-top: 1.5rem; }
 </style>
-
 
 </body>
 </html>

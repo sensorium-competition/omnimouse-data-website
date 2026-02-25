@@ -1,4 +1,4 @@
-site_name: "omnimouse docs"
+site_name: "Sensorium XL Dataset"
 
 site_url: https://omnimouse.github.org
 
@@ -76,7 +76,7 @@ nav:
   - Home: index.md
   - OmniMouse Model: model.md
   - Neurophysiological experiments: dataset.md
-  - Metadata Query: metadata_query.md
+  - Dataset Details: metadata_query.md
   - How to cite: cite.md
 # - FAQs: faq.md
 

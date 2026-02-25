@@ -1,0 +1,267 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="md-typeset">
+  <p><a href="{{ 'metadata_query/' | url }}">← Back to table</a></p>
+
+  <h1>Experiment Metadata</h1>
+
+  <div class="exp-header">
+    <div class="exp-header-item exp-header-id">
+      <span class="exp-label">experiment_id</span>
+      <span class="exp-value" id="exp-id"></span>
+    </div>
+    <div class="exp-header-row">
+      <div class="exp-header-item">
+        <span class="exp-label">animal_id</span>
+        <span class="exp-value" id="exp-animal"></span>
+      </div>
+      <div class="exp-header-item">
+        <span class="exp-label">session</span>
+        <span class="exp-value" id="exp-session"></span>
+      </div>
+      <div class="exp-header-item">
+        <span class="exp-label">scan_idx</span>
+        <span class="exp-value" id="exp-scan"></span>
+      </div>
+    </div>
+  </div>
+
+  <div id="exp-container"></div>
+
+  <p class="status" id="status">Loading experiment data…</p>
+</div>
+
+<style>
+/* Make content container full width */
+.md-grid {
+    max-width: 100%;
+}
+.md-content__inner {
+    max-width: 100%;
+    margin: 0 2rem;
+}
+
+/* Header info layout */
+.exp-header {
+    background: var(--md-code-bg-color);
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.exp-header-id {
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.exp-header-row {
+    display: flex;
+    gap: 3rem;
+}
+
+.exp-header-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.exp-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--md-default-fg-color--light);
+    font-weight: 600;
+}
+
+.exp-value {
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: var(--md-code-font-family);
+}
+
+.exp-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.exp-table th,
+.exp-table td {
+    border: 1px solid var(--md-default-fg-color--lightest);
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+    vertical-align: top;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+}
+
+.exp-table th {
+    background: slategray;
+    color: white;
+    width: 30%;
+    font-weight: 600;
+}
+
+.exp-table td {
+    width: 70%;
+}
+
+.exp-table tbody tr:nth-child(odd) {
+    background-color: var(--md-default-fg-color--lightest);
+}
+
+.exp-table tbody tr:nth-child(even) {
+    background-color: transparent;
+}
+
+.exp-table .nested-table {
+    margin: 0;
+    width: 100%;
+}
+
+.exp-table .nested-table td,
+.exp-table .nested-table th {
+    border-color: var(--md-default-fg-color--lighter);
+    padding: 0.3rem 0.5rem;
+    font-size: 0.9em;
+}
+
+.status {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: var(--md-accent-fg-color);
+}
+
+#exp-container h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid var(--md-primary-fg-color);
+}
+</style>
+
+<script>
+(function() {
+    function getQueryParam(name) {
+        return new URLSearchParams(window.location.search).get(name);
+    }
+
+    const experimentId = getQueryParam('id');
+    const statusEl = document.getElementById('status');
+    const container = document.getElementById('exp-container');
+
+    if (!experimentId) {
+        statusEl.textContent = "⚠️ No experiment ID provided in the URL.";
+        return;
+    }
+
+    const jsonPath = `${window.location.origin}/experiment_metadata/full_combined_meta.json`;
+
+    fetch(jsonPath)
+      .then(response => {
+        if (!response.ok) throw new Error('Metadata file not found');
+        return response.json();
+      })
+      .then(data => {
+        const expData = data[experimentId];
+        if (!expData) {
+            statusEl.textContent = `⚠️ Experiment "${experimentId}" not found.`;
+            return;
+        }
+
+        // Parse animal_id, session, scan_idx from experiment ID
+        // Format: dynamic{animal_id}-{session}-{scan_idx}-...
+        const idMatch = experimentId.match(/^dynamic(\d+)-(\d+)-(\d+)-/);
+        const animal_id = idMatch ? idMatch[1] : "-";
+        const session = idMatch ? idMatch[2] : "-";
+        const scan_idx = idMatch ? idMatch[3] : "-";
+
+        document.getElementById('exp-id').textContent = experimentId;
+        document.getElementById('exp-animal').textContent = animal_id;
+        document.getElementById('exp-session').textContent = session;
+        document.getElementById('exp-scan').textContent = scan_idx;
+
+        for (const key in expData) {
+            if (key === "scan_key") continue;
+
+            const sectionData = expData[key];
+            if (typeof sectionData !== "object" || sectionData === null) continue;
+
+            // Section title
+            const title = document.createElement("h3");
+            title.textContent = key;
+            container.appendChild(title);
+
+            // Create table
+            const table = document.createElement("table");
+            table.className = "exp-table";
+
+            const thead = document.createElement("thead");
+            thead.innerHTML = "<tr><th>Key</th><th>Value</th></tr>";
+
+            const tbody = document.createElement("tbody");
+
+            Object.entries(sectionData).forEach(([subKey, value]) => {
+                function renderValue(value, container, isNested = false) {
+                    if (value === null) {
+                        container.textContent = "null";
+                        return;
+                    }
+
+                    if (typeof value !== "object") {
+                        container.textContent = value;
+                        return;
+                    }
+
+                    const table = document.createElement("table");
+                    table.className = isNested ? "exp-table nested-table" : "exp-table";
+
+                    const tbody = document.createElement("tbody");
+
+                    Object.entries(value).forEach(([k, v]) => {
+                        const row = document.createElement("tr");
+
+                        const keyCell = document.createElement("td");
+                        keyCell.textContent = k;
+
+                        const valueCell = document.createElement("td");
+                        renderValue(v, valueCell, true);
+
+                        row.appendChild(keyCell);
+                        row.appendChild(valueCell);
+                        tbody.appendChild(row);
+                    });
+
+                    table.appendChild(tbody);
+                    container.appendChild(table);
+                }
+
+                const row = document.createElement("tr");
+
+                const keyCell = document.createElement("td");
+                keyCell.textContent = subKey;
+
+                const valueCell = document.createElement("td");
+                renderValue(value, valueCell);
+
+                row.appendChild(keyCell);
+                row.appendChild(valueCell);
+                tbody.appendChild(row);
+            });
+
+            table.appendChild(thead);
+            table.appendChild(tbody);
+            container.appendChild(table);
+        }
+        statusEl.remove();
+      })
+      .catch(err => {
+        statusEl.textContent = "⚠️ Error: Metadata file not found.";
+        console.error(err);
+      });
+})();
+</script>
+{% endblock %}

@@ -74,16 +74,18 @@ hide:
 }
 
 /* Table Box Styling */
-#table-wrapper { 
+#table-wrapper {
     margin-top: 24px;
     overflow: hidden;
-    display: none; 
-    padding: 0; /* Ensures the table header hits the edges of the box */
+    display: none;
+    padding: 0;
+    text-align: center;
 }
 
-#result-table { 
-    width: 100%; 
-    border-collapse: collapse; 
+#result-table {
+    display: inline-table;
+    border-collapse: collapse;
+    text-align: left;
 }
 
 #result-table th { 
@@ -102,6 +104,16 @@ hide:
 }
 
 #result-table tr:last-child td { border-bottom: none; }
+
+#result-table td a {
+    color: var(--md-accent-fg-color, #2094f3);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#result-table td a:hover {
+    text-decoration: underline;
+}
 </style>
 
 <div id="metadata-container">
@@ -136,9 +148,10 @@ fetch(json_path)
     if (!response.ok) throw new Error('File not found');
     return response.json();
   })
-  .then(data => { 
-    metadata = data; 
+  .then(data => {
+    metadata = data;
     document.getElementById('status').textContent = "Database synced successfully.";
+    showAllMetadata();
   })
   .catch(err => {
     document.getElementById('status').textContent = "⚠️ Error: Metadata file not found.";
@@ -158,12 +171,12 @@ function renderDynamicTable(dataObj) {
         return;
     }
 
-    const importantFields = ["animal_id", "session", "scan_idx", "include_behaviour"];  // fields to show
+    const importantFields = ["animal_id", "session", "scan_idx"];  // fields to show
 
     // Table header
-    let headHtml = `<tr><th>Experiment ID</th>`;
+    let headHtml = `<tr><th>Experiment ID (click for details)</th>`;
     importantFields.forEach(field => { headHtml += `<th>${field}</th>`; });
-    headHtml += `<th>Details</th></tr>`;
+    headHtml += `</tr>`;
     head.innerHTML = headHtml;
 
     // Table body
@@ -171,22 +184,17 @@ function renderDynamicTable(dataObj) {
     keys.forEach(id => {
         const expData = dataObj[id] || {};
         const scan = expData.scan_key || {};
-        const config = expData.config || {};
 
         const animal = scan.animal_id ?? "-";
         const session = scan.session ?? "-";
         const scanIdx = scan.scan_idx ?? "-";
-        const includeBehaviour = (config.include_eye || config.include_treadmill) ? "Yes" : "No";
 
+        const encodedId = encodeURIComponent(id);
         bodyHtml += `<tr>`;
-        bodyHtml += `<td><strong>${id}</strong></td>`;
+        bodyHtml += `<td><a href="../experiment/?id=${encodedId}"><strong>${id}</strong></a></td>`;
         bodyHtml += `<td>${animal}</td>`;
         bodyHtml += `<td>${session}</td>`;
         bodyHtml += `<td>${scanIdx}</td>`;
-        bodyHtml += `<td>${includeBehaviour}</td>`;
-
-        const encodedId = encodeURIComponent(id);
-        bodyHtml += `<td><a href="../experiments.html?id=${encodedId}">View full metadata</a></td>`;
         bodyHtml += `</tr>`;
     });
 

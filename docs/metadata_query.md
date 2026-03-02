@@ -141,7 +141,7 @@ let metadata = {};
 const baseURL = window.location.origin + window.location.pathname.replace(/\/[^\/]*\/?$/, '');
 
 // Build the path to your JSON
-const json_path = `${baseURL}/experiment_metadata/full_combined_meta.json`;
+const json_path = `${baseURL}/experiment_metadata/cleaned_full_combined_meta.json`;
 
 fetch(json_path)
   .then(response => {

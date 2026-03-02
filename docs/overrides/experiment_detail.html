@@ -158,7 +158,7 @@
         return;
     }
 
-    const jsonPath = `${window.location.origin}/experiment_metadata/full_combined_meta.json`;
+    const jsonPath = `${window.location.origin}/experiment_metadata/cleaned_full_combined_meta.json`;
 
     fetch(jsonPath)
       .then(response => {
@@ -184,11 +184,23 @@
         document.getElementById('exp-session').textContent = session;
         document.getElementById('exp-scan').textContent = scan_idx;
 
-        for (const key in expData) {
-            if (key === "scan_key") continue;
+        // Render "screen" first if present
+        const orderedKeys = [];
 
+        if ("scan_key" in expData) {
+            orderedKeys.push("scan_key");
+        }
+
+        // Add remaining keys except "scan_key"
+        for (const key in expData) {
+            if (key !== "scan_key") {
+                orderedKeys.push(key);
+            }
+        }
+
+        orderedKeys.forEach(key => {
             const sectionData = expData[key];
-            if (typeof sectionData !== "object" || sectionData === null) continue;
+            if (typeof sectionData !== "object" || sectionData === null) return;
 
             // Section title
             const title = document.createElement("h3");
@@ -255,7 +267,7 @@
             table.appendChild(thead);
             table.appendChild(tbody);
             container.appendChild(table);
-        }
+        });
         statusEl.remove();
       })
       .catch(err => {

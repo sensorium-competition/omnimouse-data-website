@@ -29,7 +29,7 @@ By combining multi-modal inputs and multi-task learning within a single transfor
 
     The entire dataset used in the paper uploaded to HuggingFace
 
-- [__Interactive Metadata query__](metadata_query.md)
+- [__Dataset Details__](dataset_details.md)
 
 </div>
 

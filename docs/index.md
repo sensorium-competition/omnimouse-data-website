@@ -39,7 +39,7 @@ The **Sensorium-XL dataset** is the largest single-neuron dataset to date. It co
 
 -   [:material-github:{ .lg .middle } __Experanto__](https://github.com/sensorium-competition/experanto){:target="_blank"}
 
-    Python package for working with neuroscience recordings and stimuli, including interpolation utilities.
+    Python package for working with neuroscience recordings and stimuli, including interpolation utilities. Specifically designed for the dataformats of the Sensorium competitions and OmniMouse data.
 
 -   [:material-github:{ .lg .middle } __Sensorium 2023 codebase__](https://github.com/ecker-lab/sensorium_2023){:target="_blank"}
 

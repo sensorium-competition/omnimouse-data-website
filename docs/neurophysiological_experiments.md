@@ -55,7 +55,7 @@ hide:
 
 <div class="sxl-wrap" markdown>
 
-# Sensorium-XL dataset
+# Neurophysiological experiments
 
 On this page you can find summaries of the Sensorium-XL neurophysiological dataset used to train and evaluate OmniMouse, including sources, experimental modalities, and key recording characteristics. For details on individual experiment sessions, see [Dataset Details](dataset_details.md).
 

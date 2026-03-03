@@ -137,19 +137,29 @@ hide:
 
 <script>
 let metadata = {};
+let animalSourceLookup = {};
+
 // Get the base URL of the site (without the current page or subfolder)
 const baseURL = window.location.origin + window.location.pathname.replace(/\/[^\/]*\/?$/, '');
 
-// Build the path to your JSON
-const json_path = `${baseURL}/experiment_metadata/cleaned_full_combined_meta.json`;
+// Paths to JSON files
+const meta_path = `${baseURL}/experiment_metadata/cleaned_full_combined_meta.json`;
+const animal_source_path = `${baseURL}/experiment_metadata/cite.json`;
 
-fetch(json_path)
-  .then(response => {
-    if (!response.ok) throw new Error('File not found');
+// Load both JSONs (metadata + animal->source lookup)
+Promise.all([
+  fetch(meta_path).then(response => {
+    if (!response.ok) throw new Error('Metadata file not found');
+    return response.json();
+  }),
+  fetch(animal_source_path).then(response => {
+    if (!response.ok) throw new Error('Animal source lookup file not found');
     return response.json();
   })
-  .then(data => {
-    metadata = data;
+])
+  .then(([metaData, sourceData]) => {
+    metadata = metaData || {};
+    animalSourceLookup = sourceData || {};
     document.getElementById('status').textContent = "Database synced successfully.";
     showAllMetadata();
   })
@@ -171,7 +181,7 @@ function renderDynamicTable(dataObj) {
         return;
     }
 
-    const importantFields = ["animal_id", "session", "scan_idx"];  // fields to show
+    const importantFields = ["animal_id", "session", "scan_idx", "source"];
 
     // Table header
     let headHtml = `<tr><th>Experiment ID (click for details)</th>`;
@@ -189,12 +199,27 @@ function renderDynamicTable(dataObj) {
         const session = scan.session ?? "-";
         const scanIdx = scan.scan_idx ?? "-";
 
+        let sourceCell = "-";
+        if (animal !== "-" && animalSourceLookup && animalSourceLookup[animal]) {
+            const entry = animalSourceLookup[animal];
+
+            // Expected format: {label, url} (also supports string fallback)
+            if (typeof entry === "string") {
+                sourceCell = entry;
+            } else {
+                const label = entry.label ?? entry.name ?? "source";
+                const url = entry.url ?? "#";
+                sourceCell = `<a href="${url}" target="_blank" rel="noopener">${label}</a>`;
+            }
+        }
+
         const encodedId = encodeURIComponent(id);
         bodyHtml += `<tr>`;
         bodyHtml += `<td><a href="../experiment/?id=${encodedId}"><strong>${id}</strong></a></td>`;
         bodyHtml += `<td>${animal}</td>`;
         bodyHtml += `<td>${session}</td>`;
         bodyHtml += `<td>${scanIdx}</td>`;
+        bodyHtml += `<td>${sourceCell}</td>`;
         bodyHtml += `</tr>`;
     });
 

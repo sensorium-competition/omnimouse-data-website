@@ -3,7 +3,7 @@ hide:
   - navigation
 ---
 
-On this page you can find summaries the neurophysiological datasets used to train and evaluate OmniMouse, including their sources, experimental modalities, and recording characteristics. For further information on individual experiment sessions, check out the [__Interactive Metadata query__](metadata_query.md).
+On this page you can find summaries of the Sensorium-XL neurophysiological dataset used to train and evaluate OmniMouse, including their sources, experimental modalities, and recording characteristics. For further information on individual experiment sessions, check out the [__Interactive Metadata query__](metadata_query.md).
 
 ## Evaluation Datasets
 

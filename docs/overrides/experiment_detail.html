@@ -24,6 +24,10 @@
         <span class="exp-label">scan_idx</span>
         <span class="exp-value" id="exp-scan"></span>
       </div>
+      <div class="exp-header-item">
+        <span class="exp-label">source</span>
+        <span class="exp-value" id="exp-source"></span>
+      </div>
     </div>
   </div>
 
@@ -129,6 +133,15 @@
     font-size: 0.9em;
 }
 
+.exp-header a {
+  color: var(--md-accent-fg-color, #2094f3);
+  text-decoration: none;
+  font-weight: 600;
+}
+.exp-header a:hover {
+  text-decoration: underline;
+}
+
 .status {
     margin-top: 1rem;
     font-weight: bold;
@@ -158,14 +171,20 @@
         return;
     }
 
-    const jsonPath = `${window.location.origin}/experiment_metadata/cleaned_full_combined_meta.json`;
+    const metaPath = `${window.location.origin}/experiment_metadata/cleaned_full_combined_meta.json`;
+    const sourcePath = `${window.location.origin}/experiment_metadata/cite.json`;
 
-    fetch(jsonPath)
-      .then(response => {
-        if (!response.ok) throw new Error('Metadata file not found');
-        return response.json();
-      })
-      .then(data => {
+    Promise.all([
+        fetch(metaPath).then(response => {
+            if (!response.ok) throw new Error('Metadata file not found');
+            return response.json();
+        }),
+        fetch(sourcePath).then(response => {
+            if (!response.ok) throw new Error('Animal source lookup file not found');
+            return response.json();
+        })
+    ])
+      .then(([data, animalSourceLookup]) => {
         const expData = data[experimentId];
         if (!expData) {
             statusEl.textContent = `⚠️ Experiment "${experimentId}" not found.`;
@@ -183,6 +202,20 @@
         document.getElementById('exp-animal').textContent = animal_id;
         document.getElementById('exp-session').textContent = session;
         document.getElementById('exp-scan').textContent = scan_idx;
+
+        const sourceEl = document.getElementById('exp-source');
+        let sourceHtml = "-";
+        if (animal_id !== "-" && animalSourceLookup && animalSourceLookup[animal_id]) {
+            const entry = animalSourceLookup[animal_id];
+            if (typeof entry === "string") {
+                sourceHtml = entry;
+            } else {
+                const label = entry.label ?? entry.name ?? "source";
+                const url = entry.url ?? "#";
+                sourceHtml = `<a href="${url}" target="_blank" rel="noopener">${label}</a>`;
+            }
+        }
+        sourceEl.innerHTML = sourceHtml;
 
         // Render "screen" first if present
         const orderedKeys = [];

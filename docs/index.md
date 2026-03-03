@@ -23,7 +23,7 @@ By combining multi-modal inputs and multi-task learning within a single transfor
 
     `OmniMouse` paper!
 
--   [:material-book-open:{ .lg .middle } __Checkout the dataset__](https://huggingface.co/sinzlab)
+-   [:material-book-open:{ .lg .middle } __Checkout the dataset__](https://huggingface.co/datasets/sensorium-competition/omnimouse)
 
     ---
 

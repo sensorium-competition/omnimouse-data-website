@@ -1,8 +1,8 @@
 site_name: "Sensorium XL Dataset"
 
-site_url: https://omnimouse.github.org
+site_url: https://sensorium-xl.github.org
 
-site_description: "Landing page for the OmniMouse project."
+site_description: "Landing page for the Sensorium XL dataset."
 
 theme:
   name: material
@@ -78,7 +78,6 @@ nav:
   - Neurophysiological experiments: dataset.md
   - Dataset Details: metadata_query.md
   - How to cite: cite.md
-# - FAQs: faq.md
 
 extra_css:
   - assets/stylesheets/extra.css

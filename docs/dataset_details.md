@@ -114,6 +114,61 @@ hide:
 #result-table td a:hover {
     text-decoration: underline;
 }
+
+.box-styled{
+  box-shadow:
+    0 8px 20px rgba(0,0,0,.14),
+    0 2px 6px rgba(0,0,0,.10),
+    inset 0 1px 0 rgba(255,255,255,.06);
+}
+
+[data-md-color-scheme="default"] .box-styled{
+  box-shadow:
+    0 10px 22px rgba(0,0,0,.12),
+    0 3px 8px rgba(0,0,0,.08),
+    inset 0 1px 0 rgba(255,255,255,.30);
+  border-color: color-mix(in srgb, var(--md-sys-color-outline-variant) 78%, #000 22%);
+}
+
+[data-md-color-scheme="slate"] .box-styled{
+  box-shadow:
+    0 22px 54px rgba(0,0,0,.62),
+    0 7px 16px rgba(0,0,0,.38),
+    0 0 0 1px rgba(255,255,255,.08),
+    inset 0 1px 0 rgba(255,255,255,.12);
+  border-color: color-mix(in srgb, var(--md-sys-color-outline-variant) 55%, #fff 45%);
+}
+
+.btn:hover{
+  transform: translateY(-1px);
+}
+
+[data-md-color-scheme="default"] .btn:hover{
+  box-shadow:
+    0 14px 30px rgba(0,0,0,.14),
+    0 4px 10px rgba(0,0,0,.10);
+}
+
+[data-md-color-scheme="slate"] .btn:hover{
+  box-shadow:
+    0 26px 64px rgba(0,0,0,.70),
+    0 10px 22px rgba(0,0,0,.45);
+}
+
+#table-wrapper.box-styled{
+  box-shadow:
+    0 12px 28px rgba(0,0,0,.14),
+    0 4px 10px rgba(0,0,0,.10),
+    inset 0 1px 0 rgba(255,255,255,.06);
+}
+[data-md-color-scheme="slate"] #table-wrapper.box-styled{
+  box-shadow:
+    0 26px 66px rgba(0,0,0,.72),
+    0 10px 22px rgba(0,0,0,.45),
+    0 0 0 1px rgba(255,255,255,.08),
+    inset 0 1px 0 rgba(255,255,255,.12);
+}
+
 </style>
 
 <div id="metadata-container">

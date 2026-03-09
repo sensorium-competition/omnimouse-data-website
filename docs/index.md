@@ -7,7 +7,7 @@ hide:
   - footer
 ---
 
-The **Sensorium-XL dataset** is the largest single-neuron dataset to date. It contains visual stimuli, neural responses, and behavioral measurements, and combines newly recorded data with recordings from the **Sensorium 2022** and **Sensorium 2023** Competitions. In total, it includes **333 experiments** collected from **78 mice**, and is being released alongside the **OmniMouse** project.
+The **Sensorium-XL dataset** is the largest single-neuron dataset to date. It contains visual stimuli, neural responses, and behavioral measurements, and combines newly recorded data with recordings from the **Sensorium 2022** and **Sensorium 2023** Competitions. In total, it includes **333 experiments** collected from **78 mice**, and is being released alongside the publication of the **OmniMouse** project.
 
 ---
 

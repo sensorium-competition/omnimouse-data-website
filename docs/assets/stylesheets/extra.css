@@ -118,10 +118,10 @@
   border-bottom: 1px solid var(--md-border-color);
 }
 
-.md-typeset {
-  font-size: 0.875rem;
+html {
+  font-size: 25px !important;
 }
 
-html {
-  font-size: 25px;
+.md-typeset {
+  font-size: 0.875rem !important;
 }

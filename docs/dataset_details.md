@@ -5,14 +5,12 @@ hide:
   - footer
 ---
 <style>
-/* Container & Text */
 #metadata-container { 
     font-family: var(--md-typeset-font-family, sans-serif); 
     margin-top: 20px;
     color: var(--md-sys-color-on-surface);
 }
 
-/* Individual Box styling - Adapts to Theme */
 .box-styled {
     background-color: var(--md-sys-color-surface-container-high);
     border: 1px solid var(--md-sys-color-outline-variant);
@@ -22,7 +20,6 @@ hide:
     transition: all 0.2s ease-in-out;
 }
 
-/* Controls Layout */
 .search-controls { 
     display: flex; 
     gap: 10px; 
@@ -30,7 +27,6 @@ hide:
     align-items: center;
 }
 
-/* Specific Input Styling */
 #query { 
     flex-grow: 1; 
     min-width: 200px; 
@@ -44,7 +40,6 @@ hide:
     background-color: var(--md-sys-color-surface-container-high);
 }
 
-/* Button / link styling */
 .btn { 
     cursor: pointer;
     font-weight: 500; 
@@ -69,14 +64,12 @@ hide:
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
-/* Status Message */
 .status-msg { 
     margin: 12px 4px;
     font-size: 13px;
     opacity: 0.8;
 }
 
-/* Table Box Styling */
 #table-wrapper {
     margin-top: 24px;
     overflow: hidden;
@@ -168,6 +161,93 @@ hide:
     0 0 0 1px rgba(255,255,255,.08),
     inset 0 1px 0 rgba(255,255,255,.12);
 }
+
+/* Filter dialog */
+.filter-dialog {
+  border: none;
+  border-radius: 16px;
+  padding: 0;
+  width: min(900px, 94vw);
+  height: min(84vh, 900px);
+  max-height: 84vh;
+  overflow: hidden;
+  background: var(--md-default-bg-color, var(--md-sys-color-surface));
+  color: var(--md-default-fg-color, var(--md-sys-color-on-surface));
+  box-shadow: 0 18px 48px rgba(0,0,0,.22);
+}
+
+.filter-dialog::backdrop {
+  background: rgba(0,0,0,.45);
+}
+
+.filter-dialog-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1rem 0.75rem 1rem;
+  border-bottom: 1px solid var(--md-sys-color-outline-variant);
+}
+
+.filter-dialog-body {
+  padding: 1rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: calc(84vh - 72px);
+  overscroll-behavior: contain;
+}
+
+.filter-close {
+  border: 1px solid var(--md-sys-color-outline-variant);
+  background: var(--md-sys-color-surface-container-high);
+  color: var(--md-sys-color-on-surface);
+  border-radius: 10px;
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+  font: inherit;
+}
+
+.filter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.filter-group {
+  border: 1px solid var(--md-sys-color-outline-variant);
+  border-radius: 12px;
+  padding: 12px;
+  background: var(--md-sys-color-surface-container-lowest);
+}
+
+.filter-group h4 {
+  margin: 0 0 .75rem 0;
+  font-size: 14px;
+}
+
+.filter-options {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: 220px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  font-size: 13px;
+}
+
+.filter-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.filter-count {
+  margin-left: 4px;
+  font-size: 13px;
+  opacity: .8;
+}
 </style>
 
 <div id="metadata-container">
@@ -177,6 +257,7 @@ hide:
         <button class="btn btn-search box-styled" onclick="searchMetadata()">Search</button>
         <button class="btn btn-all box-styled" onclick="showAllMetadata()">View All</button>
         <button class="btn btn-clear box-styled" onclick="clearResults()">Clear</button>
+        <button id="filter-btn" class="btn box-styled" onclick="openFilterDialog()" disabled>Filters</button>
 
         <a id="download-meta"
            class="btn box-styled"
@@ -198,18 +279,40 @@ hide:
     </div>
 </div>
 
+<dialog id="filter-dialog" class="filter-dialog">
+  <div class="filter-dialog-head">
+    <strong>Filter metadata</strong>
+    <button class="filter-close" onclick="closeFilterDialog()">Close</button>
+  </div>
+  <div class="filter-dialog-body">
+    <div id="filter-container" class="filter-grid"></div>
+    <div class="filter-actions">
+      <button class="btn box-styled" onclick="applyFilters()">Apply filters</button>
+      <button class="btn box-styled" onclick="resetFilters()">Reset filters</button>
+      <span id="filter-summary" class="filter-count"></span>
+    </div>
+  </div>
+</dialog>
+
 <script>
 let metadata = {};
 let animalSourceLookup = {};
+let filterConfig = {};
+let activeFilters = {};
 
-// Get the base URL of the site (without the current page or subfolder)
 const baseURL = window.location.origin + window.location.pathname.replace(/\/[^\/]*\/?$/, '');
-
-// Paths to JSON files
 const meta_path = `${baseURL}/experiment_metadata/cleaned_full_combined_meta.json`;
 const animal_source_path = `${baseURL}/experiment_metadata/cite.json`;
 
-// Load both JSONs
+const FILTER_FIELDS = {
+  animal_id: { path: ["scan_key", "animal_id"] },
+  session:   { path: ["scan_key", "session"] },
+  scan_idx:  { path: ["scan_key", "scan_idx"] },
+  genotype:  { path: ["scan_key", "genotype"] },
+  sex:       { path: ["scan_key", "sex"] },
+  introduced_in:   { derived: "introduced_in" }
+};
+
 Promise.all([
   fetch(meta_path).then(response => {
     if (!response.ok) throw new Error('Metadata file not found');
@@ -232,11 +335,184 @@ Promise.all([
     dl.style.opacity = "1";
     dl.removeAttribute("aria-disabled");
 
+    buildFilterConfig();
+    document.getElementById('filter-btn').disabled = false;
+
     showAllMetadata();
 })
 .catch(err => {
     document.getElementById('status').textContent = "⚠️ Error: Metadata file not found.";
 });
+
+function getFieldValue(obj, pathOrConfig) {
+    if (pathOrConfig?.derived === "introduced_in") {
+        const animal = obj?.scan_key?.animal_id;
+        if (!animal || !animalSourceLookup?.[animal]) return null;
+
+        const entry = animalSourceLookup[animal];
+        if (typeof entry === "string") return entry;
+        return entry.label ?? entry.name ?? null;
+    }
+
+    const path = pathOrConfig?.path ?? pathOrConfig;
+
+    let cur = obj;
+    for (const key of path) {
+        if (cur == null || typeof cur !== "object" || !(key in cur)) return null;
+        cur = cur[key];
+    }
+    return cur;
+}
+
+function normalizeValue(val) {
+    if (val === null || val === undefined) return null;
+
+    if (Array.isArray(val)) {
+        const cleaned = val
+            .map(v => normalizeValue(v))
+            .filter(v => v !== null);
+        return cleaned.length ? cleaned : null;
+    }
+
+    const str = String(val).trim();
+    return str === "" ? null : str;
+}
+
+function buildFilterConfig() {
+    filterConfig = {};
+
+    for (const [field, cfg] of Object.entries(FILTER_FIELDS)) {
+        const values = new Set();
+
+        for (const exp of Object.values(metadata)) {
+            const raw = getFieldValue(exp, cfg);
+            const normalized = normalizeValue(raw);
+
+            if (normalized === null) continue;
+
+            if (Array.isArray(normalized)) {
+                normalized.forEach(v => values.add(v));
+            } else {
+                values.add(normalized);
+            }
+        }
+
+        const sorted = Array.from(values).sort((a, b) =>
+            a.localeCompare(b, undefined, { numeric: true, sensitivity: "base" })
+        );
+
+        if (sorted.length > 0) {
+            filterConfig[field] = sorted;
+        }
+    }
+
+    renderFilterUI();
+}
+
+function renderFilterUI() {
+    const container = document.getElementById('filter-container');
+    let html = "";
+
+    for (const [field, values] of Object.entries(filterConfig)) {
+        html += `<div class="filter-group">`;
+        html += `<h4>${field}</h4>`;
+        html += `<div class="filter-options">`;
+
+        values.forEach(value => {
+            const checked = activeFilters[field]?.has(value) ? "checked" : "";
+            const safeId = `filter-${field}-${String(value).replace(/[^a-zA-Z0-9_-]/g, "_")}`;
+            html += `
+              <label for="${safeId}">
+                <input type="checkbox" id="${safeId}" data-field="${field}" value="${escapeHtml(value)}" ${checked}>
+                ${escapeHtml(value)}
+              </label>
+            `;
+        });
+
+        html += `</div></div>`;
+    }
+
+    container.innerHTML = html;
+    updateFilterSummary();
+}
+
+function openFilterDialog() {
+    renderFilterUI();
+    document.body.style.overflow = "hidden";
+    document.getElementById('filter-dialog').showModal();
+}
+
+function closeFilterDialog() {
+    document.body.style.overflow = "";
+    document.getElementById('filter-dialog').close();
+}
+
+document.getElementById('filter-dialog').addEventListener('close', () => {
+    document.body.style.overflow = "";
+});
+
+function applyFilters() {
+    activeFilters = {};
+    const inputs = document.querySelectorAll('#filter-container input[type="checkbox"]:checked');
+
+    inputs.forEach(input => {
+        const field = input.dataset.field;
+        const value = input.value;
+        if (!activeFilters[field]) activeFilters[field] = new Set();
+        activeFilters[field].add(value);
+    });
+
+    closeFilterDialog();
+    renderDynamicTable(getFilteredMetadata());
+}
+
+function resetFilters() {
+    activeFilters = {};
+    renderFilterUI();
+    renderDynamicTable(metadata);
+}
+
+function experimentMatchesFilters(expData) {
+    for (const [field, selectedValues] of Object.entries(activeFilters)) {
+        if (!selectedValues || selectedValues.size === 0) continue;
+
+        const cfg = FILTER_FIELDS[field];
+        const raw = getFieldValue(expData, cfg);
+        const normalized = normalizeValue(raw);
+
+        let match = false;
+
+        if (Array.isArray(normalized)) {
+            match = normalized.some(v => selectedValues.has(v));
+        } else if (normalized !== null) {
+            match = selectedValues.has(normalized);
+        }
+
+        if (!match) return false;
+    }
+    return true;
+}
+
+function getFilteredMetadata() {
+    const filtered = {};
+    for (const [id, expData] of Object.entries(metadata)) {
+        if (experimentMatchesFilters(expData)) {
+            filtered[id] = expData;
+        }
+    }
+    return filtered;
+}
+
+function updateFilterSummary() {
+    const parts = [];
+    for (const [field, values] of Object.entries(activeFilters)) {
+        if (values && values.size > 0) {
+            parts.push(`${field}: ${values.size}`);
+        }
+    }
+    document.getElementById('filter-summary').textContent =
+        parts.length ? `Active filters — ${parts.join(" | ")}` : "No active filters";
+}
 
 function renderDynamicTable(dataObj) {
     const wrapper = document.getElementById('table-wrapper');
@@ -249,10 +525,11 @@ function renderDynamicTable(dataObj) {
     if (keys.length === 0) {
         wrapper.style.display = "none";
         status.textContent = "No matches found.";
+        updateFilterSummary();
         return;
     }
 
-    const importantFields = ["animal_id", "session", "scan_idx", "used in"];
+    const importantFields = ["animal_id", "session", "scan_idx", "introduced in"];
 
     let headHtml = `<tr><th>Experiment ID (click for details)</th>`;
     importantFields.forEach(field => { headHtml += `<th>${field}</th>`; });
@@ -271,11 +548,10 @@ function renderDynamicTable(dataObj) {
         let sourceCell = "-";
         if (animal !== "-" && animalSourceLookup && animalSourceLookup[animal]) {
             const entry = animalSourceLookup[animal];
-
             if (typeof entry === "string") {
                 sourceCell = entry;
             } else {
-                const label = entry.label ?? entry.name ?? "used in";
+                const label = entry.label ?? entry.name ?? "introduced in";
                 const url = entry.url ?? "#";
                 sourceCell = `<a href="${url}" target="_blank" rel="noopener">${label}</a>`;
             }
@@ -293,27 +569,45 @@ function renderDynamicTable(dataObj) {
 
     body.innerHTML = bodyHtml;
     wrapper.style.display = "block";
-    status.textContent = `Showing ${keys.length} result(s).`;
+
+    const activeCount = Object.values(activeFilters).reduce((n, s) => n + (s?.size || 0), 0);
+    status.textContent = activeCount > 0
+        ? `Showing ${keys.length} filtered result(s).`
+        : `Showing ${keys.length} result(s).`;
+
+    updateFilterSummary();
 }
 
 function searchMetadata() {
     let q = document.getElementById('query').value.trim();
     if (!q) {
-        showAllMetadata();
+        renderDynamicTable(getFilteredMetadata());
         return;
     }
     q = q.padStart(3, '0');
-    const result = metadata[q];
+    const filtered = getFilteredMetadata();
+    const result = filtered[q];
     renderDynamicTable(result ? { [q]: result } : {});
 }
 
 function showAllMetadata() {
-    renderDynamicTable(metadata);
+    renderDynamicTable(getFilteredMetadata());
 }
 
 function clearResults() {
     document.getElementById('query').value = "";
+    activeFilters = {};
     document.getElementById('table-wrapper').style.display = "none";
     document.getElementById('status').textContent = "Database synced successfully.";
+    updateFilterSummary();
+}
+
+function escapeHtml(str) {
+    return String(str)
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#39;");
 }
 </script>

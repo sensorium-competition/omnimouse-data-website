@@ -178,7 +178,7 @@ All experiments were conducted in awake, head-fixed mice and approved by the Ins
     <dt>Source</dt>
     <dd>Willeke et al., 2026 (OmniMouse)</dd>
 
-    <dt>DOI Sensorium-XL</dt>
+    <dt>DOI Sensorium-XL dataset</dt>
     <dd class="om-doi">TBA</dd>
 
     <dt>DOI OmniMouse paper</dt>

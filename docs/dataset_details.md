@@ -44,17 +44,20 @@ hide:
     background-color: var(--md-sys-color-surface-container-high);
 }
 
-/* Muted Button Styling */
+/* Button / link styling */
 .btn { 
     cursor: pointer;
     font-weight: 500; 
     font-size: 14px;
     color: var(--md-sys-color-on-surface-variant);
     background-color: var(--md-sys-color-surface-variant);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-search { 
-    /* Muted Primary - avoids the "Strong Purple" */
     background-color: var(--md-sys-color-secondary-container);
     color: var(--md-sys-color-on-secondary-container);
     border-color: var(--md-sys-color-outline);
@@ -139,10 +142,6 @@ hide:
   border-color: color-mix(in srgb, var(--md-sys-color-outline-variant) 55%, #fff 45%);
 }
 
-.btn:hover{
-  transform: translateY(-1px);
-}
-
 [data-md-color-scheme="default"] .btn:hover{
   box-shadow:
     0 14px 30px rgba(0,0,0,.14),
@@ -161,6 +160,7 @@ hide:
     0 4px 10px rgba(0,0,0,.10),
     inset 0 1px 0 rgba(255,255,255,.06);
 }
+
 [data-md-color-scheme="slate"] #table-wrapper.box-styled{
   box-shadow:
     0 26px 66px rgba(0,0,0,.72),
@@ -168,7 +168,6 @@ hide:
     0 0 0 1px rgba(255,255,255,.08),
     inset 0 1px 0 rgba(255,255,255,.12);
 }
-
 </style>
 
 <div id="metadata-container">
@@ -178,9 +177,18 @@ hide:
         <button class="btn btn-search box-styled" onclick="searchMetadata()">Search</button>
         <button class="btn btn-all box-styled" onclick="showAllMetadata()">View All</button>
         <button class="btn btn-clear box-styled" onclick="clearResults()">Clear</button>
+
+        <a id="download-meta"
+           class="btn box-styled"
+           href="#"
+           download="cleaned_full_combined_meta.json"
+           aria-disabled="true"
+           style="pointer-events:none; opacity:.6;">
+           Download metadata JSON
+        </a>
     </div>
 
-    <div id="status" class="status-msg">Database synced successfully.</div>
+    <div id="status" class="status-msg">Loading metadata...</div>
 
     <div id="table-wrapper" class="box-styled">
         <table id="result-table">
@@ -201,7 +209,7 @@ const baseURL = window.location.origin + window.location.pathname.replace(/\/[^\
 const meta_path = `${baseURL}/experiment_metadata/cleaned_full_combined_meta.json`;
 const animal_source_path = `${baseURL}/experiment_metadata/cite.json`;
 
-// Load both JSONs (metadata + animal->source lookup)
+// Load both JSONs
 Promise.all([
   fetch(meta_path).then(response => {
     if (!response.ok) throw new Error('Metadata file not found');
@@ -212,15 +220,23 @@ Promise.all([
     return response.json();
   })
 ])
-  .then(([metaData, sourceData]) => {
+.then(([metaData, sourceData]) => {
     metadata = metaData || {};
     animalSourceLookup = sourceData || {};
+
     document.getElementById('status').textContent = "Database synced successfully.";
+
+    const dl = document.getElementById('download-meta');
+    dl.href = meta_path;
+    dl.style.pointerEvents = "auto";
+    dl.style.opacity = "1";
+    dl.removeAttribute("aria-disabled");
+
     showAllMetadata();
-  })
-  .catch(err => {
+})
+.catch(err => {
     document.getElementById('status').textContent = "⚠️ Error: Metadata file not found.";
-  });
+});
 
 function renderDynamicTable(dataObj) {
     const wrapper = document.getElementById('table-wrapper');
@@ -236,15 +252,13 @@ function renderDynamicTable(dataObj) {
         return;
     }
 
-    const importantFields = ["animal_id", "session", "scan_idx", "source"];
+    const importantFields = ["animal_id", "session", "scan_idx", "used in"];
 
-    // Table header
     let headHtml = `<tr><th>Experiment ID (click for details)</th>`;
     importantFields.forEach(field => { headHtml += `<th>${field}</th>`; });
     headHtml += `</tr>`;
     head.innerHTML = headHtml;
 
-    // Table body
     let bodyHtml = "";
     keys.forEach(id => {
         const expData = dataObj[id] || {};
@@ -258,11 +272,10 @@ function renderDynamicTable(dataObj) {
         if (animal !== "-" && animalSourceLookup && animalSourceLookup[animal]) {
             const entry = animalSourceLookup[animal];
 
-            // Expected format: {label, url} (also supports string fallback)
             if (typeof entry === "string") {
                 sourceCell = entry;
             } else {
-                const label = entry.label ?? entry.name ?? "source";
+                const label = entry.label ?? entry.name ?? "used in";
                 const url = entry.url ?? "#";
                 sourceCell = `<a href="${url}" target="_blank" rel="noopener">${label}</a>`;
             }
@@ -289,12 +302,14 @@ function searchMetadata() {
         showAllMetadata();
         return;
     }
-    q = q.padStart(3,'0');
+    q = q.padStart(3, '0');
     const result = metadata[q];
     renderDynamicTable(result ? { [q]: result } : {});
 }
 
-function showAllMetadata() { renderDynamicTable(metadata); }
+function showAllMetadata() {
+    renderDynamicTable(metadata);
+}
 
 function clearResults() {
     document.getElementById('query').value = "";

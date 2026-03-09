@@ -75,7 +75,7 @@ markdown_extensions:
 nav:
   - Home: index.md
   # - OmniMouse Model: model.md
-  - Neurophysiological experiments: neurophysiological_experiments.md
+  - Subsets and References: subsets_and_references.md
   - Dataset Details: dataset_details.md
   - How to cite: cite.md
 

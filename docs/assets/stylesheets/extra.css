@@ -117,3 +117,11 @@
 .md-header {
   border-bottom: 1px solid var(--md-border-color);
 }
+
+.md-typeset {
+  font-size: 0.875rem;
+}
+
+html {
+  font-size: 25px;
+}

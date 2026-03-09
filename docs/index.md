@@ -9,8 +9,6 @@ hide:
 
 The **Sensorium-XL dataset** is the largest single-neuron dataset to date. It contains visual stimuli, neural responses, and behavioral measurements, and combines newly recorded data with recordings from the **Sensorium 2022** and **Sensorium 2023** Competitions. In total, it includes **333 experiments** collected from **78 mice**, and is being released alongside the **OmniMouse** project.
 
-**Sensorium-XL** was used to train **OmniMouse**, a unified AI model that predicts activity in mouse visual cortex by jointly modeling visual input, neural responses, and behavior.
-
 ---
 
 <h2 style="text-align: center; margin: 2.2rem 0 1.2rem 0;">Get started</h2>
@@ -41,13 +39,13 @@ The **Sensorium-XL dataset** is the largest single-neuron dataset to date. It co
 
     Python package for working with neuroscience recordings and stimuli, including interpolation utilities. Specifically designed for the dataformats of the Sensorium competitions and OmniMouse data.
 
--   [:material-github:{ .lg .middle } __Sensorium 2023 codebase__](https://github.com/ecker-lab/sensorium_2023){:target="_blank"}
+-   [:material-github:{ .lg .middle } __Sensorium 2022 codebase__](https://github.com/sinzlab/sensorium)
 
     Tutorials, baseline models, and notebooks to get started quickly.
 
--   [:material-github:{ .lg .middle } __OmniMouse codebase__](#)
+-   [:material-github:{ .lg .middle } __Sensorium 2023 codebase__](https://github.com/ecker-lab/sensorium_2023){:target="_blank"}
 
-    OmniMouse model and data pipeline built on Experanto. (Link coming soon.)
+    Tutorials, baseline models, and notebooks to get started quickly.
 
 </div>
 

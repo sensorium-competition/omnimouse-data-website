@@ -248,6 +248,22 @@ hide:
   font-size: 13px;
   opacity: .8;
 }
+
+.filter-mode {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--md-sys-color-outline-variant);
+  font-size: 12px;
+}
+
+.filter-mode label {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
 </style>
 
 <div id="metadata-container">
@@ -299,18 +315,22 @@ let metadata = {};
 let animalSourceLookup = {};
 let filterConfig = {};
 let activeFilters = {};
+let filterModes = {
+    modalities: "inclusive"
+};
 
 const baseURL = window.location.origin + window.location.pathname.replace(/\/[^\/]*\/?$/, '');
 const meta_path = `${baseURL}/experiment_metadata/cleaned_full_combined_meta.json`;
 const animal_source_path = `${baseURL}/experiment_metadata/cite.json`;
 
 const FILTER_FIELDS = {
-  animal_id: { path: ["scan_key", "animal_id"] },
-  session:   { path: ["scan_key", "session"] },
-  scan_idx:  { path: ["scan_key", "scan_idx"] },
-  genotype:  { path: ["scan_key", "genotype"] },
-  sex:       { path: ["scan_key", "sex"] },
-  introduced_in:   { derived: "introduced_in" }
+  animal_id:      { path: ["scan_key", "animal_id"] },
+  session:        { path: ["scan_key", "session"] },
+  scan_idx:       { path: ["scan_key", "scan_idx"] },
+  genotype:       { path: ["scan_key", "genotype"] },
+  sex:            { path: ["scan_key", "sex"] },
+  modalities:     { path: ["screen", "modalities"] },
+  introduced_in:  { derived: "introduced_in" }
 };
 
 Promise.all([
@@ -416,6 +436,23 @@ function renderFilterUI() {
     for (const [field, values] of Object.entries(filterConfig)) {
         html += `<div class="filter-group">`;
         html += `<h4>${field}</h4>`;
+
+        if (field === "modalities") {
+            const mode = filterModes.modalities ?? "inclusive";
+            html += `
+              <div class="filter-mode">
+                <label>
+                  <input type="radio" name="modalities-mode" value="inclusive" ${mode === "inclusive" ? "checked" : ""}>
+                  includes any selected
+                </label>
+                <label>
+                  <input type="radio" name="modalities-mode" value="exclusive" ${mode === "exclusive" ? "checked" : ""}>
+                  exact set only
+                </label>
+              </div>
+            `;
+        }
+
         html += `<div class="filter-options">`;
 
         values.forEach(value => {
@@ -453,6 +490,12 @@ document.getElementById('filter-dialog').addEventListener('close', () => {
 
 function applyFilters() {
     activeFilters = {};
+
+    const modalityModeInput = document.querySelector('input[name="modalities-mode"]:checked');
+    if (modalityModeInput) {
+        filterModes.modalities = modalityModeInput.value;
+    }
+
     const inputs = document.querySelectorAll('#filter-container input[type="checkbox"]:checked');
 
     inputs.forEach(input => {
@@ -468,8 +511,17 @@ function applyFilters() {
 
 function resetFilters() {
     activeFilters = {};
+    filterModes.modalities = "inclusive";
     renderFilterUI();
     renderDynamicTable(metadata);
+}
+
+function setsAreEqual(a, b) {
+    if (a.size !== b.size) return false;
+    for (const item of a) {
+        if (!b.has(item)) return false;
+    }
+    return true;
 }
 
 function experimentMatchesFilters(expData) {
@@ -479,6 +531,27 @@ function experimentMatchesFilters(expData) {
         const cfg = FILTER_FIELDS[field];
         const raw = getFieldValue(expData, cfg);
         const normalized = normalizeValue(raw);
+
+        if (field === "modalities") {
+            if (normalized === null) return false;
+
+            const experimentValues = Array.isArray(normalized) ? new Set(normalized) : new Set([normalized]);
+
+            if ((filterModes.modalities ?? "inclusive") === "exclusive") {
+                if (!setsAreEqual(experimentValues, selectedValues)) return false;
+            } else {
+                let anyMatch = false;
+                for (const value of selectedValues) {
+                    if (experimentValues.has(value)) {
+                        anyMatch = true;
+                        break;
+                    }
+                }
+                if (!anyMatch) return false;
+            }
+
+            continue;
+        }
 
         let match = false;
 
@@ -507,7 +580,11 @@ function updateFilterSummary() {
     const parts = [];
     for (const [field, values] of Object.entries(activeFilters)) {
         if (values && values.size > 0) {
-            parts.push(`${field}: ${values.size}`);
+            if (field === "modalities") {
+                parts.push(`${field} (${filterModes.modalities}): ${values.size}`);
+            } else {
+                parts.push(`${field}: ${values.size}`);
+            }
         }
     }
     document.getElementById('filter-summary').textContent =
@@ -548,12 +625,22 @@ function renderDynamicTable(dataObj) {
         let sourceCell = "-";
         if (animal !== "-" && animalSourceLookup && animalSourceLookup[animal]) {
             const entry = animalSourceLookup[animal];
+
             if (typeof entry === "string") {
                 sourceCell = entry;
             } else {
                 const label = entry.label ?? entry.name ?? "introduced in";
-                const url = entry.url ?? "#";
-                sourceCell = `<a href="${url}" target="_blank" rel="noopener">${label}</a>`;
+
+                let url = "#";
+                if (entry.url) {
+                    url = entry.url;
+                } else if (entry.page && entry.anchor) {
+                    url = `${baseURL}/${entry.page}/#${entry.anchor}`;
+                } else if (entry.page) {
+                    url = `${baseURL}/${entry.page}/`;
+                }
+
+                sourceCell = `<a href="${url}">${label}</a>`;
             }
         }
 
@@ -597,6 +684,7 @@ function showAllMetadata() {
 function clearResults() {
     document.getElementById('query').value = "";
     activeFilters = {};
+    filterModes.modalities = "inclusive";
     document.getElementById('table-wrapper').style.display = "none";
     document.getElementById('status').textContent = "Database synced successfully.";
     updateFilterSummary();

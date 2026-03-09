@@ -286,7 +286,7 @@ All experiments were conducted in awake, head-fixed mice and approved by the Ins
     <dd>16 behaving mice (16 recording sessions). Eleven “pretraining” recordings are released for training/generalization; five recordings are reserved for held-out evaluation.</dd>
 
     <dt>Stimuli</dt>
-    <dd>TBA</dd>
+    <dd>Trained on natural videos and tested on held out natural videos as well as out of domain gratings.</dd>
 
     <dt>Neural data</dt>
     <dd>Wide-field two-photon calcium imaging of excitatory neurons in layers 2–5 of right V1.</dd>

@@ -26,6 +26,12 @@
             "n_timestamps":480032,
             "sampling_rate":75,
             "start_time":1520193090.4450802803
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic17797-5-7-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -55,6 +61,12 @@
             "n_timestamps":312285,
             "sampling_rate":49,
             "start_time":1520306242.183816433
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic17797-6-2-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -84,6 +96,12 @@
             "n_timestamps":405604,
             "sampling_rate":64,
             "start_time":1520367205.9617962837
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic17797-6-4-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -113,6 +131,12 @@
             "n_timestamps":372565,
             "sampling_rate":59,
             "start_time":1520374803.8212857246
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic17797-6-6-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -142,6 +166,12 @@
             "n_timestamps":585029,
             "sampling_rate":92,
             "start_time":1520385044.3721625805
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic17797-6-7-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -171,6 +201,12 @@
             "n_timestamps":566160,
             "sampling_rate":89,
             "start_time":1520392863.0294437408
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic17797-7-3-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -200,6 +236,12 @@
             "n_timestamps":613113,
             "sampling_rate":96,
             "start_time":1520451589.7015154362
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic17797-7-5-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -229,6 +271,12 @@
             "n_timestamps":622198,
             "sampling_rate":98,
             "start_time":1520467484.0203440189
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic17797-8-5-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -258,6 +306,12 @@
             "n_timestamps":581106,
             "sampling_rate":91,
             "start_time":1520549834.8621721268
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic17797-9-3-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -287,6 +341,12 @@
             "n_timestamps":430900,
             "sampling_rate":74,
             "start_time":1520624801.9177219868
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic17797-9-4-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -316,6 +376,12 @@
             "n_timestamps":374115,
             "sampling_rate":64,
             "start_time":1520632587.4826824665
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic17797-9-6-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -345,6 +411,12 @@
             "n_timestamps":372636,
             "sampling_rate":63,
             "start_time":1520645126.5696694851
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic20457-5-9-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -374,6 +446,12 @@
             "n_timestamps":632814,
             "sampling_rate":100,
             "start_time":1544724489.6816072464
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image"
+            ]
         }
     },
     "dynamic20622-2-14-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -401,6 +479,12 @@
             "n_timestamps":599150,
             "sampling_rate":100,
             "start_time":1566947658.094843626
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image"
+            ]
         }
     },
     "dynamic20892-10-10-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -430,6 +514,12 @@
             "n_timestamps":692551,
             "sampling_rate":100,
             "start_time":1550004067.6018762589
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image"
+            ]
         }
     },
     "dynamic20892-7-16-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -459,6 +549,13 @@
             "n_timestamps":289875,
             "sampling_rate":100,
             "start_time":1549396914.9407455921
+        },
+        "screen":{
+            "modalities":[
+                "INVALID",
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic20892-7-18-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -488,6 +585,13 @@
             "n_timestamps":326415,
             "sampling_rate":100,
             "start_time":1549401286.0292952061
+        },
+        "screen":{
+            "modalities":[
+                "INVALID",
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic20892-7-19-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -517,6 +621,12 @@
             "n_timestamps":291354,
             "sampling_rate":100,
             "start_time":1549406291.6174006462
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic20892-7-20-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -546,6 +656,12 @@
             "n_timestamps":283238,
             "sampling_rate":100,
             "start_time":1549410225.3707301617
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic20892-8-11-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -575,6 +691,13 @@
             "n_timestamps":302045,
             "sampling_rate":100,
             "start_time":1549485859.7087051868
+        },
+        "screen":{
+            "modalities":[
+                "INVALID",
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic20892-8-12-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -604,6 +727,12 @@
             "n_timestamps":307156,
             "sampling_rate":100,
             "start_time":1549489504.7267794609
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic20892-8-14-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -633,6 +762,13 @@
             "n_timestamps":300559,
             "sampling_rate":100,
             "start_time":1549494560.2412297726
+        },
+        "screen":{
+            "modalities":[
+                "INVALID",
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic20892-8-16-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -662,6 +798,13 @@
             "n_timestamps":292000,
             "sampling_rate":100,
             "start_time":1549498846.0508232117
+        },
+        "screen":{
+            "modalities":[
+                "INVALID",
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic20892-8-6-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -691,6 +834,12 @@
             "n_timestamps":294800,
             "sampling_rate":100,
             "start_time":1549478390.0413866043
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic20892-8-9-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -720,6 +869,13 @@
             "n_timestamps":297183,
             "sampling_rate":100,
             "start_time":1549481973.2809050083
+        },
+        "screen":{
+            "modalities":[
+                "INVALID",
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic20892-9-10-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -749,6 +905,12 @@
             "n_timestamps":617618,
             "sampling_rate":100,
             "start_time":1549571827.2478699684
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image"
+            ]
         }
     },
     "dynamic20897-2-20-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -778,6 +940,13 @@
             "n_timestamps":326300,
             "sampling_rate":100,
             "start_time":1550522654.4495172501
+        },
+        "screen":{
+            "modalities":[
+                "INVALID",
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic20897-2-21-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -807,6 +976,12 @@
             "n_timestamps":326563,
             "sampling_rate":100,
             "start_time":1550526478.24726367
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic20897-2-25-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -836,6 +1011,12 @@
             "n_timestamps":287461,
             "sampling_rate":100,
             "start_time":1550532494.3386547565
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic20897-2-26-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -865,6 +1046,12 @@
             "n_timestamps":289657,
             "sampling_rate":100,
             "start_time":1550535677.5802237988
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic20897-3-10-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -894,6 +1081,12 @@
             "n_timestamps":309932,
             "sampling_rate":100,
             "start_time":1550618099.9014611244
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic20897-3-11-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -923,6 +1116,12 @@
             "n_timestamps":284988,
             "sampling_rate":100,
             "start_time":1550623599.2886357307
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic20897-3-13-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -952,6 +1151,13 @@
             "n_timestamps":284445,
             "sampling_rate":100,
             "start_time":1550627065.7689988613
+        },
+        "screen":{
+            "modalities":[
+                "INVALID",
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic20897-3-14-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -981,6 +1187,12 @@
             "n_timestamps":287300,
             "sampling_rate":100,
             "start_time":1550630332.2626409531
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic20897-3-15-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -1010,6 +1222,12 @@
             "n_timestamps":290972,
             "sampling_rate":100,
             "start_time":1550633795.0356838703
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic20897-3-6-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -1039,6 +1257,12 @@
             "n_timestamps":284723,
             "sampling_rate":100,
             "start_time":1550604971.3952338696
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic20897-3-8-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -1068,6 +1292,13 @@
             "n_timestamps":294371,
             "sampling_rate":100,
             "start_time":1550608427.1190888882
+        },
+        "screen":{
+            "modalities":[
+                "INVALID",
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic20897-4-15-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -1097,6 +1328,12 @@
             "n_timestamps":285038,
             "sampling_rate":100,
             "start_time":1550702760.1501488686
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic20897-4-16-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -1126,6 +1363,12 @@
             "n_timestamps":326349,
             "sampling_rate":100,
             "start_time":1550706714.5853359699
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic20897-4-9-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -1155,6 +1398,13 @@
             "n_timestamps":326396,
             "sampling_rate":100,
             "start_time":1550684412.6622421741
+        },
+        "screen":{
+            "modalities":[
+                "INVALID",
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21067-10-18-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -1184,6 +1434,12 @@
             "n_timestamps":620932,
             "sampling_rate":100,
             "start_time":1554331483.3397874832
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image"
+            ]
         }
     },
     "dynamic21067-13-14-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -1213,6 +1469,12 @@
             "n_timestamps":661629,
             "sampling_rate":100,
             "start_time":1554758114.0601346493
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image"
+            ]
         }
     },
     "dynamic21067-5-13-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -1242,6 +1504,13 @@
             "n_timestamps":283618,
             "sampling_rate":100,
             "start_time":1553815641.9232311249
+        },
+        "screen":{
+            "modalities":[
+                "INVALID",
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21067-5-16-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -1271,6 +1540,12 @@
             "n_timestamps":288968,
             "sampling_rate":100,
             "start_time":1553820281.5573430061
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21067-6-12-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -1300,6 +1575,13 @@
             "n_timestamps":322623,
             "sampling_rate":100,
             "start_time":1553901154.8438603878
+        },
+        "screen":{
+            "modalities":[
+                "INVALID",
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21067-6-13-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -1329,6 +1611,12 @@
             "n_timestamps":282991,
             "sampling_rate":100,
             "start_time":1553904910.287804842
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21067-7-11-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -1358,6 +1646,12 @@
             "n_timestamps":288742,
             "sampling_rate":100,
             "start_time":1553988439.0811982155
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21067-7-7-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -1387,6 +1681,12 @@
             "n_timestamps":284763,
             "sampling_rate":100,
             "start_time":1553977487.3675568104
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21067-9-17-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -1416,6 +1716,12 @@
             "n_timestamps":606018,
             "sampling_rate":100,
             "start_time":1554222693.6577136517
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image"
+            ]
         }
     },
     "dynamic21154-3-16-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -1445,6 +1751,13 @@
             "n_timestamps":285200,
             "sampling_rate":100,
             "start_time":1552941946.3968393803
+        },
+        "screen":{
+            "modalities":[
+                "INVALID",
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21154-4-14-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -1474,6 +1787,12 @@
             "n_timestamps":287070,
             "sampling_rate":100,
             "start_time":1553040780.5245110989
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21154-4-15-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -1503,6 +1822,12 @@
             "n_timestamps":300276,
             "sampling_rate":100,
             "start_time":1553044044.5687992573
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21154-4-19-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -1532,6 +1857,12 @@
             "n_timestamps":285878,
             "sampling_rate":100,
             "start_time":1553048797.6030914783
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21154-5-11-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -1561,6 +1892,13 @@
             "n_timestamps":303200,
             "sampling_rate":100,
             "start_time":1553120951.2610759735
+        },
+        "screen":{
+            "modalities":[
+                "INVALID",
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21154-5-12-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -1590,6 +1928,12 @@
             "n_timestamps":281784,
             "sampling_rate":100,
             "start_time":1553125378.500333786
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21154-5-4-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -1619,6 +1963,12 @@
             "n_timestamps":289867,
             "sampling_rate":100,
             "start_time":1553109624.4161369801
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21154-7-12-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -1648,6 +1998,12 @@
             "n_timestamps":284199,
             "sampling_rate":100,
             "start_time":1553311374.3306894302
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21154-7-3-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -1677,6 +2033,12 @@
             "n_timestamps":284575,
             "sampling_rate":100,
             "start_time":1553279651.0391960144
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21553-13-6-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -1706,6 +2068,12 @@
             "n_timestamps":360946,
             "sampling_rate":100,
             "start_time":1559162174.0584130287
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21553-14-5-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -1735,6 +2103,12 @@
             "n_timestamps":368581,
             "sampling_rate":100,
             "start_time":1559234963.6465997696
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21553-3-48-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -1764,6 +2138,12 @@
             "n_timestamps":287462,
             "sampling_rate":100,
             "start_time":1557957632.0834658146
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21553-4-5-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -1793,6 +2173,12 @@
             "n_timestamps":286954,
             "sampling_rate":100,
             "start_time":1558026408.0588338375
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21553-7-5-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -1822,6 +2208,12 @@
             "n_timestamps":283441,
             "sampling_rate":100,
             "start_time":1558377009.9127943516
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21553-8-13-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -1851,6 +2243,12 @@
             "n_timestamps":284631,
             "sampling_rate":100,
             "start_time":1558466503.387586832
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21553-8-14-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -1880,6 +2278,12 @@
             "n_timestamps":340920,
             "sampling_rate":100,
             "start_time":1558469397.6294457912
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21553-9-6-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -1909,6 +2313,12 @@
             "n_timestamps":284775,
             "sampling_rate":100,
             "start_time":1558545173.8362216949
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21608-2-18-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -1938,6 +2348,12 @@
             "n_timestamps":652983,
             "sampling_rate":100,
             "start_time":1556056312.3556799889
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21608-3-10-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -1967,6 +2383,12 @@
             "n_timestamps":666953,
             "sampling_rate":100,
             "start_time":1556138572.7966740131
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21617-7-8-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -1996,6 +2418,12 @@
             "n_timestamps":657436,
             "sampling_rate":100,
             "start_time":1557167012.2811768055
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21617-7-9-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -2025,6 +2453,12 @@
             "n_timestamps":657311,
             "sampling_rate":100,
             "start_time":1557174567.7695746422
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21617-8-8-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -2054,6 +2488,12 @@
             "n_timestamps":669700,
             "sampling_rate":100,
             "start_time":1557258923.7803821564
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21844-3-25-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -2083,6 +2523,12 @@
             "n_timestamps":341939,
             "sampling_rate":100,
             "start_time":1560798142.0439949036
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21844-3-26-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -2112,6 +2558,12 @@
             "n_timestamps":322029,
             "sampling_rate":100,
             "start_time":1560801595.4755277634
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21844-3-27-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -2141,6 +2593,12 @@
             "n_timestamps":315814,
             "sampling_rate":100,
             "start_time":1560804863.3053674698
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21900-3-10-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -2170,6 +2628,12 @@
             "n_timestamps":151551,
             "sampling_rate":51,
             "start_time":1560192278.5052762032
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21900-3-16-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -2199,6 +2663,12 @@
             "n_timestamps":281326,
             "sampling_rate":100,
             "start_time":1560203117.4170565605
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21900-3-17-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -2228,6 +2698,12 @@
             "n_timestamps":296044,
             "sampling_rate":100,
             "start_time":1560205985.8602051735
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21900-3-18-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -2257,6 +2733,12 @@
             "n_timestamps":286159,
             "sampling_rate":100,
             "start_time":1560209085.1115086079
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21900-4-10-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -2286,6 +2768,12 @@
             "n_timestamps":793786,
             "sampling_rate":100,
             "start_time":1560283432.9576554298
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21900-4-13-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -2315,6 +2803,12 @@
             "n_timestamps":309023,
             "sampling_rate":100,
             "start_time":1560295195.3442797661
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21900-4-6-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -2344,6 +2838,12 @@
             "n_timestamps":287263,
             "sampling_rate":100,
             "start_time":1560268309.6141684055
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21900-4-7-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -2373,6 +2873,12 @@
             "n_timestamps":491075,
             "sampling_rate":100,
             "start_time":1560271856.6376168728
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21900-4-8-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -2402,6 +2908,12 @@
             "n_timestamps":320081,
             "sampling_rate":100,
             "start_time":1560276995.7498915195
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic21900-4-9-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -2431,6 +2943,12 @@
             "n_timestamps":303732,
             "sampling_rate":100,
             "start_time":1560280296.3009610176
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic22083-2-19-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -2460,6 +2978,12 @@
             "n_timestamps":284227,
             "sampling_rate":100,
             "start_time":1562003986.212574482
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic22083-2-20-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -2489,6 +3013,12 @@
             "n_timestamps":300297,
             "sampling_rate":100,
             "start_time":1562006852.6364476681
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic22083-2-21-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -2518,6 +3048,12 @@
             "n_timestamps":387500,
             "sampling_rate":100,
             "start_time":1562009917.9295549393
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic22083-2-22-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -2547,6 +3083,12 @@
             "n_timestamps":295633,
             "sampling_rate":100,
             "start_time":1562013907.7172989845
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic22083-3-13-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -2576,6 +3118,12 @@
             "n_timestamps":285184,
             "sampling_rate":100,
             "start_time":1562095987.0859727859
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic22083-3-16-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -2605,6 +3153,12 @@
             "n_timestamps":286149,
             "sampling_rate":100,
             "start_time":1562099897.5613126755
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic22083-3-17-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -2634,6 +3188,12 @@
             "n_timestamps":281488,
             "sampling_rate":100,
             "start_time":1562102993.6648581028
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic22083-3-18-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -2663,6 +3223,12 @@
             "n_timestamps":285159,
             "sampling_rate":100,
             "start_time":1562105874.9005932808
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic22083-3-19-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -2692,6 +3258,12 @@
             "n_timestamps":284548,
             "sampling_rate":100,
             "start_time":1562108926.6121685505
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic22083-3-6-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -2721,6 +3293,12 @@
             "n_timestamps":326222,
             "sampling_rate":100,
             "start_time":1562089693.9560432434
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic22084-2-11-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -2750,6 +3328,12 @@
             "n_timestamps":786451,
             "sampling_rate":100,
             "start_time":1565221635.5775732994
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic22223-2-15-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -2777,6 +3361,12 @@
             "n_timestamps":657021,
             "sampling_rate":100,
             "start_time":1566420373.5468873978
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image"
+            ]
         }
     },
     "dynamic22279-3-10-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -2806,6 +3396,12 @@
             "n_timestamps":284052,
             "sampling_rate":100,
             "start_time":1563299354.8890528679
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic22279-3-11-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -2835,6 +3431,12 @@
             "n_timestamps":285732,
             "sampling_rate":100,
             "start_time":1563302274.1213362217
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic22279-3-13-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -2864,6 +3466,12 @@
             "n_timestamps":287041,
             "sampling_rate":100,
             "start_time":1563305533.381264925
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic22279-3-2-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -2893,6 +3501,12 @@
             "n_timestamps":330625,
             "sampling_rate":100,
             "start_time":1563288856.7093975544
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic22279-3-8-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -2922,6 +3536,12 @@
             "n_timestamps":283229,
             "sampling_rate":100,
             "start_time":1563293586.9934074879
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic22279-3-9-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -2951,6 +3571,12 @@
             "n_timestamps":283331,
             "sampling_rate":100,
             "start_time":1563296472.0377357006
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic22279-5-15-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -2980,6 +3606,12 @@
             "n_timestamps":876659,
             "sampling_rate":100,
             "start_time":1565204976.4247627258
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic22285-2-10-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -3009,6 +3641,12 @@
             "n_timestamps":818239,
             "sampling_rate":100,
             "start_time":1565287699.4641170502
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic22564-2-12-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -3038,6 +3676,12 @@
             "n_timestamps":599873,
             "sampling_rate":100,
             "start_time":1567455460.5977678299
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image"
+            ]
         }
     },
     "dynamic22564-2-13-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -3067,6 +3711,12 @@
             "n_timestamps":601275,
             "sampling_rate":100,
             "start_time":1567462064.5149211884
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image"
+            ]
         }
     },
     "dynamic22564-3-12-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -3096,6 +3746,12 @@
             "n_timestamps":627966,
             "sampling_rate":100,
             "start_time":1567543583.1682546139
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image"
+            ]
         }
     },
     "dynamic22564-3-8-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -3125,6 +3781,12 @@
             "n_timestamps":619635,
             "sampling_rate":100,
             "start_time":1567534382.0017018318
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image"
+            ]
         }
     },
     "dynamic22620-4-15-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -3154,6 +3816,12 @@
             "n_timestamps":617052,
             "sampling_rate":100,
             "start_time":1570472526.8515026569
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image"
+            ]
         }
     },
     "dynamic22620-4-17-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -3183,6 +3851,12 @@
             "n_timestamps":648148,
             "sampling_rate":100,
             "start_time":1570480270.2956101894
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image"
+            ]
         }
     },
     "dynamic22620-5-11-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -3212,6 +3886,12 @@
             "n_timestamps":611100,
             "sampling_rate":100,
             "start_time":1570556003.2385511398
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image"
+            ]
         }
     },
     "dynamic22846-10-16-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -3241,6 +3921,12 @@
             "n_timestamps":608881,
             "sampling_rate":100,
             "start_time":1575481681.9919962883
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image"
+            ]
         }
     },
     "dynamic22846-2-19-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -3270,6 +3956,12 @@
             "n_timestamps":603500,
             "sampling_rate":100,
             "start_time":1573157721.4418628216
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image"
+            ]
         }
     },
     "dynamic22846-2-21-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -3299,6 +3991,12 @@
             "n_timestamps":693090,
             "sampling_rate":100,
             "start_time":1573165440.2583253384
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image"
+            ]
         }
     },
     "dynamic22846-7-15-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -3328,6 +4026,12 @@
             "n_timestamps":604525,
             "sampling_rate":100,
             "start_time":1574805110.886174202
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image"
+            ]
         }
     },
     "dynamic23343-5-17-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -3357,6 +4061,12 @@
             "n_timestamps":600000,
             "sampling_rate":100,
             "start_time":1579112459.5453312397
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image"
+            ]
         }
     },
     "dynamic23555-5-12-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -3386,6 +4096,12 @@
             "n_timestamps":606439,
             "sampling_rate":100,
             "start_time":1584727931.4611406326
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image"
+            ]
         }
     },
     "dynamic23656-14-22-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -3415,6 +4131,12 @@
             "n_timestamps":605625,
             "sampling_rate":100,
             "start_time":1588280525.1189608574
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image"
+            ]
         }
     },
     "dynamic23964-4-22-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -3444,6 +4166,12 @@
             "n_timestamps":596561,
             "sampling_rate":100,
             "start_time":1593455822.1311228275
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image"
+            ]
         }
     },
     "dynamic24620-8-24-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -3473,6 +4201,12 @@
             "n_timestamps":764320,
             "sampling_rate":100,
             "start_time":1604697452.1140646935
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic24620-9-13-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -3502,6 +4236,12 @@
             "n_timestamps":677261,
             "sampling_rate":100,
             "start_time":1604949645.0528421402
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic25133-11-22-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -3531,6 +4271,12 @@
             "n_timestamps":1200375,
             "sampling_rate":100,
             "start_time":1613774701.5186340809
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic25133-12-14-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -3560,6 +4306,12 @@
             "n_timestamps":1194613,
             "sampling_rate":100,
             "start_time":1614036192.2263741493
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic25133-12-8-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -3589,6 +4341,12 @@
             "n_timestamps":779312,
             "sampling_rate":100,
             "start_time":1614026336.3908071518
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic25404-4-19-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -3618,6 +4376,12 @@
             "n_timestamps":872700,
             "sampling_rate":100,
             "start_time":1618597611.5428981781
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic25404-4-20-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -3647,6 +4411,12 @@
             "n_timestamps":1298026,
             "sampling_rate":100,
             "start_time":1618609431.4449994564
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic25505-3-11-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -3676,6 +4446,12 @@
             "n_timestamps":1192509,
             "sampling_rate":100,
             "start_time":1619730797.7200090885
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic25505-3-7-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -3705,6 +4481,12 @@
             "n_timestamps":779473,
             "sampling_rate":100,
             "start_time":1619721300.8841953278
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic25505-4-7-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -3734,6 +4516,12 @@
             "n_timestamps":779628,
             "sampling_rate":100,
             "start_time":1619809549.81417799
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic25508-4-7-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -3763,6 +4551,12 @@
             "n_timestamps":764191,
             "sampling_rate":100,
             "start_time":1619110954.1565253735
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic25624-3-22-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -3792,6 +4586,12 @@
             "n_timestamps":300612,
             "sampling_rate":100,
             "start_time":1620255160.2428088188
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic25702-2-22-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -3821,6 +4621,12 @@
             "n_timestamps":315057,
             "sampling_rate":100,
             "start_time":1620850104.0238227844
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic25702-2-33-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -3850,6 +4656,12 @@
             "n_timestamps":290641,
             "sampling_rate":100,
             "start_time":1620856874.7985961437
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic25702-5-16-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -3879,6 +4691,12 @@
             "n_timestamps":706626,
             "sampling_rate":100,
             "start_time":1621274018.5842552185
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic25702-5-17-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -3908,6 +4726,12 @@
             "n_timestamps":745600,
             "sampling_rate":100,
             "start_time":1621281258.2418107986
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic25830-3-8-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -3937,6 +4761,12 @@
             "n_timestamps":744594,
             "sampling_rate":100,
             "start_time":1623173731.0892074108
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic25830-3-9-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -3966,6 +4796,12 @@
             "n_timestamps":746515,
             "sampling_rate":100,
             "start_time":1623181853.0106344223
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic25830-4-8-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -3995,6 +4831,12 @@
             "n_timestamps":750152,
             "sampling_rate":100,
             "start_time":1623262144.3593924046
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic25830-4-9-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -4024,6 +4866,12 @@
             "n_timestamps":745819,
             "sampling_rate":100,
             "start_time":1623269913.6624662876
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic25833-3-12-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -4053,6 +4901,12 @@
             "n_timestamps":738452,
             "sampling_rate":100,
             "start_time":1624393737.4706399441
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic25891-2-11-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -4082,6 +4936,12 @@
             "n_timestamps":759150,
             "sampling_rate":100,
             "start_time":1624911479.5674128532
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic25891-2-13-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -4111,6 +4971,12 @@
             "n_timestamps":761582,
             "sampling_rate":100,
             "start_time":1624922885.8756661415
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic25891-3-6-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -4140,6 +5006,12 @@
             "n_timestamps":771088,
             "sampling_rate":100,
             "start_time":1624998892.0045938492
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic25891-3-7-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -4169,6 +5041,12 @@
             "n_timestamps":750229,
             "sampling_rate":100,
             "start_time":1625008144.9088714123
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic26426-15-14-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -4198,6 +5076,12 @@
             "n_timestamps":737911,
             "sampling_rate":100,
             "start_time":1637088699.4456350803
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic26614-1-16-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -4227,6 +5111,13 @@
             "n_timestamps":648698,
             "sampling_rate":100,
             "start_time":1638218273.9303302765
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic26614-2-15-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -4256,6 +5147,13 @@
             "n_timestamps":780458,
             "sampling_rate":100,
             "start_time":1638303608.7790229321
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic26614-2-17-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -4285,6 +5183,13 @@
             "n_timestamps":776517,
             "sampling_rate":100,
             "start_time":1638312342.1254487038
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic26614-3-7-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -4314,6 +5219,13 @@
             "n_timestamps":785477,
             "sampling_rate":100,
             "start_time":1638395296.0480599403
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic26614-6-24-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -4343,6 +5255,13 @@
             "n_timestamps":1233073,
             "sampling_rate":100,
             "start_time":1638912201.1003036499
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic26644-14-17-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -4372,6 +5291,13 @@
             "n_timestamps":750529,
             "sampling_rate":100,
             "start_time":1639426110.3956255913
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic26645-2-18-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -4401,6 +5327,13 @@
             "n_timestamps":743993,
             "sampling_rate":100,
             "start_time":1639520951.664192915
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic26645-3-18-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -4430,6 +5363,13 @@
             "n_timestamps":784050,
             "sampling_rate":100,
             "start_time":1639614707.947630167
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic26645-3-20-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -4459,6 +5399,13 @@
             "n_timestamps":783991,
             "sampling_rate":100,
             "start_time":1639623706.3997507095
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic26645-4-19-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -4488,6 +5435,13 @@
             "n_timestamps":791076,
             "sampling_rate":100,
             "start_time":1639699396.005687952
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic26726-4-14-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -4517,6 +5471,12 @@
             "n_timestamps":700042,
             "sampling_rate":100,
             "start_time":1641242493.55372715
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic26726-6-11-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -4546,6 +5506,13 @@
             "n_timestamps":648034,
             "sampling_rate":100,
             "start_time":1642015387.1698493958
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic26726-7-12-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -4575,6 +5542,13 @@
             "n_timestamps":781822,
             "sampling_rate":100,
             "start_time":1642104936.843464613
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic26726-8-8-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -4604,6 +5578,13 @@
             "n_timestamps":783213,
             "sampling_rate":100,
             "start_time":1642185747.8609411716
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic26726-8-9-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -4633,6 +5614,13 @@
             "n_timestamps":770838,
             "sampling_rate":100,
             "start_time":1642193854.5332541466
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic26942-1-11-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -4662,6 +5650,13 @@
             "n_timestamps":646513,
             "sampling_rate":100,
             "start_time":1644867187.7632913589
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic26942-1-12-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -4691,6 +5686,13 @@
             "n_timestamps":735069,
             "sampling_rate":100,
             "start_time":1644874308.7950491905
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic26942-2-8-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -4720,6 +5722,13 @@
             "n_timestamps":771589,
             "sampling_rate":100,
             "start_time":1644960180.2771139145
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic26942-3-11-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -4749,6 +5758,13 @@
             "n_timestamps":781618,
             "sampling_rate":100,
             "start_time":1645015038.7519817352
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic27203-5-16-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -4778,6 +5794,13 @@
             "n_timestamps":619129,
             "sampling_rate":100,
             "start_time":1648674801.4748876095
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic27203-5-17-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -4807,6 +5830,13 @@
             "n_timestamps":751892,
             "sampling_rate":100,
             "start_time":1648682000.1959166527
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic27342-5-11-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -4836,6 +5866,13 @@
             "n_timestamps":751553,
             "sampling_rate":100,
             "start_time":1649445219.4865365028
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic27342-5-12-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -4865,6 +5902,13 @@
             "n_timestamps":715595,
             "sampling_rate":100,
             "start_time":1649453688.1618106365
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic27424-10-10-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -4894,6 +5938,13 @@
             "n_timestamps":742532,
             "sampling_rate":100,
             "start_time":1653598642.3279626369
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic27424-10-11-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -4923,6 +5974,13 @@
             "n_timestamps":733545,
             "sampling_rate":100,
             "start_time":1653606796.4617567062
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic27424-2-10-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -4952,6 +6010,12 @@
             "n_timestamps":769956,
             "sampling_rate":100,
             "start_time":1651765200.0771811008
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic27424-4-13-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -4981,6 +6045,12 @@
             "n_timestamps":927516,
             "sampling_rate":100,
             "start_time":1652214097.6701588631
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic27424-7-10-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -5010,6 +6080,13 @@
             "n_timestamps":768477,
             "sampling_rate":100,
             "start_time":1652561685.3278234005
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic27424-7-9-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -5039,6 +6116,13 @@
             "n_timestamps":650212,
             "sampling_rate":100,
             "start_time":1652554632.787324667
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic27424-8-5-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -5068,6 +6152,13 @@
             "n_timestamps":736700,
             "sampling_rate":100,
             "start_time":1652731706.9411709309
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic27424-8-6-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -5097,6 +6188,13 @@
             "n_timestamps":786546,
             "sampling_rate":100,
             "start_time":1652739295.78814888
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic27424-9-13-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -5126,6 +6224,13 @@
             "n_timestamps":647711,
             "sampling_rate":100,
             "start_time":1653517568.3539204597
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic27468-3-12-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -5155,6 +6260,13 @@
             "n_timestamps":645313,
             "sampling_rate":100,
             "start_time":1652814812.9447057247
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic27468-3-16-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -5184,6 +6296,13 @@
             "n_timestamps":735785,
             "sampling_rate":100,
             "start_time":1652821962.7953803539
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic27468-4-7-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -5213,6 +6332,13 @@
             "n_timestamps":771166,
             "sampling_rate":100,
             "start_time":1652909127.4732732773
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic27468-5-10-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -5242,6 +6368,13 @@
             "n_timestamps":776574,
             "sampling_rate":100,
             "start_time":1653000051.8844821453
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic27468-5-8-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -5271,6 +6404,13 @@
             "n_timestamps":777075,
             "sampling_rate":100,
             "start_time":1652992009.7492206097
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic27468-6-8-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -5300,6 +6440,13 @@
             "n_timestamps":782428,
             "sampling_rate":100,
             "start_time":1653072785.9621646404
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic27468-6-9-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -5329,6 +6476,13 @@
             "n_timestamps":771126,
             "sampling_rate":100,
             "start_time":1653080783.1000955105
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic27468-7-17-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -5358,6 +6512,12 @@
             "n_timestamps":926849,
             "sampling_rate":100,
             "start_time":1653424129.653234005
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic27470-5-10-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -5387,6 +6547,13 @@
             "n_timestamps":736914,
             "sampling_rate":100,
             "start_time":1657042776.4673578739
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic27470-5-9-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -5416,6 +6583,13 @@
             "n_timestamps":685670,
             "sampling_rate":100,
             "start_time":1657035456.7791714668
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic27470-6-8-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -5445,6 +6619,13 @@
             "n_timestamps":776874,
             "sampling_rate":100,
             "start_time":1657230818.1824226379
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic27470-7-12-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -5474,6 +6655,13 @@
             "n_timestamps":772697,
             "sampling_rate":100,
             "start_time":1657294849.6857256889
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic27470-7-15-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -5503,6 +6691,13 @@
             "n_timestamps":774396,
             "sampling_rate":100,
             "start_time":1657303777.2722494602
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic27802-2-10-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -5532,6 +6727,13 @@
             "n_timestamps":735039,
             "sampling_rate":100,
             "start_time":1655764529.686414957
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic27802-2-9-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -5561,6 +6763,13 @@
             "n_timestamps":645222,
             "sampling_rate":100,
             "start_time":1655757492.5332214832
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic27802-4-5-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -5590,6 +6799,13 @@
             "n_timestamps":781795,
             "sampling_rate":100,
             "start_time":1655911549.3633723259
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic27802-4-6-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -5619,6 +6835,13 @@
             "n_timestamps":779152,
             "sampling_rate":100,
             "start_time":1655919601.8484137058
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic27940-11-3-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -5648,6 +6871,12 @@
             "n_timestamps":774378,
             "sampling_rate":100,
             "start_time":1660163779.8896000385
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic27940-14-6-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -5677,6 +6906,13 @@
             "n_timestamps":638792,
             "sampling_rate":100,
             "start_time":1661964618.6930744648
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic27940-5-10-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -5706,6 +6942,13 @@
             "n_timestamps":638045,
             "sampling_rate":100,
             "start_time":1658172857.8933558464
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic27940-7-5-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -5735,6 +6978,13 @@
             "n_timestamps":790382,
             "sampling_rate":100,
             "start_time":1658325014.0804502964
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic27940-7-6-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -5764,6 +7014,13 @@
             "n_timestamps":774150,
             "sampling_rate":100,
             "start_time":1658333329.5682075024
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic27940-8-5-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -5793,6 +7050,13 @@
             "n_timestamps":804700,
             "sampling_rate":100,
             "start_time":1658429926.4373683929
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic27940-8-6-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -5822,6 +7086,13 @@
             "n_timestamps":784157,
             "sampling_rate":100,
             "start_time":1658438110.9711537361
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic27940-9-10-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -5851,6 +7122,13 @@
             "n_timestamps":778236,
             "sampling_rate":100,
             "start_time":1658525837.5151455402
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic27940-9-9-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -5880,6 +7158,13 @@
             "n_timestamps":795800,
             "sampling_rate":100,
             "start_time":1658517809.805804491
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic28120-11-3-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -5909,6 +7194,13 @@
             "n_timestamps":604984,
             "sampling_rate":100,
             "start_time":1662652076.9597513676
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic28120-14-14-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -5938,6 +7230,12 @@
             "n_timestamps":281621,
             "sampling_rate":100,
             "start_time":1664227643.9456458092
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic28120-14-6-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -5967,6 +7265,12 @@
             "n_timestamps":307254,
             "sampling_rate":100,
             "start_time":1664221743.2718741894
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic28120-2-9-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -5996,6 +7300,12 @@
             "n_timestamps":754497,
             "sampling_rate":100,
             "start_time":1660688602.7366394997
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic28120-7-17-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -6025,6 +7335,13 @@
             "n_timestamps":777076,
             "sampling_rate":100,
             "start_time":1661465288.9219784737
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic28120-8-6-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -6054,6 +7371,13 @@
             "n_timestamps":772553,
             "sampling_rate":100,
             "start_time":1661539534.8232882023
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic28120-8-7-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -6083,6 +7407,13 @@
             "n_timestamps":774193,
             "sampling_rate":100,
             "start_time":1661547517.4668560028
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic28120-9-12-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -6112,6 +7443,13 @@
             "n_timestamps":575700,
             "sampling_rate":100,
             "start_time":1662562389.2166552544
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic28121-2-12-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -6141,6 +7479,12 @@
             "n_timestamps":284652,
             "sampling_rate":100,
             "start_time":1662752188.3083748817
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic28121-2-7-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -6170,6 +7514,13 @@
             "n_timestamps":590500,
             "sampling_rate":100,
             "start_time":1662737755.4156031609
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic28121-3-8-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -6199,6 +7550,13 @@
             "n_timestamps":578432,
             "sampling_rate":100,
             "start_time":1662995007.5953643322
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic28121-4-5-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -6228,6 +7586,13 @@
             "n_timestamps":706073,
             "sampling_rate":100,
             "start_time":1663170321.2609131336
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic28121-4-6-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -6257,6 +7622,13 @@
             "n_timestamps":719750,
             "sampling_rate":100,
             "start_time":1663177519.5244224072
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic28121-6-7-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -6286,6 +7658,13 @@
             "n_timestamps":699663,
             "sampling_rate":100,
             "start_time":1663264629.9926869869
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic28121-6-8-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -6315,6 +7694,13 @@
             "n_timestamps":714680,
             "sampling_rate":100,
             "start_time":1663272038.0653343201
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic28447-3-10-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -6344,6 +7730,13 @@
             "n_timestamps":746899,
             "sampling_rate":100,
             "start_time":1666197349.7095589638
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic28447-3-12-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -6373,6 +7766,13 @@
             "n_timestamps":887996,
             "sampling_rate":100,
             "start_time":1666210138.3390231133
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic28447-4-11-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -6402,6 +7802,13 @@
             "n_timestamps":737317,
             "sampling_rate":100,
             "start_time":1666283696.1226053238
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic28447-4-12-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -6431,6 +7838,13 @@
             "n_timestamps":738397,
             "sampling_rate":100,
             "start_time":1666291318.8185222149
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic28447-5-14-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -6460,6 +7874,12 @@
             "n_timestamps":306718,
             "sampling_rate":100,
             "start_time":1666802819.144459486
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic28447-5-18-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -6489,6 +7909,12 @@
             "n_timestamps":290351,
             "sampling_rate":100,
             "start_time":1666807202.1864163876
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic28447-6-6-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -6518,6 +7944,13 @@
             "n_timestamps":559800,
             "sampling_rate":100,
             "start_time":1668098620.7690520287
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic28447-7-7-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -6547,6 +7980,13 @@
             "n_timestamps":736511,
             "sampling_rate":100,
             "start_time":1668196598.1359596252
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic28447-7-8-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -6576,6 +8016,13 @@
             "n_timestamps":735598,
             "sampling_rate":100,
             "start_time":1668204850.6216909885
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic28543-2-12-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -6605,6 +8052,12 @@
             "n_timestamps":288542,
             "sampling_rate":100,
             "start_time":1665518223.5143640041
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic28543-2-24-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -6634,6 +8087,12 @@
             "n_timestamps":281592,
             "sampling_rate":100,
             "start_time":1665526506.8112707138
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic28543-4-8-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -6663,6 +8122,13 @@
             "n_timestamps":812282,
             "sampling_rate":100,
             "start_time":1665687796.5787358284
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic28543-5-11-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -6692,6 +8158,13 @@
             "n_timestamps":831411,
             "sampling_rate":100,
             "start_time":1665766555.2140855789
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic28568-4-20-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -6721,6 +8194,12 @@
             "n_timestamps":282780,
             "sampling_rate":100,
             "start_time":1666982966.136248827
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic28568-4-25-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -6750,6 +8229,12 @@
             "n_timestamps":294415,
             "sampling_rate":100,
             "start_time":1666988886.4077849388
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic28568-5-22-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -6779,6 +8264,12 @@
             "n_timestamps":724670,
             "sampling_rate":100,
             "start_time":1671657657.9536106586
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic28568-6-11-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -6808,6 +8299,12 @@
             "n_timestamps":747209,
             "sampling_rate":100,
             "start_time":1671734766.9528493881
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic28568-6-12-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -6837,6 +8334,12 @@
             "n_timestamps":726096,
             "sampling_rate":100,
             "start_time":1671745132.4757094383
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic28681-4-15-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -6866,6 +8369,12 @@
             "n_timestamps":283028,
             "sampling_rate":100,
             "start_time":1670277745.8653137684
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic28681-4-8-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -6895,6 +8404,12 @@
             "n_timestamps":282340,
             "sampling_rate":100,
             "start_time":1670272839.4174141884
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic28681-5-12-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -6924,6 +8439,12 @@
             "n_timestamps":727634,
             "sampling_rate":100,
             "start_time":1670611333.861443758
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic28681-5-13-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -6953,6 +8474,12 @@
             "n_timestamps":731480,
             "sampling_rate":100,
             "start_time":1670619674.5578391552
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic28681-6-10-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -6982,6 +8509,12 @@
             "n_timestamps":726982,
             "sampling_rate":100,
             "start_time":1670875955.9938631058
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic28681-7-13-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -7011,6 +8544,13 @@
             "n_timestamps":638452,
             "sampling_rate":100,
             "start_time":1671475551.3285062313
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic28739-11-10-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -7040,6 +8580,12 @@
             "n_timestamps":728746,
             "sampling_rate":100,
             "start_time":1672341778.4994649887
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic28739-2-8-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -7069,6 +8615,13 @@
             "n_timestamps":639034,
             "sampling_rate":100,
             "start_time":1667925097.0246522427
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic28739-8-21-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -7098,6 +8651,12 @@
             "n_timestamps":291987,
             "sampling_rate":100,
             "start_time":1669840282.0538508892
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic28739-8-29-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -7127,6 +8686,12 @@
             "n_timestamps":286197,
             "sampling_rate":100,
             "start_time":1669845563.7075002193
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic29138-5-9-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -7156,6 +8721,12 @@
             "n_timestamps":723681,
             "sampling_rate":100,
             "start_time":1676917803.2197175026
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic29139-2-10-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -7185,6 +8756,13 @@
             "n_timestamps":737949,
             "sampling_rate":100,
             "start_time":1677089278.9871189594
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic29139-3-8-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -7214,6 +8792,13 @@
             "n_timestamps":867160,
             "sampling_rate":100,
             "start_time":1677187438.036819458
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic29139-3-9-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -7243,6 +8828,13 @@
             "n_timestamps":741738,
             "sampling_rate":100,
             "start_time":1677196282.5311021805
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic29156-10-14-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -7272,6 +8864,13 @@
             "n_timestamps":619360,
             "sampling_rate":100,
             "start_time":1678733258.1692032814
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic29156-11-10-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -7301,6 +8900,12 @@
             "n_timestamps":755145,
             "sampling_rate":100,
             "start_time":1679335186.9014372826
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic29156-2-18-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -7330,6 +8935,12 @@
             "n_timestamps":725051,
             "sampling_rate":100,
             "start_time":1673994739.6702227592
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic29156-5-12-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -7359,6 +8970,12 @@
             "n_timestamps":727262,
             "sampling_rate":100,
             "start_time":1675198588.3141858578
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic29156-6-10-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -7388,6 +9005,12 @@
             "n_timestamps":725200,
             "sampling_rate":100,
             "start_time":1675886289.5968146324
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic29156-7-8-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -7417,6 +9040,13 @@
             "n_timestamps":738367,
             "sampling_rate":100,
             "start_time":1678301106.4795219898
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic29156-7-9-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -7446,6 +9076,13 @@
             "n_timestamps":838251,
             "sampling_rate":100,
             "start_time":1678309146.7697308064
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic29156-8-12-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -7475,6 +9112,13 @@
             "n_timestamps":736661,
             "sampling_rate":100,
             "start_time":1678386670.3758602142
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic29228-2-10-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -7504,6 +9148,13 @@
             "n_timestamps":751971,
             "sampling_rate":100,
             "start_time":1679596945.4686727524
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic29234-2-11-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -7533,6 +9184,13 @@
             "n_timestamps":833872,
             "sampling_rate":100,
             "start_time":1677613619.0665969849
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic29234-4-6-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -7562,6 +9220,13 @@
             "n_timestamps":738347,
             "sampling_rate":100,
             "start_time":1677695376.8546209335
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic29234-4-7-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -7591,6 +9256,13 @@
             "n_timestamps":738580,
             "sampling_rate":100,
             "start_time":1677704082.7583744526
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic29234-6-9-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -7620,6 +9292,13 @@
             "n_timestamps":751722,
             "sampling_rate":100,
             "start_time":1679507811.7117750645
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic29513-2-6-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -7649,6 +9328,13 @@
             "n_timestamps":639819,
             "sampling_rate":100,
             "start_time":1680630754.5599889755
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic29513-3-5-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -7678,6 +9364,13 @@
             "n_timestamps":754662,
             "sampling_rate":100,
             "start_time":1680713404.4544184208
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic29513-4-4-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -7707,6 +9400,13 @@
             "n_timestamps":775972,
             "sampling_rate":100,
             "start_time":1680803006.243111372
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic29513-4-5-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -7736,6 +9436,13 @@
             "n_timestamps":782346,
             "sampling_rate":100,
             "start_time":1680811393.7432525158
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic29513-5-5-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -7765,6 +9472,13 @@
             "n_timestamps":774510,
             "sampling_rate":100,
             "start_time":1680883113.4185912609
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic29513-5-6-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -7794,6 +9508,13 @@
             "n_timestamps":776972,
             "sampling_rate":100,
             "start_time":1680891121.333878994
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic29514-2-9-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -7823,6 +9544,12 @@
             "n_timestamps":751077,
             "sampling_rate":100,
             "start_time":1679942607.946890831
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic30038-6-10-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -7852,6 +9579,13 @@
             "n_timestamps":728988,
             "sampling_rate":100,
             "start_time":1688754118.5838115215
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30038-6-9-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -7881,6 +9615,13 @@
             "n_timestamps":727898,
             "sampling_rate":100,
             "start_time":1688744706.8608455658
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30093-12-19-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -7910,6 +9651,12 @@
             "n_timestamps":899361,
             "sampling_rate":100,
             "start_time":1695759774.973649025
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic30415-4-12-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -7939,6 +9686,13 @@
             "n_timestamps":733729,
             "sampling_rate":100,
             "start_time":1696357536.7446761131
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30415-5-10-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -7968,6 +9722,13 @@
             "n_timestamps":744098,
             "sampling_rate":100,
             "start_time":1696444072.0307922363
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30415-6-9-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -7997,6 +9758,13 @@
             "n_timestamps":736512,
             "sampling_rate":100,
             "start_time":1696526726.8751986027
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30417-2-9-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -8026,6 +9794,12 @@
             "n_timestamps":883511,
             "sampling_rate":100,
             "start_time":1695840925.6074745655
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic30417-3-8-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -8055,6 +9829,13 @@
             "n_timestamps":620048,
             "sampling_rate":100,
             "start_time":1696613822.2039349079
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30417-3-9-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -8084,6 +9865,13 @@
             "n_timestamps":647494,
             "sampling_rate":100,
             "start_time":1696620131.8733663559
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30417-4-4-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -8113,6 +9901,13 @@
             "n_timestamps":739645,
             "sampling_rate":100,
             "start_time":1696869028.5178129673
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30417-4-5-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -8142,6 +9937,13 @@
             "n_timestamps":745300,
             "sampling_rate":100,
             "start_time":1696876554.0429713726
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30417-5-5-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -8171,6 +9973,13 @@
             "n_timestamps":738900,
             "sampling_rate":100,
             "start_time":1696957837.2552409172
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30417-5-6-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -8200,6 +10009,13 @@
             "n_timestamps":738696,
             "sampling_rate":100,
             "start_time":1696965949.3382189274
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30417-6-4-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -8229,6 +10045,13 @@
             "n_timestamps":738675,
             "sampling_rate":100,
             "start_time":1697044476.7882277966
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30417-6-5-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -8258,6 +10081,13 @@
             "n_timestamps":738354,
             "sampling_rate":100,
             "start_time":1697051898.0807197094
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30417-7-11-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -8287,6 +10117,13 @@
             "n_timestamps":746900,
             "sampling_rate":100,
             "start_time":1697147964.9453160763
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30417-7-9-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -8316,6 +10153,13 @@
             "n_timestamps":752577,
             "sampling_rate":100,
             "start_time":1697138966.9711487293
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30418-11-5-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -8345,6 +10189,13 @@
             "n_timestamps":737632,
             "sampling_rate":100,
             "start_time":1698952527.2454419136
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30418-11-6-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -8374,6 +10225,13 @@
             "n_timestamps":746752,
             "sampling_rate":100,
             "start_time":1698960918.0914635658
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30418-3-14-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -8403,6 +10261,13 @@
             "n_timestamps":743781,
             "sampling_rate":100,
             "start_time":1697568913.0225152969
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30418-4-9-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -8432,6 +10297,13 @@
             "n_timestamps":730800,
             "sampling_rate":100,
             "start_time":1697660420.1037456989
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30418-5-10-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -8461,6 +10333,13 @@
             "n_timestamps":727900,
             "sampling_rate":100,
             "start_time":1697737486.2106397152
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30418-6-9-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -8490,6 +10369,13 @@
             "n_timestamps":728520,
             "sampling_rate":100,
             "start_time":1697820751.8515424728
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30418-7-11-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -8519,6 +10405,13 @@
             "n_timestamps":622125,
             "sampling_rate":100,
             "start_time":1698427034.3071007729
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30418-7-12-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -8548,6 +10441,13 @@
             "n_timestamps":654528,
             "sampling_rate":100,
             "start_time":1698433312.3728089333
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30418-8-5-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -8577,6 +10477,13 @@
             "n_timestamps":749160,
             "sampling_rate":100,
             "start_time":1698685370.7062759399
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30418-9-7-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -8606,6 +10513,13 @@
             "n_timestamps":740218,
             "sampling_rate":100,
             "start_time":1698773227.0878834724
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30418-9-8-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -8635,6 +10549,13 @@
             "n_timestamps":746275,
             "sampling_rate":100,
             "start_time":1698780714.5873541832
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30522-2-6-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -8664,6 +10585,12 @@
             "n_timestamps":887674,
             "sampling_rate":100,
             "start_time":1698340416.5723223686
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic30697-3-8-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -8693,6 +10620,13 @@
             "n_timestamps":734847,
             "sampling_rate":100,
             "start_time":1700514734.408359766
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30697-4-11-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -8722,6 +10656,13 @@
             "n_timestamps":730839,
             "sampling_rate":100,
             "start_time":1700600579.7622628212
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30697-4-8-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -8751,6 +10692,13 @@
             "n_timestamps":730983,
             "sampling_rate":100,
             "start_time":1700591652.0588254929
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30697-5-10-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -8780,6 +10728,13 @@
             "n_timestamps":735355,
             "sampling_rate":100,
             "start_time":1700677852.4793241024
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30697-5-11-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -8809,6 +10764,13 @@
             "n_timestamps":733098,
             "sampling_rate":100,
             "start_time":1700685263.1979892254
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30746-4-11-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -8838,6 +10800,13 @@
             "n_timestamps":736083,
             "sampling_rate":100,
             "start_time":1701281120.4880383015
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30746-4-12-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -8867,6 +10836,13 @@
             "n_timestamps":386594,
             "sampling_rate":52,
             "start_time":1701288538.36708951
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30746-4-13-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -8896,6 +10872,13 @@
             "n_timestamps":389173,
             "sampling_rate":100,
             "start_time":1701295938.6594760418
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30746-5-12-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -8925,6 +10908,13 @@
             "n_timestamps":740862,
             "sampling_rate":100,
             "start_time":1701369709.2161095142
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30746-5-13-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -8954,6 +10944,13 @@
             "n_timestamps":737216,
             "sampling_rate":100,
             "start_time":1701377141.7053582668
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30746-6-8-Video-512cdd91f251cf74fff81375926f4002_30hz":{
@@ -8983,6 +10980,13 @@
             "n_timestamps":735611,
             "sampling_rate":100,
             "start_time":1701458672.4104561806
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30788-4-8-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -9012,6 +11016,12 @@
             "n_timestamps":730888,
             "sampling_rate":100,
             "start_time":1702066519.2728924751
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic30901-2-9-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -9041,6 +11051,13 @@
             "n_timestamps":640266,
             "sampling_rate":100,
             "start_time":1702410805.3023869991
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30999-2-13-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -9070,6 +11087,12 @@
             "n_timestamps":881595,
             "sampling_rate":100,
             "start_time":1704833211.1942269802
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic30999-3-6-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -9099,6 +11122,12 @@
             "n_timestamps":883120,
             "sampling_rate":100,
             "start_time":1704908369.6789441109
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "video"
+            ]
         }
     },
     "dynamic30999-4-9-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -9128,6 +11157,13 @@
             "n_timestamps":628342,
             "sampling_rate":100,
             "start_time":1705085304.4471871853
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30999-5-10-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -9157,6 +11193,13 @@
             "n_timestamps":737852,
             "sampling_rate":100,
             "start_time":1705343781.3012542725
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30999-5-11-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -9186,6 +11229,13 @@
             "n_timestamps":737532,
             "sampling_rate":100,
             "start_time":1705351194.7989826202
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30999-6-9-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -9215,6 +11265,13 @@
             "n_timestamps":737848,
             "sampling_rate":100,
             "start_time":1705431185.5461037159
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30999-7-8-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -9244,6 +11301,13 @@
             "n_timestamps":735845,
             "sampling_rate":100,
             "start_time":1705515466.7321829796
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30999-8-6-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -9273,6 +11337,13 @@
             "n_timestamps":738364,
             "sampling_rate":100,
             "start_time":1705605507.0053207874
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30999-8-7-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -9302,6 +11373,13 @@
             "n_timestamps":738118,
             "sampling_rate":100,
             "start_time":1705613051.5019991398
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30999-9-5-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -9331,6 +11409,13 @@
             "n_timestamps":736272,
             "sampling_rate":100,
             "start_time":1705686161.3450975418
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic30999-9-6-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -9360,6 +11445,13 @@
             "n_timestamps":737387,
             "sampling_rate":100,
             "start_time":1705693595.2461664677
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic31002-2-13-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -9389,6 +11481,13 @@
             "n_timestamps":623140,
             "sampling_rate":100,
             "start_time":1706297450.5510647297
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic31002-3-4-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -9418,6 +11517,13 @@
             "n_timestamps":643340,
             "sampling_rate":100,
             "start_time":1706371476.4458909035
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic31002-4-8-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -9447,6 +11553,13 @@
             "n_timestamps":735314,
             "sampling_rate":100,
             "start_time":1706555516.142313242
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic31002-4-9-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -9476,6 +11589,13 @@
             "n_timestamps":735373,
             "sampling_rate":100,
             "start_time":1706562972.6331882477
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic31002-5-6-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -9505,6 +11625,13 @@
             "n_timestamps":733693,
             "sampling_rate":100,
             "start_time":1706637933.6968400478
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic31002-5-7-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -9534,6 +11661,13 @@
             "n_timestamps":735490,
             "sampling_rate":100,
             "start_time":1706645468.8121006489
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic31002-6-5-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -9563,6 +11697,13 @@
             "n_timestamps":735900,
             "sampling_rate":100,
             "start_time":1706727756.4810640812
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic31002-7-5-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -9592,6 +11733,13 @@
             "n_timestamps":738891,
             "sampling_rate":100,
             "start_time":1706812945.9262421131
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic31002-7-6-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -9621,6 +11769,13 @@
             "n_timestamps":737590,
             "sampling_rate":100,
             "start_time":1706820379.0083017349
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     },
     "dynamic31002-8-6-Video-021a75e56847d574b9acbcc06c675055_30hz":{
@@ -9650,6 +11805,13 @@
             "n_timestamps":735973,
             "sampling_rate":100,
             "start_time":1706897353.3992021084
+        },
+        "screen":{
+            "modalities":[
+                "blank",
+                "image",
+                "video"
+            ]
         }
     }
 }

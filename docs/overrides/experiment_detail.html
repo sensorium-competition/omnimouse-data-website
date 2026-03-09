@@ -31,13 +31,23 @@
     </div>
   </div>
 
+  <div class="plot-card">
+    <div class="plot-card-header">
+      <h3>Stimulus presentation timeline</h3>
+      <p class="plot-subtitle">
+        Horizontal segments show stimulus presentation windows. Blank trials are shown at stimulus_id 0.
+      </p>
+    </div>
+    <div id="stimulus-plot"></div>
+    <p class="status" id="stimulus-status">Loading stimulus timeline…</p>
+  </div>
+
   <div id="exp-container"></div>
 
   <p class="status" id="status">Loading experiment data…</p>
 </div>
 
 <style>
-/* Make content container full width */
 .md-grid {
     max-width: 100%;
 }
@@ -46,7 +56,6 @@
     margin: 0 2rem;
 }
 
-/* Header info layout */
 .exp-header {
     background: var(--md-code-bg-color);
     border-radius: 8px;
@@ -63,6 +72,7 @@
 .exp-header-row {
     display: flex;
     gap: 3rem;
+    flex-wrap: wrap;
 }
 
 .exp-header-item {
@@ -83,6 +93,30 @@
     font-size: 1.1rem;
     font-weight: 500;
     font-family: var(--md-code-font-family);
+}
+
+.plot-card {
+    background: var(--md-code-bg-color);
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.plot-card-header h3 {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+}
+
+.plot-subtitle {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--md-default-fg-color--light);
+    font-size: 0.9rem;
+}
+
+#stimulus-plot {
+    width: 100%;
+    min-height: 500px;
 }
 
 .exp-table {
@@ -134,12 +168,12 @@
 }
 
 .exp-header a {
-  color: var(--md-accent-fg-color, #2094f3);
-  text-decoration: none;
-  font-weight: 600;
+    color: var(--md-accent-fg-color, #2094f3);
+    text-decoration: none;
+    font-weight: 600;
 }
 .exp-header a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .status {
@@ -156,54 +190,240 @@
 }
 </style>
 
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+
 <script>
 (function() {
     function getQueryParam(name) {
         return new URLSearchParams(window.location.search).get(name);
     }
 
-    const experimentId = getQueryParam('id');
-    const statusEl = document.getElementById('status');
-    const container = document.getElementById('exp-container');
+    function renderValue(value, container, isNested = false) {
+        if (value === null) {
+            container.textContent = "null";
+            return;
+        }
+
+        if (typeof value !== "object") {
+            container.textContent = value;
+            return;
+        }
+
+        const table = document.createElement("table");
+        table.className = isNested ? "exp-table nested-table" : "exp-table";
+
+        const tbody = document.createElement("tbody");
+
+        Object.entries(value).forEach(([k, v]) => {
+            const row = document.createElement("tr");
+
+            const keyCell = document.createElement("td");
+            keyCell.textContent = k;
+
+            const valueCell = document.createElement("td");
+            renderValue(v, valueCell, true);
+
+            row.appendChild(keyCell);
+            row.appendChild(valueCell);
+            tbody.appendChild(row);
+        });
+
+        table.appendChild(tbody);
+        container.appendChild(table);
+    }
+
+    function renderStimulusPlot(plotData) {
+        const stimulusStatusEl = document.getElementById("stimulus-status");
+        const plotEl = document.getElementById("stimulus-plot");
+
+        const events = (plotData?.events ?? []).filter(
+            e => e.start_time != null && e.end_time != null && e.end_time >= e.start_time
+        );
+
+        if (!events.length) {
+            plotEl.style.display = "none";
+            stimulusStatusEl.textContent = "No stimulus timeline available for this experiment.";
+            return;
+        }
+
+        const maxTime = Math.max(...events.map(e => e.end_time), 0);
+        const maxStimulusId = Math.max(...events.map(e => e.stimulus_id), 0);
+
+        const imageX = [], imageY = [], imageText = [];
+        const videoX = [], videoY = [], videoText = [];
+        const blankX = [], blankY = [], blankText = [];
+
+        events.forEach((event) => {
+            const duration = event.end_time - event.start_time;
+            const fileLabel = event.npy_file ?? "blank";
+
+            const hoverText =
+                `trial: ${event.trial_key ?? ""}<br>` +
+                `file: ${fileLabel}<br>` +
+                `stimulus_id: ${event.stimulus_id}<br>` +
+                `start_time: ${Number(event.start_time).toFixed(3)}<br>` +
+                `end_time: ${Number(event.end_time).toFixed(3)}<br>` +
+                `duration: ${duration.toFixed(3)}`;
+
+            if (event.stimulus_id === 0) {
+                blankX.push(event.start_time, event.end_time, null);
+                blankY.push(event.stimulus_id, event.stimulus_id, null);
+                blankText.push(hoverText, hoverText, null);
+            } else if (duration < 2.0) {
+                const midTime = (event.start_time + event.end_time) / 2;
+                imageX.push(midTime);
+                imageY.push(event.stimulus_id);
+                imageText.push(hoverText);
+            } else {
+                videoX.push(event.start_time, event.end_time, null);
+                videoY.push(event.stimulus_id, event.stimulus_id, null);
+                videoText.push(hoverText, hoverText, null);
+            }
+        });
+
+        const traces = [
+            {
+                x: imageX,
+                y: imageY,
+                text: imageText,
+                mode: "markers",
+                type: "scattergl",
+                name: "Images",
+                marker: {
+                    color: "#1f77b4",
+                    size: 3
+                },
+                hovertemplate: "%{text}<extra></extra>"
+            },
+            {
+                x: videoX,
+                y: videoY,
+                text: videoText,
+                mode: "lines",
+                type: "scattergl",
+                name: "Videos",
+                line: {
+                    color: "#8856a7",
+                    width: 5
+                },
+                hovertemplate: "%{text}<extra></extra>"
+            },
+            {
+                x: blankX,
+                y: blankY,
+                text: blankText,
+                mode: "lines",
+                type: "scattergl",
+                name: "Blanks",
+                line: {
+                    color: "black",
+                    width: 5
+                },
+                hovertemplate: "%{text}<extra></extra>"
+            }
+        ].filter(trace => trace.x.length > 0);
+
+        const plotHeight = Math.max(380, Math.min(700, 100 + (maxStimulusId + 1) * 5));
+        plotEl.style.height = `${plotHeight}px`;
+
+        const yTickStep = Math.max(1, Math.ceil((maxStimulusId + 1) / 10));
+
+        const layout = {
+            title: "Stimulus presentation timeline",
+            paper_bgcolor: "rgba(0,0,0,0)",
+            plot_bgcolor: "rgba(0,0,0,0)",
+            dragmode: "zoom",
+            hovermode: "closest",
+            margin: { t: 50, r: 20, b: 60, l: 95 },
+            xaxis: {
+                title: "Time (s)",
+                zeroline: false,
+                range: [0, maxTime]
+            },
+            yaxis: {
+                title: "Stimulus ID",
+                automargin: true,
+                zeroline: false,
+                range: [-0.5, maxStimulusId + 0.5],
+                dtick: yTickStep
+            },
+            legend: {
+                orientation: "h",
+                y: 1.08,
+                x: 0
+            }
+        };
+
+        const config = {
+            responsive: true,
+            scrollZoom: true,
+            displaylogo: false
+        };
+
+        Plotly.newPlot(plotEl, traces, layout, config)
+            .then(() => {
+                stimulusStatusEl.remove();
+            })
+            .catch(err => {
+                console.error("Plotly render failed:", err);
+                plotEl.style.display = "none";
+                stimulusStatusEl.textContent = "⚠️ Failed to render stimulus timeline.";
+            });
+    }
+
+    const experimentId = getQueryParam("id");
+    const statusEl = document.getElementById("status");
+    const container = document.getElementById("exp-container");
+    const stimulusStatusEl = document.getElementById("stimulus-status");
+    const plotEl = document.getElementById("stimulus-plot");
 
     if (!experimentId) {
         statusEl.textContent = "⚠️ No experiment ID provided in the URL.";
+        stimulusStatusEl.textContent = "";
+        plotEl.style.display = "none";
         return;
     }
 
     const metaPath = `${window.location.origin}/experiment_metadata/cleaned_full_combined_meta.json`;
     const sourcePath = `${window.location.origin}/experiment_metadata/cite.json`;
+    const stimulusPath = `${window.location.origin}/experiment_metadata/stimulus_plot_data/${experimentId}.json`;
 
     Promise.all([
         fetch(metaPath).then(response => {
-            if (!response.ok) throw new Error('Metadata file not found');
+            if (!response.ok) throw new Error("Metadata file not found");
             return response.json();
         }),
         fetch(sourcePath).then(response => {
-            if (!response.ok) throw new Error('Animal source lookup file not found');
+            if (!response.ok) throw new Error("Animal source lookup file not found");
+            return response.json();
+        }),
+        fetch(stimulusPath).then(response => {
+            if (!response.ok) throw new Error("Stimulus plot file not found");
             return response.json();
         })
     ])
-      .then(([data, animalSourceLookup]) => {
+    .then(([data, animalSourceLookup, stimulusPlotData]) => {
         const expData = data[experimentId];
         if (!expData) {
             statusEl.textContent = `⚠️ Experiment "${experimentId}" not found.`;
+            stimulusStatusEl.textContent = "";
+            plotEl.style.display = "none";
             return;
         }
 
-        // Parse animal_id, session, scan_idx from experiment ID
-        // Format: dynamic{animal_id}-{session}-{scan_idx}-...
+        renderStimulusPlot(stimulusPlotData);
+
         const idMatch = experimentId.match(/^dynamic(\d+)-(\d+)-(\d+)-/);
         const animal_id = idMatch ? idMatch[1] : "-";
         const session = idMatch ? idMatch[2] : "-";
         const scan_idx = idMatch ? idMatch[3] : "-";
 
-        document.getElementById('exp-id').textContent = experimentId;
-        document.getElementById('exp-animal').textContent = animal_id;
-        document.getElementById('exp-session').textContent = session;
-        document.getElementById('exp-scan').textContent = scan_idx;
+        document.getElementById("exp-id").textContent = experimentId;
+        document.getElementById("exp-animal").textContent = animal_id;
+        document.getElementById("exp-session").textContent = session;
+        document.getElementById("exp-scan").textContent = scan_idx;
 
-        const sourceEl = document.getElementById('exp-source');
+        const sourceEl = document.getElementById("exp-source");
         let sourceHtml = "-";
         if (animal_id !== "-" && animalSourceLookup && animalSourceLookup[animal_id]) {
             const entry = animalSourceLookup[animal_id];
@@ -217,14 +437,12 @@
         }
         sourceEl.innerHTML = sourceHtml;
 
-        // Render "screen" first if present
         const orderedKeys = [];
 
         if ("scan_key" in expData) {
             orderedKeys.push("scan_key");
         }
 
-        // Add remaining keys except "scan_key"
         for (const key in expData) {
             if (key !== "scan_key") {
                 orderedKeys.push(key);
@@ -235,12 +453,10 @@
             const sectionData = expData[key];
             if (typeof sectionData !== "object" || sectionData === null) return;
 
-            // Section title
             const title = document.createElement("h3");
             title.textContent = key;
             container.appendChild(title);
 
-            // Create table
             const table = document.createElement("table");
             table.className = "exp-table";
 
@@ -250,40 +466,6 @@
             const tbody = document.createElement("tbody");
 
             Object.entries(sectionData).forEach(([subKey, value]) => {
-                function renderValue(value, container, isNested = false) {
-                    if (value === null) {
-                        container.textContent = "null";
-                        return;
-                    }
-
-                    if (typeof value !== "object") {
-                        container.textContent = value;
-                        return;
-                    }
-
-                    const table = document.createElement("table");
-                    table.className = isNested ? "exp-table nested-table" : "exp-table";
-
-                    const tbody = document.createElement("tbody");
-
-                    Object.entries(value).forEach(([k, v]) => {
-                        const row = document.createElement("tr");
-
-                        const keyCell = document.createElement("td");
-                        keyCell.textContent = k;
-
-                        const valueCell = document.createElement("td");
-                        renderValue(v, valueCell, true);
-
-                        row.appendChild(keyCell);
-                        row.appendChild(valueCell);
-                        tbody.appendChild(row);
-                    });
-
-                    table.appendChild(tbody);
-                    container.appendChild(table);
-                }
-
                 const row = document.createElement("tr");
 
                 const keyCell = document.createElement("td");
@@ -301,12 +483,15 @@
             table.appendChild(tbody);
             container.appendChild(table);
         });
+
         statusEl.remove();
-      })
-      .catch(err => {
-        statusEl.textContent = "⚠️ Error: Metadata file not found.";
+    })
+    .catch(err => {
+        statusEl.textContent = "⚠️ Error: Failed to load experiment data.";
+        stimulusStatusEl.textContent = "⚠️ Error: Failed to load stimulus timeline.";
+        plotEl.style.display = "none";
         console.error(err);
-      });
+    });
 })();
 </script>
 {% endblock %}

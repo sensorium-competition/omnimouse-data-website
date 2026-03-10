@@ -174,7 +174,9 @@ hide:
   background: var(--md-default-bg-color, var(--md-sys-color-surface));
   color: var(--md-default-fg-color, var(--md-sys-color-on-surface));
   box-shadow: 0 18px 48px rgba(0,0,0,.22);
+}
 
+.filter-dialog[open] {
   display: grid;
   grid-template-rows: auto minmax(0, 1fr) auto;
 }

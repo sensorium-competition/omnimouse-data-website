@@ -194,6 +194,9 @@
 
 <script>
 (function() {
+    let cachedStimulusPlotData = null;
+    let rerenderThemeTimer = null;
+
     function getQueryParam(name) {
         return new URLSearchParams(window.location.search).get(name);
     }
@@ -232,8 +235,65 @@
         container.appendChild(table);
     }
 
-    function renderStimulusPlot(plotData) {
-        const stimulusStatusEl = document.getElementById("stimulus-status");
+    function parseColorToRgb(color) {
+        if (!color) return null;
+
+        color = color.trim();
+
+        if (color.startsWith("rgb")) {
+            const m = color.match(/rgba?\(([^)]+)\)/);
+            if (!m) return null;
+            const parts = m[1].split(",").slice(0, 3).map(v => Number(v.trim()));
+            if (parts.length === 3 && parts.every(v => !Number.isNaN(v))) {
+                return parts;
+            }
+        }
+
+        if (color.startsWith("#")) {
+            let hex = color.slice(1);
+
+            if (hex.length === 3) {
+                hex = hex.split("").map(c => c + c).join("");
+            }
+
+            if (hex.length === 6) {
+                const r = parseInt(hex.slice(0, 2), 16);
+                const g = parseInt(hex.slice(2, 4), 16);
+                const b = parseInt(hex.slice(4, 6), 16);
+                return [r, g, b];
+            }
+        }
+
+        return null;
+    }
+
+    function getEffectivePlotBackground() {
+        const plotCard = document.querySelector(".plot-card");
+        const mdTypeset = document.querySelector(".md-typeset");
+
+        const candidates = [
+            plotCard ? getComputedStyle(plotCard).backgroundColor : "",
+            mdTypeset ? getComputedStyle(mdTypeset).backgroundColor : "",
+            getComputedStyle(document.body).backgroundColor,
+            getComputedStyle(document.documentElement).backgroundColor
+        ];
+
+        for (const color of candidates) {
+            const rgb = parseColorToRgb(color);
+            if (!rgb) continue;
+            return { color, rgb };
+        }
+
+        return { color: "rgb(255, 255, 255)", rgb: [255, 255, 255] };
+    }
+
+    function isDarkFromRgb(rgb) {
+        const [r, g, b] = rgb;
+        const luminance = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+        return luminance < 140;
+    }
+
+    function buildStimulusPlot(plotData) {
         const plotEl = document.getElementById("stimulus-plot");
 
         const events = (plotData?.events ?? []).filter(
@@ -241,42 +301,57 @@
         );
 
         if (!events.length) {
-            plotEl.style.display = "none";
-            stimulusStatusEl.textContent = "No stimulus timeline available for this experiment.";
-            return;
+            return null;
         }
 
-        const maxTime = Math.max(...events.map(e => e.end_time), 0);
-        const maxStimulusId = Math.max(...events.map(e => e.stimulus_id), 0);
+        const bgInfo = getEffectivePlotBackground();
+        const isDark = isDarkFromRgb(bgInfo.rgb);
+
+        console.log("isDark =", isDark, "| background =", bgInfo.color, "| rgb =", bgInfo.rgb);
+
+        const textColor = isDark ? "#f5f5f5" : "#1a1a1a";
+        const gridColor = isDark ? "rgba(255,255,255,0.18)" : "rgba(0,0,0,0.10)";
+        const axisColor = isDark ? "rgba(255,255,255,0.75)" : "rgba(0,0,0,0.40)";
+        const tickColor = isDark ? "rgba(255,255,255,0.85)" : "rgba(0,0,0,0.50)";
+        const blankColor = isDark ? "#ffffff" : "#111111";
+        const legendBg = isDark ? "rgba(20,20,20,0.82)" : "rgba(255,255,255,0.88)";
+        const legendBorder = isDark ? "rgba(255,255,255,0.22)" : "rgba(0,0,0,0.15)";
+        const imageColor = "#4da3ff";
+        const videoColor = "#a56de2";
+
+        const maxTime = Math.max(...events.map(e => Number(e.end_time) || 0), 0);
+        const maxStimulusId = Math.max(...events.map(e => Number(e.stimulus_id) || 0), 0);
 
         const imageX = [], imageY = [], imageText = [];
         const videoX = [], videoY = [], videoText = [];
         const blankX = [], blankY = [], blankText = [];
 
         events.forEach((event) => {
-            const duration = event.end_time - event.start_time;
+            const start = Number(event.start_time);
+            const end = Number(event.end_time);
+            const stimId = Number(event.stimulus_id);
+            const duration = end - start;
             const fileLabel = event.npy_file ?? "blank";
 
             const hoverText =
                 `trial: ${event.trial_key ?? ""}<br>` +
                 `file: ${fileLabel}<br>` +
-                `stimulus_id: ${event.stimulus_id}<br>` +
-                `start_time: ${Number(event.start_time).toFixed(3)}<br>` +
-                `end_time: ${Number(event.end_time).toFixed(3)}<br>` +
+                `stimulus_id: ${stimId}<br>` +
+                `start_time: ${start.toFixed(3)}<br>` +
+                `end_time: ${end.toFixed(3)}<br>` +
                 `duration: ${duration.toFixed(3)}`;
 
-            if (event.stimulus_id === 0) {
-                blankX.push(event.start_time, event.end_time, null);
-                blankY.push(event.stimulus_id, event.stimulus_id, null);
+            if (stimId === 0) {
+                blankX.push(start, end, null);
+                blankY.push(stimId, stimId, null);
                 blankText.push(hoverText, hoverText, null);
             } else if (duration < 2.0) {
-                const midTime = (event.start_time + event.end_time) / 2;
-                imageX.push(midTime);
-                imageY.push(event.stimulus_id);
+                imageX.push((start + end) / 2);
+                imageY.push(stimId);
                 imageText.push(hoverText);
             } else {
-                videoX.push(event.start_time, event.end_time, null);
-                videoY.push(event.stimulus_id, event.stimulus_id, null);
+                videoX.push(start, end, null);
+                videoY.push(stimId, stimId, null);
                 videoText.push(hoverText, hoverText, null);
             }
         });
@@ -290,7 +365,7 @@
                 type: "scattergl",
                 name: "Images",
                 marker: {
-                    color: "#1f77b4",
+                    color: imageColor,
                     size: 3
                 },
                 hovertemplate: "%{text}<extra></extra>"
@@ -303,7 +378,7 @@
                 type: "scattergl",
                 name: "Videos",
                 line: {
-                    color: "#8856a7",
+                    color: videoColor,
                     width: 5
                 },
                 hovertemplate: "%{text}<extra></extra>"
@@ -316,41 +391,98 @@
                 type: "scattergl",
                 name: "Blanks",
                 line: {
-                    color: "black",
+                    color: blankColor,
                     width: 5
                 },
                 hovertemplate: "%{text}<extra></extra>"
             }
         ].filter(trace => trace.x.length > 0);
 
-        const plotHeight = Math.max(380, Math.min(700, 100 + (maxStimulusId + 1) * 5));
+        const plotHeight = Math.max(380, Math.min(700, 120 + (maxStimulusId + 1) * 5));
         plotEl.style.height = `${plotHeight}px`;
 
         const yTickStep = Math.max(1, Math.ceil((maxStimulusId + 1) / 10));
 
         const layout = {
-            title: "Stimulus presentation timeline",
             paper_bgcolor: "rgba(0,0,0,0)",
             plot_bgcolor: "rgba(0,0,0,0)",
             dragmode: "zoom",
             hovermode: "closest",
-            margin: { t: 50, r: 20, b: 60, l: 95 },
+            font: {
+                color: textColor,
+                size: 12
+            },
+            margin: {
+                t: 20,
+                r: 20,
+                b: 60,
+                l: 95
+            },
             xaxis: {
-                title: "Time (s)",
+                title: {
+                    text: "Time (s)",
+                    font: {
+                        color: textColor,
+                        size: 15
+                    }
+                },
+                tickfont: {
+                    color: textColor,
+                    size: 12
+                },
+                showline: true,
+                linecolor: axisColor,
+                linewidth: 1.5,
+                tickcolor: tickColor,
+                tickwidth: 1.5,
+                ticks: "outside",
                 zeroline: false,
+                showgrid: true,
+                gridcolor: gridColor,
+                gridwidth: 1,
+                color: textColor,
                 range: [0, maxTime]
             },
             yaxis: {
-                title: "Stimulus ID",
+                title: {
+                    text: "Stimulus ID",
+                    font: {
+                        color: textColor,
+                        size: 15
+                    }
+                },
+                tickfont: {
+                    color: textColor,
+                    size: 12
+                },
                 automargin: true,
+                showline: true,
+                linecolor: axisColor,
+                linewidth: 1.5,
+                tickcolor: tickColor,
+                tickwidth: 1.5,
+                ticks: "outside",
                 zeroline: false,
+                showgrid: true,
+                gridcolor: gridColor,
+                gridwidth: 1,
+                color: textColor,
                 range: [-0.5, maxStimulusId + 0.5],
                 dtick: yTickStep
             },
             legend: {
-                orientation: "h",
-                y: 1.08,
-                x: 0
+                orientation: "v",
+                x: 0.02,
+                y: 0.98,
+                xanchor: "left",
+                yanchor: "top",
+                font: {
+                    color: textColor,
+                    size: 12
+                },
+                bgcolor: legendBg,
+                bordercolor: legendBorder,
+                borderwidth: 1
             }
         };
 
@@ -360,15 +492,52 @@
             displaylogo: false
         };
 
-        Plotly.newPlot(plotEl, traces, layout, config)
+        return { traces, layout, config };
+    }
+
+    function renderStimulusPlot(plotData) {
+        const stimulusStatusEl = document.getElementById("stimulus-status");
+        const plotEl = document.getElementById("stimulus-plot");
+
+        const built = buildStimulusPlot(plotData);
+
+        if (!built) {
+            plotEl.style.display = "none";
+            if (stimulusStatusEl) {
+                stimulusStatusEl.textContent = "No stimulus timeline available for this experiment.";
+            }
+            return;
+        }
+
+        plotEl.style.display = "block";
+
+        const renderPromise = plotEl.data
+            ? Plotly.react(plotEl, built.traces, built.layout, built.config)
+            : Plotly.newPlot(plotEl, built.traces, built.layout, built.config);
+
+        renderPromise
             .then(() => {
-                stimulusStatusEl.remove();
+                if (stimulusStatusEl) {
+                    stimulusStatusEl.remove();
+                }
             })
             .catch(err => {
                 console.error("Plotly render failed:", err);
                 plotEl.style.display = "none";
-                stimulusStatusEl.textContent = "⚠️ Failed to render stimulus timeline.";
+                if (stimulusStatusEl) {
+                    stimulusStatusEl.textContent = "⚠️ Failed to render stimulus timeline.";
+                }
             });
+    }
+
+    function rerenderStimulusPlotForThemeChange() {
+        if (!cachedStimulusPlotData) return;
+
+        clearTimeout(rerenderThemeTimer);
+        rerenderThemeTimer = setTimeout(() => {
+            console.log("theme change detected, rerendering plot");
+            renderStimulusPlot(cachedStimulusPlotData);
+        }, 120);
     }
 
     const experimentId = getQueryParam("id");
@@ -411,6 +580,7 @@
             return;
         }
 
+        cachedStimulusPlotData = stimulusPlotData;
         renderStimulusPlot(stimulusPlotData);
 
         const idMatch = experimentId.match(/^dynamic(\d+)-(\d+)-(\d+)-/);
@@ -492,6 +662,34 @@
         plotEl.style.display = "none";
         console.error(err);
     });
+
+    window.addEventListener("resize", () => {
+        const plotEl = document.getElementById("stimulus-plot");
+        if (plotEl && plotEl.data) {
+            Plotly.Plots.resize(plotEl);
+        }
+    });
+
+    const themeObserver = new MutationObserver((mutations) => {
+        const changed = mutations.some(m => m.attributeName === "data-md-color-scheme");
+        if (changed) {
+            rerenderStimulusPlotForThemeChange();
+        }
+    });
+
+    if (document.documentElement) {
+        themeObserver.observe(document.documentElement, {
+            attributes: true,
+            attributeFilter: ["data-md-color-scheme"]
+        });
+    }
+
+    if (document.body) {
+        themeObserver.observe(document.body, {
+            attributes: true,
+            attributeFilter: ["data-md-color-scheme"]
+        });
+    }
 })();
 </script>
 {% endblock %}

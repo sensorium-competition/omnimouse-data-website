@@ -165,15 +165,18 @@ hide:
 /* Filter dialog */
 .filter-dialog {
   border: none;
-  border-radius: 16px;
+  border-radius: 18px;
   padding: 0;
-  width: min(900px, 94vw);
-  height: min(84vh, 900px);
-  max-height: 84vh;
+  width: min(960px, 94vw);
+  height: min(86vh, 920px);
+  max-height: 86vh;
   overflow: hidden;
   background: var(--md-default-bg-color, var(--md-sys-color-surface));
   color: var(--md-default-fg-color, var(--md-sys-color-on-surface));
   box-shadow: 0 18px 48px rgba(0,0,0,.22);
+
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
 }
 
 .filter-dialog::backdrop {
@@ -185,16 +188,33 @@ hide:
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  padding: 1rem 1rem 0.75rem 1rem;
+  padding: 1.1rem 1.25rem 0.9rem 1.25rem;
   border-bottom: 1px solid var(--md-sys-color-outline-variant);
 }
 
 .filter-dialog-body {
-  padding: 1rem;
+  padding: 1.1rem 1.25rem;
   overflow-y: auto;
   overflow-x: hidden;
-  max-height: calc(84vh - 72px);
+  min-height: 0;
   overscroll-behavior: contain;
+}
+
+.filter-dialog-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0.95rem 1.25rem 1.1rem 1.25rem;
+  border-top: 1px solid var(--md-sys-color-outline-variant);
+  background: var(--md-default-bg-color, var(--md-sys-color-surface));
+}
+
+.filter-footer-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .filter-close {
@@ -210,41 +230,55 @@ hide:
 .filter-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 14px;
+  gap: 16px;
+  align-items: start;
 }
 
 .filter-group {
   border: 1px solid var(--md-sys-color-outline-variant);
   border-radius: 12px;
-  padding: 12px;
+  padding: 14px;
   background: var(--md-sys-color-surface-container-lowest);
+
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 300px;
+  min-height: 300px;
+  overflow: hidden;
 }
 
 .filter-group h4 {
   margin: 0 0 .75rem 0;
   font-size: 14px;
+  flex: 0 0 auto;
 }
 
 .filter-options {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  max-height: 220px;
+  flex: 1 1 auto;
+  min-height: 0;
+  height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
   overscroll-behavior: contain;
   font-size: 13px;
+  padding-right: 4px;
+}
+
+.filter-options label {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
 }
 
 .filter-actions {
-  display: flex;
-  gap: 10px;
-  margin-top: 16px;
-  flex-wrap: wrap;
+  display: none;
 }
 
 .filter-count {
-  margin-left: 4px;
   font-size: 13px;
   opacity: .8;
 }
@@ -257,12 +291,54 @@ hide:
   padding-bottom: 10px;
   border-bottom: 1px solid var(--md-sys-color-outline-variant);
   font-size: 12px;
+  flex: 0 0 auto;
 }
 
 .filter-mode label {
   display: flex;
   gap: 6px;
   align-items: center;
+}
+
+@media (max-width: 700px) {
+  .filter-dialog {
+    width: min(96vw, 960px);
+    height: min(88vh, 920px);
+    max-height: 88vh;
+  }
+
+  .filter-dialog-head,
+  .filter-dialog-body,
+  .filter-dialog-footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .filter-dialog-footer {
+    align-items: stretch;
+  }
+
+  .filter-footer-actions {
+    width: 100%;
+  }
+
+  .filter-footer-actions .btn {
+    flex: 1 1 auto;
+  }
+
+  .filter-count {
+    width: 100%;
+  }
+
+  .filter-group {
+    height: 260px;
+    min-height: 260px;
+  }
+}
+
+html.filter-open,
+body.filter-open {
+  overflow: hidden !important;
 }
 </style>
 
@@ -300,13 +376,17 @@ hide:
     <strong>Filter metadata</strong>
     <button class="filter-close" onclick="closeFilterDialog()">Close</button>
   </div>
+
   <div class="filter-dialog-body">
     <div id="filter-container" class="filter-grid"></div>
-    <div class="filter-actions">
+  </div>
+
+  <div class="filter-dialog-footer">
+    <div class="filter-footer-actions">
       <button class="btn box-styled" onclick="applyFilters()">Apply filters</button>
       <button class="btn box-styled" onclick="resetFilters()">Reset filters</button>
-      <span id="filter-summary" class="filter-count"></span>
     </div>
+    <span id="filter-summary" class="filter-count"></span>
   </div>
 </dialog>
 
@@ -475,17 +555,20 @@ function renderFilterUI() {
 
 function openFilterDialog() {
     renderFilterUI();
-    document.body.style.overflow = "hidden";
+    document.documentElement.classList.add("filter-open");
+    document.body.classList.add("filter-open");
     document.getElementById('filter-dialog').showModal();
 }
 
 function closeFilterDialog() {
-    document.body.style.overflow = "";
+    document.documentElement.classList.remove("filter-open");
+    document.body.classList.remove("filter-open");
     document.getElementById('filter-dialog').close();
 }
 
 document.getElementById('filter-dialog').addEventListener('close', () => {
-    document.body.style.overflow = "";
+    document.documentElement.classList.remove("filter-open");
+    document.body.classList.remove("filter-open");
 });
 
 function applyFilters() {

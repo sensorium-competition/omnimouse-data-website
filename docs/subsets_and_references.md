@@ -111,11 +111,18 @@ hide:
   border-bottom: 1px solid var(--md-default-fg-color--lightest);
 }
 
+.cite-dialog-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .cite-dialog-body {
   padding: 1rem 1rem 1.1rem 1rem;
 }
 
-.cite-close {
+.cite-close,
+.cite-copy {
   border: 1px solid var(--md-default-fg-color--lightest);
   background: var(--md-default-bg-color);
   color: var(--md-default-fg-color);
@@ -125,7 +132,8 @@ hide:
   font: inherit;
 }
 
-.cite-close:hover {
+.cite-close:hover,
+.cite-copy:hover {
   background: color-mix(in srgb, var(--md-default-bg-color) 92%, var(--md-accent-fg-color) 8%);
 }
 
@@ -302,11 +310,14 @@ All experiments were conducted in awake, head-fixed mice and approved by the Ins
 <dialog id="cite-om" class="cite-dialog">
   <div class="cite-dialog-head">
     <strong>OmniMouse</strong>
-    <button class="cite-close" onclick="document.getElementById('cite-om').close()">Close</button>
+    <div class="cite-dialog-actions">
+      <button class="cite-copy" onclick="copyBibtex('bibtex-om', this)">Copy</button>
+      <button class="cite-close" onclick="document.getElementById('cite-om').close()">Close</button>
+    </div>
   </div>
   <div class="cite-dialog-body">
     <p>Main dataset citation.</p>
-    <pre><code>@inproceedings{
+    <pre><code id="bibtex-om">@inproceedings{
       willeke2026omnimouse,
       title={OmniMouse: Scaling properties of multi-modal, multi-task Brain Models on 150B Neural Tokens},
       author={Konstantin Friedrich Willeke and Polina Turishcheva and Alex Gilbert and Goirik Chakrabarty and Hasan Atakan Bedel and Paul G. Fahey and Yongrong Qiu and Marissa A. Weis and Michaela Vystr{\v{c}}ilov{\'a} and Taliah Muhammad and Lydia Ntanavara and Rachel E Froebe and Kayla Ponder and Zheng Huan Tan and Emin Orhan and Erick Cobos and Sophia Sanborn and Katrin Franke and Fabian H. Sinz and Alexander S. Ecker and Andreas S. Tolias},
@@ -320,11 +331,14 @@ All experiments were conducted in awake, head-fixed mice and approved by the Ins
 <dialog id="cite-s22" class="cite-dialog">
   <div class="cite-dialog-head">
     <strong>Sensorium 2022</strong>
-    <button class="cite-close" onclick="document.getElementById('cite-s22').close()">Close</button>
+    <div class="cite-dialog-actions">
+      <button class="cite-copy" onclick="copyBibtex('bibtex-s22', this)">Copy</button>
+      <button class="cite-close" onclick="document.getElementById('cite-s22').close()">Close</button>
+    </div>
   </div>
   <div class="cite-dialog-body">
     <p>Original source citation for the Sensorium 2022 subset.</p>
-    <pre><code>@misc{willeke2022sensoriumcompetitionpredictinglargescale,
+    <pre><code id="bibtex-s22">@misc{willeke2022sensoriumcompetitionpredictinglargescale,
   title={The Sensorium competition on predicting large-scale mouse primary visual cortex activity},
   author={Konstantin F. Willeke and Paul G. Fahey and Mohammad Bashiri and Laura Pede and Max F. Burg and Christoph Blessing and Santiago A. Cadena and Zhiwei Ding and Konstantin-Klemens Lurz and Kayla Ponder and Taliah Muhammad and Saumil S. Patel and Alexander S. Ecker and Andreas S. Tolias and Fabian H. Sinz},
   year={2022},
@@ -339,11 +353,14 @@ All experiments were conducted in awake, head-fixed mice and approved by the Ins
 <dialog id="cite-s23" class="cite-dialog">
   <div class="cite-dialog-head">
     <strong>Sensorium 2023</strong>
-    <button class="cite-close" onclick="document.getElementById('cite-s23').close()">Close</button>
+    <div class="cite-dialog-actions">
+      <button class="cite-copy" onclick="copyBibtex('bibtex-s23', this)">Copy</button>
+      <button class="cite-close" onclick="document.getElementById('cite-s23').close()">Close</button>
+    </div>
   </div>
   <div class="cite-dialog-body">
     <p>Original source citation for the Sensorium 2023 subset.</p>
-    <pre><code>@misc{turishcheva2024dynamicsensoriumcompetitionpredicting,
+    <pre><code id="bibtex-s23">@misc{turishcheva2024dynamicsensoriumcompetitionpredicting,
   title={The Dynamic Sensorium competition for predicting large-scale mouse visual cortex activity from videos},
   author={Polina Turishcheva and Paul G. Fahey and Laura Hansel and Rachel Froebe and Kayla Ponder and Michaela Vystrčilová and Konstantin F. Willeke and Mohammad Bashiri and Eric Wang and Zhiwei Ding and Andreas S. Tolias and Fabian H. Sinz and Alexander S. Ecker},
   year={2024},
@@ -358,11 +375,14 @@ All experiments were conducted in awake, head-fixed mice and approved by the Ins
 <dialog id="cite-foundation" class="cite-dialog">
   <div class="cite-dialog-head">
     <strong>Foundation model paper</strong>
-    <button class="cite-close" onclick="document.getElementById('cite-foundation').close()">Close</button>
+    <div class="cite-dialog-actions">
+      <button class="cite-copy" onclick="copyBibtex('bibtex-foundation', this)">Copy</button>
+      <button class="cite-close" onclick="document.getElementById('cite-foundation').close()">Close</button>
+    </div>
   </div>
   <div class="cite-dialog-body">
     <p>Original source citation for this subset.</p>
-    <pre><code>@article{wang2023foundation,
+    <pre><code id="bibtex-foundation">@article{wang2023foundation,
   title   = {Foundation model of neural activity predicts response to new stimulus types},
   author  = {Wang, E.Y. and Fahey, P.G. and Ding, Z. and others},
   journal = {Nature},
@@ -371,3 +391,27 @@ All experiments were conducted in awake, head-fixed mice and approved by the Ins
 }</code></pre>
   </div>
 </dialog>
+
+<script>
+async function copyBibtex(codeId, button) {
+  const codeEl = document.getElementById(codeId);
+  if (!codeEl) return;
+
+  const text = codeEl.innerText;
+
+  try {
+    await navigator.clipboard.writeText(text);
+    const original = button.textContent;
+    button.textContent = 'Copied';
+    setTimeout(() => {
+      button.textContent = original;
+    }, 1200);
+  } catch (err) {
+    const original = button.textContent;
+    button.textContent = 'Failed';
+    setTimeout(() => {
+      button.textContent = original;
+    }, 1200);
+  }
+}
+</script>

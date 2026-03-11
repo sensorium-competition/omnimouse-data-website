@@ -1,5 +1,5 @@
 ---
-title: Sensorium-XL dataset
+title: Enigma-Mouse dataset
 homepage: true
 hide:
   - navigation
@@ -7,7 +7,7 @@ hide:
   - footer
 ---
 
-The **Sensorium-XL dataset** is the largest single-neuron dataset to date. It contains visual stimuli, neural responses, and behavioral measurements, and combines newly recorded data with recordings from the **Sensorium 2022** and **Sensorium 2023** Competitions. In total, it includes **333 experiments** collected from **78 mice**, and is being released alongside the publication of the **OmniMouse** project.
+The **Enigma-Mouse dataset** is the largest single-neuron dataset to date. It contains visual stimuli, neural responses, and behavioral measurements, and combines newly recorded data with recordings from the **Sensorium 2022** and **Sensorium 2023** Competitions. In total, it includes **333 experiments** collected from **78 mice**, and is being released alongside the publication of the **OmniMouse** project.
 
 ---
 
@@ -17,7 +17,7 @@ The **Sensorium-XL dataset** is the largest single-neuron dataset to date. It co
 
 -   [:fontawesome-regular-newspaper:{ .lg .middle } __Read the OmniMouse paper__](https://openreview.net/forum?id=mEw4lhAn0F){:target="_blank"}
 
-    Background, methodology, and results for OmniMouse, plus an overview of Sensorium-XL.
+    Background, methodology, and results for OmniMouse, plus an overview of Enigma-Mouse.
 
 -   [:material-book-open:{ .lg .middle } __Explore the dataset on Hugging Face__](https://huggingface.co/datasets/sensorium-competition/omnimouse){:target="_blank"}
 

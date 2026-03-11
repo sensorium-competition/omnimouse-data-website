@@ -166,27 +166,27 @@ hide:
 
 # Subsets and references
 
-On this page you can find summaries of the Sensorium-XL neurophysiological dataset used to train and evaluate OmniMouse, including sources, experimental modalities, and key recording characteristics. For details on individual experiment sessions, see [Dataset Details](dataset_details.md).
+On this page you can find summaries of the Enigma-Mouse neurophysiological dataset used to train and evaluate OmniMouse, including sources, experimental modalities, and key recording characteristics. For details on individual experiment sessions, see [Dataset Details](dataset_details.md).
 
 All experiments were conducted in awake, head-fixed mice and approved by the Institutional Animal Care and Use Committee of Baylor College of Medicine.
 
-## Sensorium-XL { .toc-heading }
+## Enigma-Mouse { .toc-heading }
 
 <div class="om-card">
   <div class="om-card__head">
     <h2>
-      Sensorium-XL
+      Enigma-Mouse
       <a href="#" class="bibtex-link" onclick="document.getElementById('cite-om').showModal(); return false;">BibTeX</a>
     </h2>
   </div>
   <div class="om-card__body" markdown>
-  Sensorium-XL combines newly recorded data with prior recordings from other projects (sub-datasets listed below). It was introduced in the OmniMouse paper by Willeke et al. in 2026 and is published here as the Sensorium-XL dataset with it's own DOI.
+  Enigma-Mouse combines newly recorded data with prior recordings from other projects (sub-datasets listed below). It was introduced in the OmniMouse paper by Willeke et al. in 2026 and is published here as the Enigma-Mouse dataset with it's own DOI.
 
   <dl class="om-dl">
     <dt>Source</dt>
     <dd>Willeke et al., 2026 (OmniMouse)</dd>
 
-    <dt>DOI Sensorium-XL dataset</dt>
+    <dt>DOI Enigma-Mouse dataset</dt>
     <dd class="om-doi">TBA</dd>
 
     <dt>DOI OmniMouse paper</dt>

@@ -5,11 +5,11 @@ hide:
   - footer
 ---
 
-The **Sensorium-XL Dataset** builds on experimental data obtained from multiple projects and original sources. When using the Sensorium-XL Dataset for scientific purposes, please cite:
+The **Enigma-Mouse Dataset** builds on experimental data obtained from multiple projects and original sources. When using the Enigma-Mouse Dataset for scientific purposes, please cite:
 
 <ol style="margin-top: .4rem;">
   <li><strong>the original data source(s)</strong> your results depend on and the corresponding paper,</li>
-  <li>and, if possible, the Sensorium-XL dataset repository/homepage.</li>
+  <li>and, if possible, the Enigma-Mouse dataset repository/homepage.</li>
 </ol>
 
 You can find the corresponding paper for each individual experiment in the [__Dataset Details__](dataset_details.md) section. This ensures proper credit to the experimental labs and researchers, and improves reproducibility.
@@ -117,7 +117,7 @@ You can find the corresponding paper for each individual experiment in the [__Da
 </style>
 
 <div class="cite-grid">
-  <button class="cite-button" onclick="document.getElementById('cite-sxl').showModal()">Sensorium-XL</button>
+  <button class="cite-button" onclick="document.getElementById('cite-sxl').showModal()">Enigma-Mouse</button>
   <button class="cite-button" onclick="document.getElementById('cite-om').showModal()">OmniMouse</button>
   <button class="cite-button" onclick="document.getElementById('cite-s22').showModal()">Sensorium 2022</button>
   <button class="cite-button" onclick="document.getElementById('cite-s23').showModal()">Sensorium 2023</button>
@@ -130,7 +130,7 @@ Click a box to open the BibTeX citation.
 
 <dialog id="cite-sxl" class="cite-dialog">
   <div class="cite-dialog-head">
-    <strong>Sensorium-XL</strong>
+    <strong>Enigma-Mouse</strong>
     <div class="cite-dialog-actions">
       <button class="cite-copy" onclick="copyBibtex('bibtex-sxl', this)">Copy</button>
       <button class="cite-close" onclick="document.getElementById('cite-sxl').close()">Close</button>

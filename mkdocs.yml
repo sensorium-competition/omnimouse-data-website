@@ -1,8 +1,8 @@
-site_name: "Sensorium-XL Dataset"
+site_name: "Enigma-Mouse Dataset"
 
-site_url: https://sensorium-xl.github.org
+site_url: https://enigma-mouse.github.org
 
-site_description: "Landing page for the Sensorium XL dataset."
+site_description: "Landing page for the Enigma-Mouse dataset."
 
 theme:
   name: material

@@ -448,10 +448,10 @@ Promise.all([
 
 function getFieldValue(obj, pathOrConfig) {
     if (pathOrConfig?.derived === "introduced_in") {
-        const animal = obj?.scan_key?.animal_id;
-        if (!animal || !animalSourceLookup?.[animal]) return null;
+        const lookupKey = getExperimentLookupKey(obj);
+        if (!lookupKey || !animalSourceLookup?.[lookupKey]) return null;
 
-        const entry = animalSourceLookup[animal];
+        const entry = animalSourceLookup[lookupKey];
         if (typeof entry === "string") return entry;
         return entry.label ?? entry.name ?? null;
     }
@@ -609,6 +609,15 @@ function setsAreEqual(a, b) {
     return true;
 }
 
+function getExperimentLookupKey(obj) {
+    const animal = obj?.scan_key?.animal_id;
+    const session = obj?.scan_key?.session;
+    const scanIdx = obj?.scan_key?.scan_idx;
+
+    if (animal == null || session == null || scanIdx == null) return null;
+    return `${animal}_${session}_${scanIdx}`;
+}
+
 function experimentMatchesFilters(expData) {
     for (const [field, selectedValues] of Object.entries(activeFilters)) {
         if (!selectedValues || selectedValues.size === 0) continue;
@@ -708,22 +717,24 @@ function renderDynamicTable(dataObj) {
         const scanIdx = scan.scan_idx ?? "-";
 
         let sourceCell = "-";
-        if (animal !== "-" && animalSourceLookup && animalSourceLookup[animal]) {
-            const entry = animalSourceLookup[animal];
+        const lookupKey = getExperimentLookupKey(expData);
+
+        if (lookupKey && animalSourceLookup && animalSourceLookup[lookupKey]) {
+            const entry = animalSourceLookup[lookupKey];
 
             if (typeof entry === "string") {
                 sourceCell = entry;
             } else {
                 const label = entry.label ?? entry.name ?? "introduced in";
 
-                let url = "#";
-                if (entry.url) {
-                    url = entry.url;
-                } else if (entry.page && entry.anchor) {
-                    url = `${baseURL}/${entry.page}/#${entry.anchor}`;
-                } else if (entry.page) {
-                    url = `${baseURL}/${entry.page}/`;
-                }
+            let url = "#";
+            if (entry.url) {
+                url = entry.url;
+            } else if (entry.anchor) {
+                url = `${baseURL}/subsets_and_references/#${entry.anchor}`;
+            } else {
+                url = `${baseURL}/subsets_and_references/`;
+            }
 
                 sourceCell = `<a href="${url}">${label}</a>`;
             }

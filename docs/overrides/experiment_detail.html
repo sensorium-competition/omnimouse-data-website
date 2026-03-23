@@ -595,16 +595,33 @@
 
         const sourceEl = document.getElementById("exp-source");
         let sourceHtml = "-";
-        if (animal_id !== "-" && animalSourceLookup && animalSourceLookup[animal_id]) {
-            const entry = animalSourceLookup[animal_id];
+
+        const lookupKey =
+            animal_id !== "-" && session !== "-" && scan_idx !== "-"
+                ? `${animal_id}_${session}_${scan_idx}`
+                : null;
+
+        if (lookupKey && animalSourceLookup && animalSourceLookup[lookupKey]) {
+            const entry = animalSourceLookup[lookupKey];
+
             if (typeof entry === "string") {
                 sourceHtml = entry;
             } else {
                 const label = entry.label ?? entry.name ?? "source";
-                const url = entry.url ?? "#";
-                sourceHtml = `<a href="${url}" target="_blank" rel="noopener">${label}</a>`;
+
+                let url = "#";
+                if (entry.url) {
+                    url = entry.url;
+                } else if (entry.anchor) {
+                    url = `${window.location.origin}/subsets_and_references/#${entry.anchor}`;
+                } else {
+                    url = `${window.location.origin}/subsets_and_references/`;
+                }
+
+                sourceHtml = `<a href="${url}">${label}</a>`;
             }
         }
+
         sourceEl.innerHTML = sourceHtml;
 
         const orderedKeys = [];

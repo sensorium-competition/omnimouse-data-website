@@ -1,367 +1,1667 @@
 {
-  "17797": {
+  "17797_4_7": {
+    "anchor": "platinum-mouse-data",
+    "label": "Platinum Mouse Data",
+    "paper": "platinum_scan_keys"
+  },
+  "17797_5_7": {
+    "anchor": "platinum-mouse-data",
+    "label": "Platinum Mouse Data",
+    "paper": "platinum_scan_keys"
+  },
+  "17797_6_2": {
+    "anchor": "platinum-mouse-data",
+    "label": "Platinum Mouse Data",
+    "paper": "platinum_scan_keys"
+  },
+  "17797_6_4": {
+    "anchor": "platinum-mouse-data",
+    "label": "Platinum Mouse Data",
+    "paper": "platinum_scan_keys"
+  },
+  "17797_6_6": {
+    "anchor": "platinum-mouse-data",
+    "label": "Platinum Mouse Data",
+    "paper": "platinum_scan_keys"
+  },
+  "17797_6_7": {
+    "anchor": "platinum-mouse-data",
+    "label": "Platinum Mouse Data",
+    "paper": "platinum_scan_keys"
+  },
+  "17797_7_3": {
+    "anchor": "platinum-mouse-data",
+    "label": "Platinum Mouse Data",
+    "paper": "platinum_scan_keys"
+  },
+  "17797_7_5": {
+    "anchor": "platinum-mouse-data",
+    "label": "Platinum Mouse Data",
+    "paper": "platinum_scan_keys"
+  },
+  "17797_8_5": {
+    "anchor": "platinum-mouse-data",
+    "label": "Platinum Mouse Data",
+    "paper": "platinum_scan_keys"
+  },
+  "17797_9_3": {
+    "anchor": "platinum-mouse-data",
+    "label": "Platinum Mouse Data",
+    "paper": "platinum_scan_keys"
+  },
+  "17797_9_4": {
+    "anchor": "platinum-mouse-data",
+    "label": "Platinum Mouse Data",
+    "paper": "platinum_scan_keys"
+  },
+  "17797_9_6": {
+    "anchor": "platinum-mouse-data",
+    "label": "Platinum Mouse Data",
+    "paper": "platinum_scan_keys"
+  },
+  "20457_5_9": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "20457": {
+  "20622_2_14": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "20622": {
+  "20892_10_10": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "20892": {
+  "20892_7_16": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "20892_7_18": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "20892_7_19": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "20892_7_20": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "20892_8_11": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "20892_8_12": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "20892_8_14": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "20892_8_16": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "20892_8_6": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "20892_8_9": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "20892_9_10": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "20897": {
-    "anchor": "omnimouse",
-    "label": "OmniMouse",
-    "page": "subsets_and_references"
+  "20897_2_20": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
   },
-  "21067": {
+  "20897_2_21": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "20897_2_25": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "20897_2_26": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "20897_3_10": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "20897_3_11": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "20897_3_13": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "20897_3_14": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "20897_3_15": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "20897_3_6": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "20897_3_8": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "20897_4_15": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "20897_4_16": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "20897_4_9": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "21067_10_18": {
     "anchor": "sensorium-2022",
     "label": "Sensorium 2022",
-    "page": "subsets_and_references"
+    "paper": "sens2022_scan_keys"
   },
-  "21154": {
+  "21067_13_14": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "21553": {
+  "21067_5_13": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "21067_5_16": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "21067_6_12": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "21067_6_13": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "21067_7_11": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "21067_7_7": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "21067_9_17": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "21608": {
+  "21154_3_16": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "21154_4_14": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "21154_4_15": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "21154_4_19": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "21154_5_11": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "21154_5_12": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "21154_5_4": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "21154_7_12": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "21154_7_3": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "21553_13_6": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "21617": {
+  "21553_14_5": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "21844": {
+  "21553_3_48": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "21553_4_5": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "21553_7_5": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "21553_8_13": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "21900": {
+  "21553_8_14": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "22083": {
+  "21553_9_6": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "22084": {
+  "21608_2_18": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "22223": {
+  "21608_3_10": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "22279": {
+  "21617_7_8": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "22285": {
+  "21617_7_9": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "22564": {
+  "21617_8_8": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "22620": {
+  "21844_3_25": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "22846": {
+  "21844_3_26": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "21844_3_27": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "21900_3_10": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "21900_3_16": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "21900_3_17": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "21900_3_18": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "21900_4_10": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "21900_4_13": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "21900_4_6": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "21900_4_7": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "21900_4_8": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "21900_4_9": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "22083_2_19": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "22083_2_20": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "22083_2_21": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "22083_2_22": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "22083_3_13": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "22083_3_16": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "22083_3_17": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "22083_3_18": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "22083_3_19": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "22083_3_6": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "22084_2_11": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "22223_2_15": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "22279_3_10": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "22279_3_11": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "22279_3_13": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "22279_3_2": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "22279_3_8": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "22279_3_9": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "22279_5_15": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "22285_2_10": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "22564_2_12": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "22564_2_13": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "22564_3_12": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "22564_3_8": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "22620_4_15": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "22620_4_17": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "22620_5_11": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "22846_10_16": {
     "anchor": "sensorium-2022",
     "label": "Sensorium 2022",
-    "page": "subsets_and_references"
+    "paper": "sens2022_scan_keys"
   },
-  "23343": {
+  "22846_2_19": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "22846_2_21": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "22846_7_15": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "23343_5_17": {
     "anchor": "sensorium-2022",
     "label": "Sensorium 2022",
-    "page": "subsets_and_references"
+    "paper": "sens2022_scan_keys"
   },
-  "23555": {
+  "23555_5_12": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "23656": {
+  "23656_14_22": {
     "anchor": "sensorium-2022",
     "label": "Sensorium 2022",
-    "page": "subsets_and_references"
+    "paper": "sens2022_scan_keys"
   },
-  "23964": {
+  "23964_4_22": {
     "anchor": "sensorium-2022",
     "label": "Sensorium 2022",
-    "page": "subsets_and_references"
+    "paper": "sens2022_scan_keys"
   },
-  "24620": {
+  "24620_8_24": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "24620_9_13": {
     "anchor": "foundation-model-of-neural-activity-predicts-response-to-new-stimulus-types",
     "label": "Foundational Model",
-    "page": "subsets_and_references"
+    "paper": "foundation_scan_keys"
   },
-  "25133": {
+  "25133_11_22": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "25133_12_14": {
     "anchor": "foundation-model-of-neural-activity-predicts-response-to-new-stimulus-types",
     "label": "Foundational Model",
-    "page": "subsets_and_references"
+    "paper": "foundation_scan_keys"
   },
-  "25404": {
+  "25133_12_8": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "25404_4_19": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "25404_4_20": {
     "anchor": "foundation-model-of-neural-activity-predicts-response-to-new-stimulus-types",
     "label": "Foundational Model",
-    "page": "subsets_and_references"
+    "paper": "foundation_scan_keys"
   },
-  "25505": {
+  "25505_3_11": {
     "anchor": "foundation-model-of-neural-activity-predicts-response-to-new-stimulus-types",
     "label": "Foundational Model",
-    "page": "subsets_and_references"
+    "paper": "foundation_scan_keys"
   },
-  "25508": {
+  "25505_3_7": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "25624": {
+  "25505_4_7": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "25702": {
+  "25508_4_7": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "25624_3_22": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "25702_2_22": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "25702_2_33": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "25702_5_16": {
     "anchor": "foundation-model-of-neural-activity-predicts-response-to-new-stimulus-types",
     "label": "Foundational Model",
-    "page": "subsets_and_references"
+    "paper": "foundation_scan_keys"
   },
-  "25830": {
+  "25702_5_17": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "25833": {
+  "25830_3_8": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "25830_3_9": {
     "anchor": "foundation-model-of-neural-activity-predicts-response-to-new-stimulus-types",
     "label": "Foundational Model",
-    "page": "subsets_and_references"
+    "paper": "foundation_scan_keys"
   },
-  "25891": {
+  "25830_4_8": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "26426": {
+  "25830_4_9": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "26614": {
+  "25833_3_12": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "26644": {
+  "25891_2_11": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "26645": {
+  "25891_2_13": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "26726": {
+  "25891_3_6": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "26942": {
+  "25891_3_7": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "27203": {
+  "26426_15_14": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "26614_1_16": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "26614_2_15": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "26614_2_17": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "26614_3_7": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "26614_6_24": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "26644_14_17": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "26645_2_18": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "26645_3_18": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "26645_3_20": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "26645_4_19": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "26726_4_14": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "26726_6_11": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "26726_7_12": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "26726_8_8": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "26726_8_9": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "26942_1_11": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "26942_1_12": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "26942_2_8": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "26942_3_11": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "27203_5_16": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "27203_5_17": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "27342_5_11": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "27342_5_12": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "27424_10_10": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "27424_10_11": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "27424_2_10": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "FunConn",
+    "paper": "funconn_scan_keys"
+  },
+  "27424_4_13": {
     "anchor": "foundation-model-of-neural-activity-predicts-response-to-new-stimulus-types",
     "label": "Foundational Model",
-    "page": "subsets_and_references"
+    "paper": "foundation_scan_keys"
   },
-  "27342": {
-    "anchor": "foundation-model-of-neural-activity-predicts-response-to-new-stimulus-types",
-    "label": "Foundational Model",
-    "page": "subsets_and_references"
-  },
-  "27424": {
-    "anchor": "foundation-model-of-neural-activity-predicts-response-to-new-stimulus-types",
-    "label": "Foundational Model",
-    "page": "subsets_and_references"
-  },
-  "27468": {
-    "anchor": "foundation-model-of-neural-activity-predicts-response-to-new-stimulus-types",
-    "label": "Foundational Model",
-    "page": "subsets_and_references"
-  },
-  "27470": {
+  "27424_7_10": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "27802": {
+  "27424_7_9": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "27424_8_5": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "27940": {
+  "27424_8_6": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "27424_9_13": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "27468_3_12": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "27468_3_16": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "28120": {
+  "27468_4_7": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "27468_5_10": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "27468_5_8": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "27468_6_8": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "27468_6_9": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "27468_7_17": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "28121": {
+  "27470_5_10": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "28447": {
+  "27470_5_9": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "27470_6_8": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "27470_7_12": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "27470_7_15": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "27802_2_10": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "28543": {
+  "27802_2_9": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "27802_4_5": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "27802_4_6": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "27940_11_3": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "FunConn",
+    "paper": "funconn_scan_keys"
+  },
+  "27940_14_6": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "28568": {
+  "27940_5_10": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "27940_7_5": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "27940_7_6": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "27940_8_5": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "27940_8_6": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "27940_9_10": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "27940_9_9": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "28120_11_3": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "28681": {
+  "28120_14_14": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "28120_14_6": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "28120_2_9": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "FunConn",
+    "paper": "funconn_scan_keys"
+  },
+  "28120_7_17": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "28120_8_6": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "28120_8_7": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "28120_9_12": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "28739": {
+  "28121_2_12": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "29138": {
+  "28121_2_7": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "29139": {
+  "28121_3_8": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "29156": {
+  "28121_4_5": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "28121_4_6": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "28121_6_7": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "28121_6_8": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "28447_3_10": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "28447_3_12": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "28447_4_11": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "28447_4_12": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "28447_5_14": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "28447_5_18": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "28447_6_6": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "28447_7_7": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "28447_7_8": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "28543_2_12": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "28543_2_24": {
+    "anchor": "a-global-map-of-orientation-tuning-in-mouse-visual-cortex",
+    "label": "OriMap",
+    "paper": "orimap_scan_keys"
+  },
+  "28543_4_8": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "28543_5_11": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "28568_4_20": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "28568_4_25": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "28568_5_22": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "28568_6_11": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "28568_6_12": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "28681_4_15": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "28681_4_8": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "28681_5_12": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "28681_5_13": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "28681_6_10": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "28681_7_13": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "28739_11_10": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "28739_2_8": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "28739_8_21": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "28739_8_29": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "29138_5_9": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "29139_2_10": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "29139_3_8": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "29139_3_9": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "29156_10_14": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "29156_11_10": {
     "anchor": "sensorium-2023",
     "label": "Sensorium 2023",
-    "page": "subsets_and_references"
+    "paper": "sens2023_scan_keys"
   },
-  "29228": {
+  "29156_2_18": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "29156_5_12": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "29156_6_10": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "29156_7_8": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "29156_7_9": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "29156_8_12": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "29228_2_10": {
     "anchor": "sensorium-2023",
     "label": "Sensorium 2023",
-    "page": "subsets_and_references"
+    "paper": "sens2023_scan_keys"
   },
-  "29234": {
+  "29234_2_11": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "29234_4_6": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "29234_4_7": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "29234_6_9": {
     "anchor": "sensorium-2023",
     "label": "Sensorium 2023",
-    "page": "subsets_and_references"
+    "paper": "sens2023_scan_keys"
   },
-  "29513": {
+  "29513_2_6": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "29513_3_5": {
     "anchor": "sensorium-2023",
     "label": "Sensorium 2023",
-    "page": "subsets_and_references"
+    "paper": "sens2023_scan_keys"
   },
-  "29514": {
+  "29513_4_4": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "29513_4_5": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "29513_5_5": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "29513_5_6": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "29514_2_9": {
     "anchor": "sensorium-2023",
     "label": "Sensorium 2023",
-    "page": "subsets_and_references"
+    "paper": "sens2023_scan_keys"
   },
-  "30038": {
+  "30038_6_10": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "30093": {
+  "30038_6_9": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "30415": {
+  "30093_12_19": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "FunConn",
+    "paper": "funconn_scan_keys"
+  },
+  "30415_4_12": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "30417": {
+  "30415_5_10": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "30418": {
+  "30415_6_9": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "30522": {
+  "30417_2_9": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "FunConn",
+    "paper": "funconn_scan_keys"
+  },
+  "30417_3_8": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "30417_3_9": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "30417_4_4": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "30417_4_5": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "30417_5_5": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "30417_5_6": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "30417_6_4": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "30417_6_5": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "30417_7_11": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "30417_7_9": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "30418_11_5": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "30418_11_6": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "30418_3_14": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "30697": {
+  "30418_4_9": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "30746": {
+  "30418_5_10": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "30788": {
+  "30418_6_9": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "30901": {
+  "30418_7_11": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "30418_7_12": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "30418_8_5": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "30418_9_7": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "30418_9_8": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "30522_2_6": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "30999": {
+  "30697_3_8": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
   },
-  "31002": {
+  "30697_4_11": {
     "anchor": "omnimouse",
     "label": "OmniMouse",
-    "page": "subsets_and_references"
+    "paper": "OmniMouse"
+  },
+  "30697_4_8": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "30697_5_10": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "30697_5_11": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "30746_4_11": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "30746_4_12": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "30746_4_13": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "30746_5_12": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "30746_5_13": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "30746_6_8": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "30788_4_8": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "30901_2_9": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "30999_2_13": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "30999_3_6": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "FunConn",
+    "paper": "funconn_scan_keys"
+  },
+  "30999_4_9": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "30999_5_10": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "30999_5_11": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "30999_6_9": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "30999_7_8": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "30999_8_6": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "30999_8_7": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "30999_9_5": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "30999_9_6": {
+    "anchor": "omnimouse",
+    "label": "OmniMouse",
+    "paper": "OmniMouse"
+  },
+  "31002_2_13": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "31002_3_4": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "31002_4_8": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "31002_4_9": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "31002_5_6": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "31002_5_7": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "31002_6_5": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "31002_7_5": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "31002_7_6": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
+  },
+  "31002_8_6": {
+    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "label": "Bipartite",
+    "paper": "bipartite_scan_keys"
   }
 }

@@ -273,6 +273,102 @@ All experiments were conducted in awake, head-fixed mice and approved by the Ins
   </div>
 </div>
 
+## Functional connectomics spanning multiple areas of mouse visual cortex { .toc-heading }
+
+<div class="om-card">
+  <div class="om-card__head">
+    <h2>
+      Functional connectomics spanning multiple areas of mouse visual cortex
+      <a href="#" class="bibtex-link" onclick="document.getElementById('cite-funccon').showModal(); return false;">BibTeX</a>
+    </h2>
+  </div>
+  <div class="om-card__body" markdown>
+  <dl class="om-dl">
+    <dt>Source</dt>
+    <dd>Bae et al., 2025 (Functional connectomics spanning multiple areas of mouse visual cortex)</dd>
+
+    <dt>DOI</dt>
+    <dd class="om-doi"><a href="https://doi.org/10.1038/10.1038/s41586-025-08790-w">10.1038/s41586-025-08790-w</a></dd>
+
+    <dt>Animals / recordings</dt>
+    <dd>6 behaving mice recorded over 7 sessions.</dd>
+
+    <dt>Stimuli</dt>
+    <dd>Trained on natural videos and tested on held out natural videos as well as out of domain gratings.</dd>
+
+    <dt>Neural data</dt>
+    <dd>Wide-field two-photon calcium imaging of excitatory neurons in layers 2–5 of right V1.</dd>
+
+    <dt>Behavior</dt>
+    <dd>Four aligned behavioral variables (locomotion speed, pupil size, horizontal pupil position, vertical pupil position).</dd>
+  </dl>
+  </div>
+</div>
+
+## A global map of orientation tuning in mouse visual cortex { .toc-heading }
+
+<div class="om-card">
+  <div class="om-card__head">
+    <h2>
+      A global map of orientation tuning in mouse visual cortex
+      <a href="#" class="bibtex-link" onclick="document.getElementById('cite-orimap').showModal(); return false;">BibTeX</a>
+    </h2>
+  </div>
+  <div class="om-card__body" markdown>
+  <dl class="om-dl">
+    <dt>Source</dt>
+    <dd>Fahey et al., 2019 (A global map of orientation tuning in mouse visual cortex)</dd>
+
+    <dt>DOI</dt>
+    <dd class="om-doi"><a href="https://doi.org/10.1038/10.1101/745323">10.1101/745323</a></dd>
+
+    <dt>Animals / recordings</dt>
+    <dd>12 behaving mice recorded over 75 sessions.</dd>
+
+    <dt>Stimuli</dt>
+    <dd>Trained on natural videos and tested on held out natural videos as well as out of domain gratings.</dd>
+
+    <dt>Neural data</dt>
+    <dd>Wide-field two-photon calcium imaging of excitatory neurons in layers 2–5 of right V1.</dd>
+
+    <dt>Behavior</dt>
+    <dd>Four aligned behavioral variables (locomotion speed, pupil size, horizontal pupil position, vertical pupil position).</dd>
+  </dl>
+  </div>
+</div>
+
+## Functional bipartite invariance in mouse primary visual cortex receptive fields { .toc-heading }
+
+<div class="om-card">
+  <div class="om-card__head">
+    <h2>
+      Functional bipartite invariance in mouse primary visual cortex receptive fields
+      <a href="#" class="bibtex-link" onclick="document.getElementById('cite-bipartite').showModal(); return false;">BibTeX</a>
+    </h2>
+  </div>
+  <div class="om-card__body" markdown>
+  <dl class="om-dl">
+    <dt>Source</dt>
+    <dd>Ding et al., 2026(Functional bipartite invariance in mouse primary visual cortex receptive fields)</dd>
+
+    <dt>DOI</dt>
+    <dd class="om-doi"><a href="https://doi.org/10.1038/10.1038/s41593-026-02213-3">10.1038/s41593-026-02213-3</a></dd>
+
+    <dt>Animals / recordings</dt>
+    <dd>14 behaving mice recorded over 75 sessions.</dd>
+
+    <dt>Stimuli</dt>
+    <dd>Trained on natural videos and tested on held out natural videos as well as out of domain gratings.</dd>
+
+    <dt>Neural data</dt>
+    <dd>Wide-field two-photon calcium imaging of excitatory neurons in layers 2–5 of right V1.</dd>
+
+    <dt>Behavior</dt>
+    <dd>Four aligned behavioral variables (locomotion speed, pupil size, horizontal pupil position, vertical pupil position).</dd>
+  </dl>
+  </div>
+</div>
+
 ## Foundation model of neural activity predicts response to new stimulus types { .toc-heading }
 
 <div class="om-card">
@@ -368,6 +464,72 @@ All experiments were conducted in awake, head-fixed mice and approved by the Ins
   archivePrefix={arXiv},
   primaryClass={q-bio.NC},
   url={https://arxiv.org/abs/2305.19654}
+}</code></pre>
+  </div>
+</dialog>
+
+<dialog id="cite-funccon" class="cite-dialog">
+  <div class="cite-dialog-head">
+    <strong>Funccon paper</strong>
+    <div class="cite-dialog-actions">
+      <button class="cite-copy" onclick="copyBibtex('bibtex-funccon', this)">Copy</button>
+      <button class="cite-close" onclick="document.getElementById('cite-funccon').close()">Close</button>
+    </div>
+  </div>
+  <div class="cite-dialog-body">
+    <p>Original source citation for this subset.</p>
+    <pre><code id="bibtex-funccon">@article{microns2025functional,
+  title={Functional connectomics spanning multiple areas of mouse visual cortex},
+  journal={Nature},
+  volume={640},
+  number={8058},
+  pages={435--447},
+  year={2025},
+  publisher={Nature Publishing Group UK London}
+}
+</code></pre>
+  </div>
+</dialog>
+
+<dialog id="cite-orimap" class="cite-dialog">
+  <div class="cite-dialog-head">
+    <strong>Orimap paper</strong>
+    <div class="cite-dialog-actions">
+      <button class="cite-copy" onclick="copyBibtex('bibtex-orimap', this)">Copy</button>
+      <button class="cite-close" onclick="document.getElementById('cite-orimap').close()">Close</button>
+    </div>
+  </div>
+  <div class="cite-dialog-body">
+    <p>Original source citation for this subset.</p>
+    <pre><code id="bibtex-orimap">@article{fahey2019global,
+  title={A global map of orientation tuning in mouse visual cortex},
+  author={Fahey, Paul G and Muhammad, Taliah and Smith, Cameron and Froudarakis, Emmanouil and Cobos, Erick and Fu, Jiakun and Walker, Edgar Y and Yatsenko, Dimitri and Sinz, Fabian H and Reimer, Jacob and others},
+  journal={BioRXiv},
+  pages={745323},
+  year={2019},
+  publisher={Cold Spring Harbor Laboratory}
+}
+</code></pre>
+  </div>
+</dialog>
+
+<dialog id="cite-bipartite" class="cite-dialog">
+  <div class="cite-dialog-head">
+    <strong>Bipartite paper</strong>
+    <div class="cite-dialog-actions">
+      <button class="cite-copy" onclick="copyBibtex('bibtex-bipartite', this)">Copy</button>
+      <button class="cite-close" onclick="document.getElementById('cite-bipartite').close()">Close</button>
+    </div>
+  </div>
+  <div class="cite-dialog-body">
+    <p>Original source citation for this subset.</p>
+    <pre><code id="bibtex-bipartite">@article{ding2026functional,
+  title={Functional bipartite invariance in mouse primary visual cortex receptive fields},
+  author={Ding, Zhiwei and Tran, Dat and Ponder, Kayla and Ding, Zhuokun and Froebe, Rachel and Ntanavara, Lydia and Fahey, Paul G and Cobos, Erick and Baroni, Luca and Diamantaki, Maria and others},
+  journal={Nature Neuroscience},
+  pages={1--13},
+  year={2026},
+  publisher={Nature Publishing Group US New York}
 }</code></pre>
   </div>
 </dialog>

@@ -17,29 +17,87 @@ You can find the corresponding paper for each individual experiment in the [__Da
 <style>
 .cite-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(4, minmax(180px, 1fr));
   gap: 1rem;
-  margin-top: 1.2rem;
+  margin-top: 1.4rem;
+  justify-content: center;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 1100px) {
+  .cite-grid {
+    grid-template-columns: repeat(3, minmax(180px, 1fr));
+    max-width: 760px;
+  }
+
+  .cite-grid > * {
+    grid-column: auto !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .cite-grid {
+    grid-template-columns: repeat(2, minmax(160px, 1fr));
+    max-width: 520px;
+  }
+}
+
+@media (max-width: 520px) {
+  .cite-grid {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+  }
 }
 
 .cite-button {
-  display: block;
-  width: 100%;
-  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 220px;
+  min-height: 96px;
+  height: 96px;
+  padding: 1rem 1.1rem;
   text-align: left;
   border: 1px solid var(--md-default-fg-color--lightest);
   border-radius: 14px;
   background: var(--md-default-bg-color);
   color: var(--md-default-fg-color);
   font-weight: 700;
+  font-size: 1.05rem;
+  line-height: 1.2;
   cursor: pointer;
   box-shadow: 0 1px 0 rgba(0,0,0,.04);
-  transition: background 0.15s ease, transform 0.15s ease;
+  transition: background 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .cite-button:hover {
   background: color-mix(in srgb, var(--md-default-bg-color) 92%, var(--md-accent-fg-color) 8%);
   transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(0,0,0,.08);
+}
+
+@media (max-width: 980px) {
+  .cite-grid {
+    grid-template-columns: repeat(3, minmax(220px, 220px));
+  }
+}
+
+@media (max-width: 760px) {
+  .cite-grid {
+    grid-template-columns: repeat(2, minmax(220px, 220px));
+  }
+}
+
+@media (max-width: 520px) {
+  .cite-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cite-button {
+    width: 100%;
+  }
 }
 
 .cite-dialog {
@@ -121,6 +179,9 @@ You can find the corresponding paper for each individual experiment in the [__Da
   <button class="cite-button" onclick="document.getElementById('cite-om').showModal()">OmniMouse</button>
   <button class="cite-button" onclick="document.getElementById('cite-s22').showModal()">Sensorium 2022</button>
   <button class="cite-button" onclick="document.getElementById('cite-s23').showModal()">Sensorium 2023</button>
+  <button class="cite-button" onclick="document.getElementById('cite-funccon').showModal()">Funccon paper</button>
+  <button class="cite-button" onclick="document.getElementById('cite-orimap').showModal()">Orimap paper</button>
+  <button class="cite-button" onclick="document.getElementById('cite-bipartite').showModal()">Bipartite paper</button>
   <button class="cite-button" onclick="document.getElementById('cite-foundation').showModal()">Foundation model paper</button>
 </div>
 
@@ -183,6 +244,70 @@ Click a box to open the BibTeX citation.
       archivePrefix={arXiv},
       primaryClass={q-bio.NC},
       url={https://arxiv.org/abs/2206.08666}, 
+}</code></pre>
+  </div>
+</dialog>
+
+<dialog id="cite-funccon" class="cite-dialog">
+  <div class="cite-dialog-head">
+    <strong>Funccon paper</strong>
+    <div class="cite-dialog-actions">
+      <button class="cite-copy" onclick="copyBibtex('bibtex-funccon', this)">Copy</button>
+      <button class="cite-close" onclick="document.getElementById('cite-funccon').close()">Close</button>
+    </div>
+  </div>
+  <div class="cite-dialog-body">
+    <p>Original source citation for the Funccon subset.</p>
+    <pre><code id="bibtex-funccon">@article{microns2025functional,
+  title={Functional connectomics spanning multiple areas of mouse visual cortex},
+  journal={Nature},
+  volume={640},
+  number={8058},
+  pages={435--447},
+  year={2025},
+  publisher={Nature Publishing Group UK London}
+}</code></pre>
+  </div>
+</dialog>
+
+<dialog id="cite-orimap" class="cite-dialog">
+  <div class="cite-dialog-head">
+    <strong>Orimap paper</strong>
+    <div class="cite-dialog-actions">
+      <button class="cite-copy" onclick="copyBibtex('bibtex-orimap', this)">Copy</button>
+      <button class="cite-close" onclick="document.getElementById('cite-orimap').close()">Close</button>
+    </div>
+  </div>
+  <div class="cite-dialog-body">
+    <p>Original source citation for the Orimap subset.</p>
+    <pre><code id="bibtex-orimap">@article{fahey2019global,
+  title={A global map of orientation tuning in mouse visual cortex},
+  author={Fahey, Paul G and Muhammad, Taliah and Smith, Cameron and Froudarakis, Emmanouil and Cobos, Erick and Fu, Jiakun and Walker, Edgar Y and Yatsenko, Dimitri and Sinz, Fabian H and Reimer, Jacob and others},
+  journal={BioRXiv},
+  pages={745323},
+  year={2019},
+  publisher={Cold Spring Harbor Laboratory}
+}</code></pre>
+  </div>
+</dialog>
+
+<dialog id="cite-bipartite" class="cite-dialog">
+  <div class="cite-dialog-head">
+    <strong>Bipartite paper</strong>
+    <div class="cite-dialog-actions">
+      <button class="cite-copy" onclick="copyBibtex('bibtex-bipartite', this)">Copy</button>
+      <button class="cite-close" onclick="document.getElementById('cite-bipartite').close()">Close</button>
+    </div>
+  </div>
+  <div class="cite-dialog-body">
+    <p>Original source citation for the Bipartite subset.</p>
+    <pre><code id="bibtex-bipartite">@article{ding2026functional,
+  title={Functional bipartite invariance in mouse primary visual cortex receptive fields},
+  author={Ding, Zhiwei and Tran, Dat and Ponder, Kayla and Ding, Zhuokun and Froebe, Rachel and Ntanavara, Lydia and Fahey, Paul G and Cobos, Erick and Baroni, Luca and Diamantaki, Maria and others},
+  journal={Nature Neuroscience},
+  pages={1--13},
+  year={2026},
+  publisher={Nature Publishing Group US New York}
 }</code></pre>
   </div>
 </dialog>

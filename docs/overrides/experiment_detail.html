@@ -600,25 +600,47 @@
             animal_id !== "-" && session !== "-" && scan_idx !== "-"
                 ? `${animal_id}_${session}_${scan_idx}`
                 : null;
+        
+        <!-- This is allows us to list multiple sources per experiment by wrapping the json dicts in a list -->
+        function renderSourceEntry(entry) {
+            if (typeof entry === "string") {
+                return entry;
+            }
+
+            if (!entry || typeof entry !== "object") {
+                return "";
+            }
+
+            const label = entry.label ?? entry.name ?? "source";
+
+            let url = "#";
+            if (entry.url) {
+                url = entry.url;
+            } else if (entry.anchor) {
+                url = `${window.location.origin}/subsets_and_references/#${entry.anchor}`;
+            } else {
+                url = `${window.location.origin}/subsets_and_references/`;
+            }
+
+            return `<a href="${url}">${label}</a>`;
+        }
 
         if (lookupKey && animalSourceLookup && animalSourceLookup[lookupKey]) {
             const entry = animalSourceLookup[lookupKey];
 
-            if (typeof entry === "string") {
-                sourceHtml = entry;
-            } else {
-                const label = entry.label ?? entry.name ?? "source";
+            if (Array.isArray(entry)) {
+                const rendered = entry
+                    .map(renderSourceEntry)
+                    .filter(Boolean);
 
-                let url = "#";
-                if (entry.url) {
-                    url = entry.url;
-                } else if (entry.anchor) {
-                    url = `${window.location.origin}/subsets_and_references/#${entry.anchor}`;
-                } else {
-                    url = `${window.location.origin}/subsets_and_references/`;
+                if (rendered.length) {
+                    sourceHtml = rendered.join(", ");
                 }
-
-                sourceHtml = `<a href="${url}">${label}</a>`;
+            } else {
+                const rendered = renderSourceEntry(entry);
+                if (rendered) {
+                    sourceHtml = rendered;
+                }
             }
         }
 

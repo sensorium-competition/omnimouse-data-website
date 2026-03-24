@@ -286,9 +286,42 @@ All experiments were conducted in awake, head-fixed mice and approved by the Ins
   <dl class="om-dl">
     <dt>Source</dt>
     <dd>Bae et al., 2025 (Functional connectomics spanning multiple areas of mouse visual cortex)</dd>
+    <dd> <a href="https://www.nature.com/immersive/d42859-025-00001-w/index.html">Microns Website</a></dd>
 
     <dt>DOI</dt>
-    <dd class="om-doi"><a href="https://doi.org/10.1038/10.1038/s41586-025-08790-w">10.1038/s41586-025-08790-w</a></dd>
+    <dd class="om-doi"><a href="https://doi.org/10.1038/s41586-025-08790-w">10.1038/s41586-025-08790-w</a></dd>
+
+    <dt>Animals / recordings</dt>
+    <dd>1 behaving mice recorded over 12 sessions.</dd>
+
+    <dt>Stimuli</dt>
+    <dd>Trained on natural videos and tested on held out natural videos as well as out of domain gratings.</dd>
+
+    <dt>Neural data</dt>
+    <dd>Wide-field two-photon calcium imaging of excitatory neurons in layers 2–5 of right V1.</dd>
+
+    <dt>Behavior</dt>
+    <dd>Four aligned behavioral variables (locomotion speed, pupil size, horizontal pupil position, vertical pupil position).</dd>
+  </dl>
+  </div>
+</div>
+
+## Functional connectomics reveals general wiring rule in mouse visual cortex { .toc-heading }
+
+<div class="om-card">
+  <div class="om-card__head">
+    <h2>
+      Functional connectomics reveals general wiring rule in mouse visual cortex
+      <a href="#" class="bibtex-link" onclick="document.getElementById('cite-funccon').showModal(); return false;">BibTeX</a>
+    </h2>
+  </div>
+  <div class="om-card__body" markdown>
+  <dl class="om-dl">
+    <dt>Source</dt>
+    <dd>Ding et al., 2025 (Functional connectomics reveals general wiring rule in mouse visual cortex)</dd>
+
+    <dt>DOI</dt>
+    <dd class="om-doi"><a href="https://doi.org/10.1038/s41586-025-08840-3">10.1038/s41586-025-08840-3</a></dd>
 
     <dt>Animals / recordings</dt>
     <dd>6 behaving mice recorded over 7 sessions.</dd>
@@ -478,7 +511,31 @@ All experiments were conducted in awake, head-fixed mice and approved by the Ins
   </div>
   <div class="cite-dialog-body">
     <p>Original source citation for this subset.</p>
-    <pre><code id="bibtex-funccon">@article{microns2025functional,
+    <pre><code id="bibtex-funccon">@article{ding2025functional,
+  title={Functional connectomics reveals general wiring rule in mouse visual cortex},
+  author={Ding, Zhuokun and Fahey, Paul G and Papadopoulos, Stelios and Wang, Eric Y and Celii, Brendan and Papadopoulos, Christos and Chang, Andersen and Kunin, Alexander B and Tran, Dat and Fu, Jiakun and others},
+  journal={Nature},
+  volume={640},
+  number={8058},
+  pages={459--469},
+  year={2025},
+  publisher={Nature Publishing Group UK London}
+}
+</code></pre>
+  </div>
+</dialog>
+
+<dialog id="cite-platinum" class="cite-dialog">
+  <div class="cite-dialog-head">
+    <strong>Platinum Mouse Data paper</strong>
+    <div class="cite-dialog-actions">
+      <button class="cite-copy" onclick="copyBibtex('bibtex-platinum', this)">Copy</button>
+      <button class="cite-close" onclick="document.getElementById('cite-platinum').close()">Close</button>
+    </div>
+  </div>
+  <div class="cite-dialog-body">
+    <p>Original source citation for this subset.</p>
+    <pre><code id="bibtex-platinum">@article{microns2025functional,
   title={Functional connectomics spanning multiple areas of mouse visual cortex},
   journal={Nature},
   volume={640},

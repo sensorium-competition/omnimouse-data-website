@@ -1,62 +1,62 @@
 {
   "17797_4_7": {
-    "anchor": "platinum-mouse-data",
-    "label": "Platinum Mouse Data",
+    "anchor": "functional-connectomics-spanning-multiple-areas-of-mouse-visual-cortex",
+    "label": "Platinum",
     "paper": "platinum_scan_keys"
   },
   "17797_5_7": {
-    "anchor": "platinum-mouse-data",
-    "label": "Platinum Mouse Data",
+    "anchor": "functional-connectomics-spanning-multiple-areas-of-mouse-visual-cortex",
+    "label": "Platinum",
     "paper": "platinum_scan_keys"
   },
   "17797_6_2": {
-    "anchor": "platinum-mouse-data",
-    "label": "Platinum Mouse Data",
+    "anchor": "functional-connectomics-spanning-multiple-areas-of-mouse-visual-cortex",
+    "label": "Platinum",
     "paper": "platinum_scan_keys"
   },
   "17797_6_4": {
-    "anchor": "platinum-mouse-data",
-    "label": "Platinum Mouse Data",
+    "anchor": "functional-connectomics-spanning-multiple-areas-of-mouse-visual-cortex",
+    "label": "Platinum",
     "paper": "platinum_scan_keys"
   },
   "17797_6_6": {
-    "anchor": "platinum-mouse-data",
-    "label": "Platinum Mouse Data",
+    "anchor": "functional-connectomics-spanning-multiple-areas-of-mouse-visual-cortex",
+    "label": "Platinum",
     "paper": "platinum_scan_keys"
   },
   "17797_6_7": {
-    "anchor": "platinum-mouse-data",
-    "label": "Platinum Mouse Data",
+    "anchor": "functional-connectomics-spanning-multiple-areas-of-mouse-visual-cortex",
+    "label": "Platinum",
     "paper": "platinum_scan_keys"
   },
   "17797_7_3": {
-    "anchor": "platinum-mouse-data",
-    "label": "Platinum Mouse Data",
+    "anchor": "functional-connectomics-spanning-multiple-areas-of-mouse-visual-cortex",
+    "label": "Platinum",
     "paper": "platinum_scan_keys"
   },
   "17797_7_5": {
-    "anchor": "platinum-mouse-data",
-    "label": "Platinum Mouse Data",
+    "anchor": "functional-connectomics-spanning-multiple-areas-of-mouse-visual-cortex",
+    "label": "Platinum",
     "paper": "platinum_scan_keys"
   },
   "17797_8_5": {
-    "anchor": "platinum-mouse-data",
-    "label": "Platinum Mouse Data",
+    "anchor": "functional-connectomics-spanning-multiple-areas-of-mouse-visual-cortex",
+    "label": "Platinum",
     "paper": "platinum_scan_keys"
   },
   "17797_9_3": {
-    "anchor": "platinum-mouse-data",
-    "label": "Platinum Mouse Data",
+    "anchor": "functional-connectomics-spanning-multiple-areas-of-mouse-visual-cortex",
+    "label": "Platinum",
     "paper": "platinum_scan_keys"
   },
   "17797_9_4": {
-    "anchor": "platinum-mouse-data",
-    "label": "Platinum Mouse Data",
+    "anchor": "functional-connectomics-spanning-multiple-areas-of-mouse-visual-cortex",
+    "label": "Platinum",
     "paper": "platinum_scan_keys"
   },
   "17797_9_6": {
-    "anchor": "platinum-mouse-data",
-    "label": "Platinum Mouse Data",
+    "anchor": "functional-connectomics-spanning-multiple-areas-of-mouse-visual-cortex",
+    "label": "Platinum",
     "paper": "platinum_scan_keys"
   },
   "20457_5_9": {
@@ -850,7 +850,7 @@
     "paper": "bipartite_scan_keys"
   },
   "27424_2_10": {
-    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "anchor": "functional-connectomics-reveals-general-wiring-rule-in-mouse-visual-cortex",
     "label": "FunConn",
     "paper": "funconn_scan_keys"
   },
@@ -970,7 +970,7 @@
     "paper": "bipartite_scan_keys"
   },
   "27940_11_3": {
-    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "anchor": "functional-connectomics-reveals-general-wiring-rule-in-mouse-visual-cortex",
     "label": "FunConn",
     "paper": "funconn_scan_keys"
   },
@@ -1030,7 +1030,7 @@
     "paper": "orimap_scan_keys"
   },
   "28120_2_9": {
-    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "anchor": "functional-connectomics-reveals-general-wiring-rule-in-mouse-visual-cortex",
     "label": "FunConn",
     "paper": "funconn_scan_keys"
   },
@@ -1360,7 +1360,7 @@
     "paper": "OmniMouse"
   },
   "30093_12_19": {
-    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "anchor": "functional-connectomics-reveals-general-wiring-rule-in-mouse-visual-cortex",
     "label": "FunConn",
     "paper": "funconn_scan_keys"
   },
@@ -1380,7 +1380,7 @@
     "paper": "OmniMouse"
   },
   "30417_2_9": {
-    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "anchor": "functional-connectomics-reveals-general-wiring-rule-in-mouse-visual-cortex",
     "label": "FunConn",
     "paper": "funconn_scan_keys"
   },
@@ -1565,7 +1565,7 @@
     "paper": "OmniMouse"
   },
   "30999_3_6": {
-    "anchor": "functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields",
+    "anchor": "functional-connectomics-reveals-general-wiring-rule-in-mouse-visual-cortex",
     "label": "FunConn",
     "paper": "funconn_scan_keys"
   },

@@ -452,18 +452,22 @@ function getFieldValue(obj, pathOrConfig) {
         if (!lookupKey || !animalSourceLookup?.[lookupKey]) return null;
 
         const entry = animalSourceLookup[lookupKey];
+
         if (typeof entry === "string") return entry;
-        return entry.label ?? entry.name ?? null;
-    }
 
-    const path = pathOrConfig?.path ?? pathOrConfig;
+        if (Array.isArray(entry)) {
+            const firstValid = entry.flat().find(
+                item => item && typeof item === "object" && !Array.isArray(item)
+            );
+            return firstValid?.label ?? firstValid?.name ?? null;
+        }
 
-    let cur = obj;
-    for (const key of path) {
-        if (cur == null || typeof cur !== "object" || !(key in cur)) return null;
-        cur = cur[key];
+        if (entry && typeof entry === "object") {
+            return entry.label ?? entry.name ?? null;
+        }
+
+        return null;
     }
-    return cur;
 }
 
 function normalizeValue(val) {
@@ -725,18 +729,28 @@ function renderDynamicTable(dataObj) {
             if (typeof entry === "string") {
                 sourceCell = entry;
             } else {
-                const label = entry.label ?? entry.name ?? "introduced in";
+                let chosenEntry = entry;
 
-            let url = "#";
-            if (entry.url) {
-                url = entry.url;
-            } else if (entry.anchor) {
-                url = `${baseURL}/subsets_and_references/#${entry.anchor}`;
-            } else {
-                url = `${baseURL}/subsets_and_references/`;
-            }
+                if (Array.isArray(entry)) {
+                    chosenEntry = entry.flat().find(
+                        item => item && typeof item === "object" && !Array.isArray(item)
+                    );
+                }
 
-                sourceCell = `<a href="${url}">${label}</a>`;
+                if (chosenEntry && typeof chosenEntry === "object") {
+                    const label = chosenEntry.label ?? chosenEntry.name ?? "introduced in";
+
+                    let url = "#";
+                    if (chosenEntry.url) {
+                        url = chosenEntry.url;
+                    } else if (chosenEntry.anchor) {
+                        url = `${baseURL}/subsets_and_references/#${chosenEntry.anchor}`;
+                    } else {
+                        url = `${baseURL}/subsets_and_references/`;
+                    }
+
+                    sourceCell = `<a href="${url}">${label}</a>`;
+                }
             }
         }
 

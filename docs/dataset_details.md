@@ -455,19 +455,27 @@ function getFieldValue(obj, pathOrConfig) {
 
         if (typeof entry === "string") return entry;
 
+        let primarySource = null;
+
         if (Array.isArray(entry)) {
-            const firstValid = entry.flat().find(
+            primarySource = entry.flat().find(
                 item => item && typeof item === "object" && !Array.isArray(item)
             );
-            return firstValid?.label ?? firstValid?.name ?? null;
+        } else if (entry && Array.isArray(entry.sources)) {
+            primarySource = entry.sources[0] ?? null;
+        } else if (entry && typeof entry === "object") {
+            primarySource = entry;
         }
 
-        if (entry && typeof entry === "object") {
-            return entry.label ?? entry.name ?? null;
-        }
-
-        return null;
+        return primarySource?.label ?? primarySource?.name ?? null;
     }
+
+    if (!pathOrConfig?.path) return null;
+
+    return pathOrConfig.path.reduce(
+        (acc, key) => (acc && acc[key] !== undefined ? acc[key] : null),
+        obj
+    );
 }
 
 function normalizeValue(val) {
@@ -723,33 +731,50 @@ function renderDynamicTable(dataObj) {
         let sourceCell = "-";
         const lookupKey = getExperimentLookupKey(expData);
 
+        function renderSourceEntry(entry) {
+            if (typeof entry === "string") {
+                return escapeHtml(entry);
+            }
+
+            if (!entry || typeof entry !== "object") {
+                return "";
+            }
+
+            const label = entry.label ?? entry.name ?? "introduced in";
+
+            let url = "#";
+            if (entry.url) {
+                url = entry.url;
+            } else if (entry.anchor) {
+                url = `${baseURL}/subsets_and_references/#${entry.anchor}`;
+            } else {
+                url = `${baseURL}/subsets_and_references/`;
+            }
+
+            return `<a href="${url}">${escapeHtml(label)}</a>`;
+        }
+
         if (lookupKey && animalSourceLookup && animalSourceLookup[lookupKey]) {
             const entry = animalSourceLookup[lookupKey];
 
             if (typeof entry === "string") {
-                sourceCell = entry;
+                sourceCell = escapeHtml(entry);
             } else {
-                let chosenEntry = entry;
+                let primarySource = null;
 
                 if (Array.isArray(entry)) {
-                    chosenEntry = entry.flat().find(
+                    primarySource = entry.flat().find(
                         item => item && typeof item === "object" && !Array.isArray(item)
                     );
+                } else if (entry && Array.isArray(entry.sources)) {
+                    primarySource = entry.sources[0] ?? null;
+                } else if (entry && typeof entry === "object") {
+                    primarySource = entry;
                 }
 
-                if (chosenEntry && typeof chosenEntry === "object") {
-                    const label = chosenEntry.label ?? chosenEntry.name ?? "introduced in";
-
-                    let url = "#";
-                    if (chosenEntry.url) {
-                        url = chosenEntry.url;
-                    } else if (chosenEntry.anchor) {
-                        url = `${baseURL}/subsets_and_references/#${chosenEntry.anchor}`;
-                    } else {
-                        url = `${baseURL}/subsets_and_references/`;
-                    }
-
-                    sourceCell = `<a href="${url}">${label}</a>`;
+                const rendered = renderSourceEntry(primarySource);
+                if (rendered) {
+                    sourceCell = rendered;
                 }
             }
         }

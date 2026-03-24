@@ -600,8 +600,7 @@
             animal_id !== "-" && session !== "-" && scan_idx !== "-"
                 ? `${animal_id}_${session}_${scan_idx}`
                 : null;
-        
-        <!-- This is allows us to list multiple sources per experiment by wrapping the json dicts in a list -->
+
         function renderSourceEntry(entry) {
             if (typeof entry === "string") {
                 return entry;
@@ -628,19 +627,22 @@
         if (lookupKey && animalSourceLookup && animalSourceLookup[lookupKey]) {
             const entry = animalSourceLookup[lookupKey];
 
-            if (Array.isArray(entry)) {
-                const rendered = entry
-                    .map(renderSourceEntry)
-                    .filter(Boolean);
+            let sources = [];
 
-                if (rendered.length) {
-                    sourceHtml = rendered.join(", ");
-                }
-            } else {
-                const rendered = renderSourceEntry(entry);
-                if (rendered) {
-                    sourceHtml = rendered;
-                }
+            if (Array.isArray(entry)) {
+                sources = entry;
+            } else if (entry && Array.isArray(entry.sources)) {
+                sources = entry.sources;
+            } else if (entry && typeof entry === "object") {
+                sources = [entry];
+            }
+
+            const rendered = sources
+                .map(renderSourceEntry)
+                .filter(Boolean);
+
+            if (rendered.length) {
+                sourceHtml = rendered.join(", ");
             }
         }
 

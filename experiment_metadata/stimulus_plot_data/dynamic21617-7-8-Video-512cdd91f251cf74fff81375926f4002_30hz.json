@@ -1,0 +1,4365 @@
+{
+  "experiment_id": "dynamic21617-7-8-Video-512cdd91f251cf74fff81375926f4002_30hz",
+  "events": [
+    {
+      "trial_key": "00000",
+      "stimulus_id": 1,
+      "modality": "video",
+      "start_time": 0.0,
+      "end_time": 10.016533136367798,
+      "npy_file": "00000.npy"
+    },
+    {
+      "trial_key": "00001",
+      "stimulus_id": 2,
+      "modality": "video",
+      "start_time": 10.016533136367798,
+      "end_time": 20.016385316848755,
+      "npy_file": "00001.npy"
+    },
+    {
+      "trial_key": "00002",
+      "stimulus_id": 3,
+      "modality": "video",
+      "start_time": 20.016385316848755,
+      "end_time": 30.016255140304565,
+      "npy_file": "00002.npy"
+    },
+    {
+      "trial_key": "00003",
+      "stimulus_id": 4,
+      "modality": "video",
+      "start_time": 30.016255140304565,
+      "end_time": 40.03278708457947,
+      "npy_file": "00003.npy"
+    },
+    {
+      "trial_key": "00004",
+      "stimulus_id": 5,
+      "modality": "video",
+      "start_time": 40.03278708457947,
+      "end_time": 50.03265118598938,
+      "npy_file": "00004.npy"
+    },
+    {
+      "trial_key": "00005",
+      "stimulus_id": 6,
+      "modality": "video",
+      "start_time": 50.03265118598938,
+      "end_time": 60.04916739463806,
+      "npy_file": "00005.npy"
+    },
+    {
+      "trial_key": "00006",
+      "stimulus_id": 7,
+      "modality": "video",
+      "start_time": 60.04916739463806,
+      "end_time": 70.0490391254425,
+      "npy_file": "00006.npy"
+    },
+    {
+      "trial_key": "00007",
+      "stimulus_id": 8,
+      "modality": "video",
+      "start_time": 70.0490391254425,
+      "end_time": 80.04890418052673,
+      "npy_file": "00007.npy"
+    },
+    {
+      "trial_key": "00008",
+      "stimulus_id": 9,
+      "modality": "video",
+      "start_time": 80.04890418052673,
+      "end_time": 90.04876708984375,
+      "npy_file": "00008.npy"
+    },
+    {
+      "trial_key": "00009",
+      "stimulus_id": 10,
+      "modality": "video",
+      "start_time": 90.04876708984375,
+      "end_time": 100.0486261844635,
+      "npy_file": "00009.npy"
+    },
+    {
+      "trial_key": "00010",
+      "stimulus_id": 11,
+      "modality": "video",
+      "start_time": 100.0486261844635,
+      "end_time": 110.06516098976135,
+      "npy_file": "00010.npy"
+    },
+    {
+      "trial_key": "00011",
+      "stimulus_id": 12,
+      "modality": "video",
+      "start_time": 110.06516098976135,
+      "end_time": 120.0816900730133,
+      "npy_file": "00011.npy"
+    },
+    {
+      "trial_key": "00012",
+      "stimulus_id": 13,
+      "modality": "video",
+      "start_time": 120.0816900730133,
+      "end_time": 135.11481308937073,
+      "npy_file": "00012.npy"
+    },
+    {
+      "trial_key": "00013",
+      "stimulus_id": 14,
+      "modality": "video",
+      "start_time": 135.11481308937073,
+      "end_time": 150.1312701702118,
+      "npy_file": "00013.npy"
+    },
+    {
+      "trial_key": "00014",
+      "stimulus_id": 15,
+      "modality": "video",
+      "start_time": 150.1312701702118,
+      "end_time": 165.14773511886597,
+      "npy_file": "00014.npy"
+    },
+    {
+      "trial_key": "00015",
+      "stimulus_id": 16,
+      "modality": "video",
+      "start_time": 165.14773511886597,
+      "end_time": 180.16418719291687,
+      "npy_file": "00015.npy"
+    },
+    {
+      "trial_key": "00016",
+      "stimulus_id": 17,
+      "modality": "video",
+      "start_time": 180.16418719291687,
+      "end_time": 190.16404914855957,
+      "npy_file": "00016.npy"
+    },
+    {
+      "trial_key": "00017",
+      "stimulus_id": 18,
+      "modality": "video",
+      "start_time": 190.16404914855957,
+      "end_time": 200.1639120578766,
+      "npy_file": "00017.npy"
+    },
+    {
+      "trial_key": "00018",
+      "stimulus_id": 19,
+      "modality": "video",
+      "start_time": 200.1639120578766,
+      "end_time": 210.1637761592865,
+      "npy_file": "00018.npy"
+    },
+    {
+      "trial_key": "00019",
+      "stimulus_id": 20,
+      "modality": "video",
+      "start_time": 210.1637761592865,
+      "end_time": 220.16363501548767,
+      "npy_file": "00019.npy"
+    },
+    {
+      "trial_key": "00020",
+      "stimulus_id": 21,
+      "modality": "video",
+      "start_time": 220.16363501548767,
+      "end_time": 230.16350197792053,
+      "npy_file": "00020.npy"
+    },
+    {
+      "trial_key": "00021",
+      "stimulus_id": 22,
+      "modality": "video",
+      "start_time": 230.16350197792053,
+      "end_time": 240.16336107254028,
+      "npy_file": "00021.npy"
+    },
+    {
+      "trial_key": "00022",
+      "stimulus_id": 23,
+      "modality": "video",
+      "start_time": 240.16336107254028,
+      "end_time": 255.17981815338135,
+      "npy_file": "00022.npy"
+    },
+    {
+      "trial_key": "00023",
+      "stimulus_id": 24,
+      "modality": "video",
+      "start_time": 255.17981815338135,
+      "end_time": 270.19627714157104,
+      "npy_file": "00023.npy"
+    },
+    {
+      "trial_key": "00024",
+      "stimulus_id": 25,
+      "modality": "video",
+      "start_time": 270.19627714157104,
+      "end_time": 285.21273612976074,
+      "npy_file": "00024.npy"
+    },
+    {
+      "trial_key": "00025",
+      "stimulus_id": 26,
+      "modality": "video",
+      "start_time": 285.21273612976074,
+      "end_time": 300.2291991710663,
+      "npy_file": "00025.npy"
+    },
+    {
+      "trial_key": "00026",
+      "stimulus_id": 27,
+      "modality": "video",
+      "start_time": 300.2291991710663,
+      "end_time": 315.2456452846527,
+      "npy_file": "00026.npy"
+    },
+    {
+      "trial_key": "00027",
+      "stimulus_id": 28,
+      "modality": "video",
+      "start_time": 315.2456452846527,
+      "end_time": 330.2621042728424,
+      "npy_file": "00027.npy"
+    },
+    {
+      "trial_key": "00028",
+      "stimulus_id": 29,
+      "modality": "video",
+      "start_time": 330.2621042728424,
+      "end_time": 345.27857303619385,
+      "npy_file": "00028.npy"
+    },
+    {
+      "trial_key": "00029",
+      "stimulus_id": 30,
+      "modality": "video",
+      "start_time": 345.27857303619385,
+      "end_time": 360.29503107070923,
+      "npy_file": "00029.npy"
+    },
+    {
+      "trial_key": "00030",
+      "stimulus_id": 31,
+      "modality": "video",
+      "start_time": 360.29503107070923,
+      "end_time": 375.31149315834045,
+      "npy_file": "00030.npy"
+    },
+    {
+      "trial_key": "00031",
+      "stimulus_id": 32,
+      "modality": "video",
+      "start_time": 375.31149315834045,
+      "end_time": 390.3279449939728,
+      "npy_file": "00031.npy"
+    },
+    {
+      "trial_key": "00032",
+      "stimulus_id": 33,
+      "modality": "video",
+      "start_time": 390.3279449939728,
+      "end_time": 405.34440517425537,
+      "npy_file": "00032.npy"
+    },
+    {
+      "trial_key": "00033",
+      "stimulus_id": 34,
+      "modality": "video",
+      "start_time": 405.34440517425537,
+      "end_time": 420.360867023468,
+      "npy_file": "00033.npy"
+    },
+    {
+      "trial_key": "00034",
+      "stimulus_id": 35,
+      "modality": "video",
+      "start_time": 420.360867023468,
+      "end_time": 430.36073112487793,
+      "npy_file": "00034.npy"
+    },
+    {
+      "trial_key": "00035",
+      "stimulus_id": 36,
+      "modality": "video",
+      "start_time": 430.36073112487793,
+      "end_time": 440.36058712005615,
+      "npy_file": "00035.npy"
+    },
+    {
+      "trial_key": "00036",
+      "stimulus_id": 37,
+      "modality": "video",
+      "start_time": 440.36058712005615,
+      "end_time": 450.36044812202454,
+      "npy_file": "00036.npy"
+    },
+    {
+      "trial_key": "00037",
+      "stimulus_id": 38,
+      "modality": "video",
+      "start_time": 450.36044812202454,
+      "end_time": 460.37698101997375,
+      "npy_file": "00037.npy"
+    },
+    {
+      "trial_key": "00038",
+      "stimulus_id": 39,
+      "modality": "video",
+      "start_time": 460.37698101997375,
+      "end_time": 470.3935070037842,
+      "npy_file": "00038.npy"
+    },
+    {
+      "trial_key": "00039",
+      "stimulus_id": 40,
+      "modality": "video",
+      "start_time": 470.3935070037842,
+      "end_time": 480.39336705207825,
+      "npy_file": "00039.npy"
+    },
+    {
+      "trial_key": "00040",
+      "stimulus_id": 41,
+      "modality": "video",
+      "start_time": 480.39336705207825,
+      "end_time": 490.3932204246521,
+      "npy_file": "00040.npy"
+    },
+    {
+      "trial_key": "00041",
+      "stimulus_id": 42,
+      "modality": "video",
+      "start_time": 490.3932204246521,
+      "end_time": 500.3930940628052,
+      "npy_file": "00041.npy"
+    },
+    {
+      "trial_key": "00042",
+      "stimulus_id": 43,
+      "modality": "video",
+      "start_time": 500.3930940628052,
+      "end_time": 510.3929531574249,
+      "npy_file": "00042.npy"
+    },
+    {
+      "trial_key": "00043",
+      "stimulus_id": 44,
+      "modality": "video",
+      "start_time": 510.3929531574249,
+      "end_time": 520.3928062915802,
+      "npy_file": "00043.npy"
+    },
+    {
+      "trial_key": "00044",
+      "stimulus_id": 45,
+      "modality": "video",
+      "start_time": 520.3928062915802,
+      "end_time": 530.4093401432037,
+      "npy_file": "00044.npy"
+    },
+    {
+      "trial_key": "00045",
+      "stimulus_id": 46,
+      "modality": "video",
+      "start_time": 530.4093401432037,
+      "end_time": 540.4092030525208,
+      "npy_file": "00045.npy"
+    },
+    {
+      "trial_key": "00046",
+      "stimulus_id": 47,
+      "modality": "video",
+      "start_time": 540.4092030525208,
+      "end_time": 555.4256670475006,
+      "npy_file": "00046.npy"
+    },
+    {
+      "trial_key": "00047",
+      "stimulus_id": 48,
+      "modality": "video",
+      "start_time": 555.4256670475006,
+      "end_time": 570.4421231746674,
+      "npy_file": "00047.npy"
+    },
+    {
+      "trial_key": "00048",
+      "stimulus_id": 49,
+      "modality": "video",
+      "start_time": 570.4421231746674,
+      "end_time": 585.4585800170898,
+      "npy_file": "00048.npy"
+    },
+    {
+      "trial_key": "00049",
+      "stimulus_id": 50,
+      "modality": "video",
+      "start_time": 585.4585800170898,
+      "end_time": 600.4750370979309,
+      "npy_file": "00049.npy"
+    },
+    {
+      "trial_key": "00050",
+      "stimulus_id": 51,
+      "modality": "video",
+      "start_time": 600.4750370979309,
+      "end_time": 610.4749000072479,
+      "npy_file": "00050.npy"
+    },
+    {
+      "trial_key": "00051",
+      "stimulus_id": 52,
+      "modality": "video",
+      "start_time": 610.4749000072479,
+      "end_time": 620.4914193153381,
+      "npy_file": "00051.npy"
+    },
+    {
+      "trial_key": "00052",
+      "stimulus_id": 53,
+      "modality": "video",
+      "start_time": 620.4914193153381,
+      "end_time": 630.4912803173065,
+      "npy_file": "00052.npy"
+    },
+    {
+      "trial_key": "00053",
+      "stimulus_id": 54,
+      "modality": "video",
+      "start_time": 630.4912803173065,
+      "end_time": 640.5078094005585,
+      "npy_file": "00053.npy"
+    },
+    {
+      "trial_key": "00054",
+      "stimulus_id": 55,
+      "modality": "video",
+      "start_time": 640.5078094005585,
+      "end_time": 650.5076811313629,
+      "npy_file": "00054.npy"
+    },
+    {
+      "trial_key": "00055",
+      "stimulus_id": 56,
+      "modality": "video",
+      "start_time": 650.5076811313629,
+      "end_time": 660.5242102146149,
+      "npy_file": "00055.npy"
+    },
+    {
+      "trial_key": "00056",
+      "stimulus_id": 57,
+      "modality": "video",
+      "start_time": 660.5242102146149,
+      "end_time": 675.5406651496887,
+      "npy_file": "00056.npy"
+    },
+    {
+      "trial_key": "00057",
+      "stimulus_id": 58,
+      "modality": "video",
+      "start_time": 675.5406651496887,
+      "end_time": 690.5571291446686,
+      "npy_file": "00057.npy"
+    },
+    {
+      "trial_key": "00058",
+      "stimulus_id": 59,
+      "modality": "video",
+      "start_time": 690.5571291446686,
+      "end_time": 705.5735850334167,
+      "npy_file": "00058.npy"
+    },
+    {
+      "trial_key": "00059",
+      "stimulus_id": 60,
+      "modality": "video",
+      "start_time": 705.5735850334167,
+      "end_time": 720.5900421142578,
+      "npy_file": "00059.npy"
+    },
+    {
+      "trial_key": "00060",
+      "stimulus_id": 61,
+      "modality": "video",
+      "start_time": 720.5900421142578,
+      "end_time": 735.6065030097961,
+      "npy_file": "00060.npy"
+    },
+    {
+      "trial_key": "00061",
+      "stimulus_id": 62,
+      "modality": "video",
+      "start_time": 735.6065030097961,
+      "end_time": 750.6229581832886,
+      "npy_file": "00061.npy"
+    },
+    {
+      "trial_key": "00062",
+      "stimulus_id": 63,
+      "modality": "video",
+      "start_time": 750.6229581832886,
+      "end_time": 765.6560871601105,
+      "npy_file": "00062.npy"
+    },
+    {
+      "trial_key": "00063",
+      "stimulus_id": 64,
+      "modality": "video",
+      "start_time": 765.6560871601105,
+      "end_time": 780.6725313663483,
+      "npy_file": "00063.npy"
+    },
+    {
+      "trial_key": "00064",
+      "stimulus_id": 65,
+      "modality": "video",
+      "start_time": 780.6725313663483,
+      "end_time": 790.6724011898041,
+      "npy_file": "00064.npy"
+    },
+    {
+      "trial_key": "00065",
+      "stimulus_id": 66,
+      "modality": "video",
+      "start_time": 790.6724011898041,
+      "end_time": 800.6722609996796,
+      "npy_file": "00065.npy"
+    },
+    {
+      "trial_key": "00066",
+      "stimulus_id": 67,
+      "modality": "video",
+      "start_time": 800.6722609996796,
+      "end_time": 810.6887834072113,
+      "npy_file": "00066.npy"
+    },
+    {
+      "trial_key": "00067",
+      "stimulus_id": 68,
+      "modality": "video",
+      "start_time": 810.6887834072113,
+      "end_time": 820.688648223877,
+      "npy_file": "00067.npy"
+    },
+    {
+      "trial_key": "00068",
+      "stimulus_id": 69,
+      "modality": "video",
+      "start_time": 820.688648223877,
+      "end_time": 830.6885054111481,
+      "npy_file": "00068.npy"
+    },
+    {
+      "trial_key": "00069",
+      "stimulus_id": 70,
+      "modality": "video",
+      "start_time": 830.6885054111481,
+      "end_time": 840.7050333023071,
+      "npy_file": "00069.npy"
+    },
+    {
+      "trial_key": "00070",
+      "stimulus_id": 71,
+      "modality": "video",
+      "start_time": 840.7050333023071,
+      "end_time": 850.7215692996979,
+      "npy_file": "00070.npy"
+    },
+    {
+      "trial_key": "00071",
+      "stimulus_id": 72,
+      "modality": "video",
+      "start_time": 850.7215692996979,
+      "end_time": 860.721431016922,
+      "npy_file": "00071.npy"
+    },
+    {
+      "trial_key": "00072",
+      "stimulus_id": 73,
+      "modality": "video",
+      "start_time": 860.721431016922,
+      "end_time": 870.7212951183319,
+      "npy_file": "00072.npy"
+    },
+    {
+      "trial_key": "00073",
+      "stimulus_id": 74,
+      "modality": "video",
+      "start_time": 870.7212951183319,
+      "end_time": 880.7211542129517,
+      "npy_file": "00073.npy"
+    },
+    {
+      "trial_key": "00074",
+      "stimulus_id": 75,
+      "modality": "video",
+      "start_time": 880.7211542129517,
+      "end_time": 890.7210149765015,
+      "npy_file": "00074.npy"
+    },
+    {
+      "trial_key": "00075",
+      "stimulus_id": 76,
+      "modality": "video",
+      "start_time": 890.7210149765015,
+      "end_time": 900.7208759784698,
+      "npy_file": "00075.npy"
+    },
+    {
+      "trial_key": "00076",
+      "stimulus_id": 77,
+      "modality": "video",
+      "start_time": 900.7208759784698,
+      "end_time": 910.7207450866699,
+      "npy_file": "00076.npy"
+    },
+    {
+      "trial_key": "00077",
+      "stimulus_id": 78,
+      "modality": "video",
+      "start_time": 910.7207450866699,
+      "end_time": 920.720605134964,
+      "npy_file": "00077.npy"
+    },
+    {
+      "trial_key": "00078",
+      "stimulus_id": 79,
+      "modality": "video",
+      "start_time": 920.720605134964,
+      "end_time": 930.720468044281,
+      "npy_file": "00078.npy"
+    },
+    {
+      "trial_key": "00079",
+      "stimulus_id": 80,
+      "modality": "video",
+      "start_time": 930.720468044281,
+      "end_time": 940.7203261852264,
+      "npy_file": "00079.npy"
+    },
+    {
+      "trial_key": "00080",
+      "stimulus_id": 81,
+      "modality": "video",
+      "start_time": 940.7203261852264,
+      "end_time": 950.7201871871948,
+      "npy_file": "00080.npy"
+    },
+    {
+      "trial_key": "00081",
+      "stimulus_id": 82,
+      "modality": "video",
+      "start_time": 950.7201871871948,
+      "end_time": 960.7200491428375,
+      "npy_file": "00081.npy"
+    },
+    {
+      "trial_key": "00082",
+      "stimulus_id": 83,
+      "modality": "video",
+      "start_time": 960.7200491428375,
+      "end_time": 970.7199151515961,
+      "npy_file": "00082.npy"
+    },
+    {
+      "trial_key": "00083",
+      "stimulus_id": 84,
+      "modality": "video",
+      "start_time": 970.7199151515961,
+      "end_time": 980.7197740077972,
+      "npy_file": "00083.npy"
+    },
+    {
+      "trial_key": "00084",
+      "stimulus_id": 85,
+      "modality": "video",
+      "start_time": 980.7197740077972,
+      "end_time": 990.7196340560913,
+      "npy_file": "00084.npy"
+    },
+    {
+      "trial_key": "00085",
+      "stimulus_id": 86,
+      "modality": "video",
+      "start_time": 990.7196340560913,
+      "end_time": 1000.7194991111755,
+      "npy_file": "00085.npy"
+    },
+    {
+      "trial_key": "00086",
+      "stimulus_id": 87,
+      "modality": "video",
+      "start_time": 1000.7194991111755,
+      "end_time": 1010.7193601131439,
+      "npy_file": "00086.npy"
+    },
+    {
+      "trial_key": "00087",
+      "stimulus_id": 88,
+      "modality": "video",
+      "start_time": 1010.7193601131439,
+      "end_time": 1020.7358870506287,
+      "npy_file": "00087.npy"
+    },
+    {
+      "trial_key": "00088",
+      "stimulus_id": 41,
+      "modality": "video",
+      "start_time": 1020.7358870506287,
+      "end_time": 1030.7357561588287,
+      "npy_file": "00088.npy"
+    },
+    {
+      "trial_key": "00089",
+      "stimulus_id": 42,
+      "modality": "video",
+      "start_time": 1030.7357561588287,
+      "end_time": 1040.7522811889648,
+      "npy_file": "00089.npy"
+    },
+    {
+      "trial_key": "00090",
+      "stimulus_id": 43,
+      "modality": "video",
+      "start_time": 1040.7522811889648,
+      "end_time": 1050.752140045166,
+      "npy_file": "00090.npy"
+    },
+    {
+      "trial_key": "00091",
+      "stimulus_id": 44,
+      "modality": "video",
+      "start_time": 1050.752140045166,
+      "end_time": 1060.7519962787628,
+      "npy_file": "00091.npy"
+    },
+    {
+      "trial_key": "00092",
+      "stimulus_id": 45,
+      "modality": "video",
+      "start_time": 1060.7519962787628,
+      "end_time": 1070.7518711090088,
+      "npy_file": "00092.npy"
+    },
+    {
+      "trial_key": "00093",
+      "stimulus_id": 46,
+      "modality": "video",
+      "start_time": 1070.7518711090088,
+      "end_time": 1080.751727104187,
+      "npy_file": "00093.npy"
+    },
+    {
+      "trial_key": "00094",
+      "stimulus_id": 89,
+      "modality": "video",
+      "start_time": 1080.751727104187,
+      "end_time": 1090.7515921592712,
+      "npy_file": "00094.npy"
+    },
+    {
+      "trial_key": "00095",
+      "stimulus_id": 90,
+      "modality": "video",
+      "start_time": 1090.7515921592712,
+      "end_time": 1100.7681102752686,
+      "npy_file": "00095.npy"
+    },
+    {
+      "trial_key": "00096",
+      "stimulus_id": 91,
+      "modality": "video",
+      "start_time": 1100.7681102752686,
+      "end_time": 1110.767976284027,
+      "npy_file": "00096.npy"
+    },
+    {
+      "trial_key": "00097",
+      "stimulus_id": 92,
+      "modality": "video",
+      "start_time": 1110.767976284027,
+      "end_time": 1120.7845129966736,
+      "npy_file": "00097.npy"
+    },
+    {
+      "trial_key": "00098",
+      "stimulus_id": 93,
+      "modality": "video",
+      "start_time": 1120.7845129966736,
+      "end_time": 1130.7843720912933,
+      "npy_file": "00098.npy"
+    },
+    {
+      "trial_key": "00099",
+      "stimulus_id": 94,
+      "modality": "video",
+      "start_time": 1130.7843720912933,
+      "end_time": 1140.7842361927032,
+      "npy_file": "00099.npy"
+    },
+    {
+      "trial_key": "00100",
+      "stimulus_id": 95,
+      "modality": "video",
+      "start_time": 1140.7842361927032,
+      "end_time": 1150.784098148346,
+      "npy_file": "00100.npy"
+    },
+    {
+      "trial_key": "00101",
+      "stimulus_id": 96,
+      "modality": "video",
+      "start_time": 1150.784098148346,
+      "end_time": 1160.7839560508728,
+      "npy_file": "00101.npy"
+    },
+    {
+      "trial_key": "00102",
+      "stimulus_id": 97,
+      "modality": "video",
+      "start_time": 1160.7839560508728,
+      "end_time": 1170.7838122844696,
+      "npy_file": "00102.npy"
+    },
+    {
+      "trial_key": "00103",
+      "stimulus_id": 98,
+      "modality": "video",
+      "start_time": 1170.7838122844696,
+      "end_time": 1180.783685207367,
+      "npy_file": "00103.npy"
+    },
+    {
+      "trial_key": "00104",
+      "stimulus_id": 99,
+      "modality": "video",
+      "start_time": 1180.783685207367,
+      "end_time": 1190.7835383415222,
+      "npy_file": "00104.npy"
+    },
+    {
+      "trial_key": "00105",
+      "stimulus_id": 100,
+      "modality": "video",
+      "start_time": 1190.7835383415222,
+      "end_time": 1200.783411026001,
+      "npy_file": "00105.npy"
+    },
+    {
+      "trial_key": "00106",
+      "stimulus_id": 101,
+      "modality": "video",
+      "start_time": 1200.783411026001,
+      "end_time": 1210.7832729816437,
+      "npy_file": "00106.npy"
+    },
+    {
+      "trial_key": "00107",
+      "stimulus_id": 102,
+      "modality": "video",
+      "start_time": 1210.7832729816437,
+      "end_time": 1220.7997903823853,
+      "npy_file": "00107.npy"
+    },
+    {
+      "trial_key": "00108",
+      "stimulus_id": 103,
+      "modality": "video",
+      "start_time": 1220.7997903823853,
+      "end_time": 1230.7996580600739,
+      "npy_file": "00108.npy"
+    },
+    {
+      "trial_key": "00109",
+      "stimulus_id": 104,
+      "modality": "video",
+      "start_time": 1230.7996580600739,
+      "end_time": 1240.7995221614838,
+      "npy_file": "00109.npy"
+    },
+    {
+      "trial_key": "00110",
+      "stimulus_id": 105,
+      "modality": "video",
+      "start_time": 1240.7995221614838,
+      "end_time": 1250.7993733882904,
+      "npy_file": "00110.npy"
+    },
+    {
+      "trial_key": "00111",
+      "stimulus_id": 106,
+      "modality": "video",
+      "start_time": 1250.7993733882904,
+      "end_time": 1260.7992441654205,
+      "npy_file": "00111.npy"
+    },
+    {
+      "trial_key": "00112",
+      "stimulus_id": 107,
+      "modality": "video",
+      "start_time": 1260.7992441654205,
+      "end_time": 1275.8157081604004,
+      "npy_file": "00112.npy"
+    },
+    {
+      "trial_key": "00113",
+      "stimulus_id": 108,
+      "modality": "video",
+      "start_time": 1275.8157081604004,
+      "end_time": 1290.8321533203125,
+      "npy_file": "00113.npy"
+    },
+    {
+      "trial_key": "00114",
+      "stimulus_id": 109,
+      "modality": "video",
+      "start_time": 1290.8321533203125,
+      "end_time": 1305.8486251831055,
+      "npy_file": "00114.npy"
+    },
+    {
+      "trial_key": "00115",
+      "stimulus_id": 110,
+      "modality": "video",
+      "start_time": 1305.8486251831055,
+      "end_time": 1320.8650703430176,
+      "npy_file": "00115.npy"
+    },
+    {
+      "trial_key": "00116",
+      "stimulus_id": 111,
+      "modality": "video",
+      "start_time": 1320.8650703430176,
+      "end_time": 1335.8815371990204,
+      "npy_file": "00116.npy"
+    },
+    {
+      "trial_key": "00117",
+      "stimulus_id": 112,
+      "modality": "video",
+      "start_time": 1335.8815371990204,
+      "end_time": 1350.8979930877686,
+      "npy_file": "00117.npy"
+    },
+    {
+      "trial_key": "00118",
+      "stimulus_id": 113,
+      "modality": "video",
+      "start_time": 1350.8979930877686,
+      "end_time": 1365.9144539833069,
+      "npy_file": "00118.npy"
+    },
+    {
+      "trial_key": "00119",
+      "stimulus_id": 114,
+      "modality": "video",
+      "start_time": 1365.9144539833069,
+      "end_time": 1380.9309141635895,
+      "npy_file": "00119.npy"
+    },
+    {
+      "trial_key": "00120",
+      "stimulus_id": 115,
+      "modality": "video",
+      "start_time": 1380.9309141635895,
+      "end_time": 1395.9473731517792,
+      "npy_file": "00120.npy"
+    },
+    {
+      "trial_key": "00121",
+      "stimulus_id": 116,
+      "modality": "video",
+      "start_time": 1395.9473731517792,
+      "end_time": 1410.9638271331787,
+      "npy_file": "00121.npy"
+    },
+    {
+      "trial_key": "00122",
+      "stimulus_id": 117,
+      "modality": "video",
+      "start_time": 1410.9638271331787,
+      "end_time": 1425.980285167694,
+      "npy_file": "00122.npy"
+    },
+    {
+      "trial_key": "00123",
+      "stimulus_id": 118,
+      "modality": "video",
+      "start_time": 1425.980285167694,
+      "end_time": 1440.9967460632324,
+      "npy_file": "00123.npy"
+    },
+    {
+      "trial_key": "00124",
+      "stimulus_id": 119,
+      "modality": "video",
+      "start_time": 1440.9967460632324,
+      "end_time": 1451.0132720470428,
+      "npy_file": "00124.npy"
+    },
+    {
+      "trial_key": "00125",
+      "stimulus_id": 120,
+      "modality": "video",
+      "start_time": 1451.0132720470428,
+      "end_time": 1461.0131330490112,
+      "npy_file": "00125.npy"
+    },
+    {
+      "trial_key": "00126",
+      "stimulus_id": 121,
+      "modality": "video",
+      "start_time": 1461.0131330490112,
+      "end_time": 1471.0129940509796,
+      "npy_file": "00126.npy"
+    },
+    {
+      "trial_key": "00127",
+      "stimulus_id": 122,
+      "modality": "video",
+      "start_time": 1471.0129940509796,
+      "end_time": 1481.0128591060638,
+      "npy_file": "00127.npy"
+    },
+    {
+      "trial_key": "00128",
+      "stimulus_id": 123,
+      "modality": "video",
+      "start_time": 1481.0128591060638,
+      "end_time": 1491.0127182006836,
+      "npy_file": "00128.npy"
+    },
+    {
+      "trial_key": "00129",
+      "stimulus_id": 124,
+      "modality": "video",
+      "start_time": 1491.0127182006836,
+      "end_time": 1501.0125830173492,
+      "npy_file": "00129.npy"
+    },
+    {
+      "trial_key": "00130",
+      "stimulus_id": 125,
+      "modality": "video",
+      "start_time": 1501.0125830173492,
+      "end_time": 1511.0124430656433,
+      "npy_file": "00130.npy"
+    },
+    {
+      "trial_key": "00131",
+      "stimulus_id": 126,
+      "modality": "video",
+      "start_time": 1511.0124430656433,
+      "end_time": 1521.0122990608215,
+      "npy_file": "00131.npy"
+    },
+    {
+      "trial_key": "00132",
+      "stimulus_id": 127,
+      "modality": "video",
+      "start_time": 1521.0122990608215,
+      "end_time": 1531.0121641159058,
+      "npy_file": "00132.npy"
+    },
+    {
+      "trial_key": "00133",
+      "stimulus_id": 128,
+      "modality": "video",
+      "start_time": 1531.0121641159058,
+      "end_time": 1541.01202917099,
+      "npy_file": "00133.npy"
+    },
+    {
+      "trial_key": "00134",
+      "stimulus_id": 129,
+      "modality": "video",
+      "start_time": 1541.01202917099,
+      "end_time": 1551.0118901729584,
+      "npy_file": "00134.npy"
+    },
+    {
+      "trial_key": "00135",
+      "stimulus_id": 130,
+      "modality": "video",
+      "start_time": 1551.0118901729584,
+      "end_time": 1561.0284152030945,
+      "npy_file": "00135.npy"
+    },
+    {
+      "trial_key": "00136",
+      "stimulus_id": 41,
+      "modality": "video",
+      "start_time": 1561.0284152030945,
+      "end_time": 1571.0282740592957,
+      "npy_file": "00136.npy"
+    },
+    {
+      "trial_key": "00137",
+      "stimulus_id": 42,
+      "modality": "video",
+      "start_time": 1571.0282740592957,
+      "end_time": 1581.044801235199,
+      "npy_file": "00137.npy"
+    },
+    {
+      "trial_key": "00138",
+      "stimulus_id": 43,
+      "modality": "video",
+      "start_time": 1581.044801235199,
+      "end_time": 1591.0613331794739,
+      "npy_file": "00138.npy"
+    },
+    {
+      "trial_key": "00139",
+      "stimulus_id": 44,
+      "modality": "video",
+      "start_time": 1591.0613331794739,
+      "end_time": 1601.0611941814423,
+      "npy_file": "00139.npy"
+    },
+    {
+      "trial_key": "00140",
+      "stimulus_id": 45,
+      "modality": "video",
+      "start_time": 1601.0611941814423,
+      "end_time": 1611.0610551834106,
+      "npy_file": "00140.npy"
+    },
+    {
+      "trial_key": "00141",
+      "stimulus_id": 46,
+      "modality": "video",
+      "start_time": 1611.0610551834106,
+      "end_time": 1621.060919046402,
+      "npy_file": "00141.npy"
+    },
+    {
+      "trial_key": "00142",
+      "stimulus_id": 131,
+      "modality": "video",
+      "start_time": 1621.060919046402,
+      "end_time": 1631.060779094696,
+      "npy_file": "00142.npy"
+    },
+    {
+      "trial_key": "00143",
+      "stimulus_id": 132,
+      "modality": "video",
+      "start_time": 1631.060779094696,
+      "end_time": 1641.060642004013,
+      "npy_file": "00143.npy"
+    },
+    {
+      "trial_key": "00144",
+      "stimulus_id": 133,
+      "modality": "video",
+      "start_time": 1641.060642004013,
+      "end_time": 1651.0604944229126,
+      "npy_file": "00144.npy"
+    },
+    {
+      "trial_key": "00145",
+      "stimulus_id": 134,
+      "modality": "video",
+      "start_time": 1651.0604944229126,
+      "end_time": 1661.0770213603973,
+      "npy_file": "00145.npy"
+    },
+    {
+      "trial_key": "00146",
+      "stimulus_id": 135,
+      "modality": "video",
+      "start_time": 1661.0770213603973,
+      "end_time": 1671.076894044876,
+      "npy_file": "00146.npy"
+    },
+    {
+      "trial_key": "00147",
+      "stimulus_id": 136,
+      "modality": "video",
+      "start_time": 1671.076894044876,
+      "end_time": 1681.076758146286,
+      "npy_file": "00147.npy"
+    },
+    {
+      "trial_key": "00148",
+      "stimulus_id": 137,
+      "modality": "video",
+      "start_time": 1681.076758146286,
+      "end_time": 1691.07661819458,
+      "npy_file": "00148.npy"
+    },
+    {
+      "trial_key": "00149",
+      "stimulus_id": 138,
+      "modality": "video",
+      "start_time": 1691.07661819458,
+      "end_time": 1701.0764801502228,
+      "npy_file": "00149.npy"
+    },
+    {
+      "trial_key": "00150",
+      "stimulus_id": 139,
+      "modality": "video",
+      "start_time": 1701.0764801502228,
+      "end_time": 1711.0763411521912,
+      "npy_file": "00150.npy"
+    },
+    {
+      "trial_key": "00151",
+      "stimulus_id": 140,
+      "modality": "video",
+      "start_time": 1711.0763411521912,
+      "end_time": 1721.0762050151825,
+      "npy_file": "00151.npy"
+    },
+    {
+      "trial_key": "00152",
+      "stimulus_id": 141,
+      "modality": "video",
+      "start_time": 1721.0762050151825,
+      "end_time": 1731.0760600566864,
+      "npy_file": "00152.npy"
+    },
+    {
+      "trial_key": "00153",
+      "stimulus_id": 142,
+      "modality": "video",
+      "start_time": 1731.0760600566864,
+      "end_time": 1741.075923204422,
+      "npy_file": "00153.npy"
+    },
+    {
+      "trial_key": "00154",
+      "stimulus_id": 143,
+      "modality": "video",
+      "start_time": 1741.075923204422,
+      "end_time": 1756.0923871994019,
+      "npy_file": "00154.npy"
+    },
+    {
+      "trial_key": "00155",
+      "stimulus_id": 144,
+      "modality": "video",
+      "start_time": 1756.0923871994019,
+      "end_time": 1771.1088449954987,
+      "npy_file": "00155.npy"
+    },
+    {
+      "trial_key": "00156",
+      "stimulus_id": 145,
+      "modality": "video",
+      "start_time": 1771.1088449954987,
+      "end_time": 1786.1252980232239,
+      "npy_file": "00156.npy"
+    },
+    {
+      "trial_key": "00157",
+      "stimulus_id": 146,
+      "modality": "video",
+      "start_time": 1786.1252980232239,
+      "end_time": 1801.1417610645294,
+      "npy_file": "00157.npy"
+    },
+    {
+      "trial_key": "00158",
+      "stimulus_id": 147,
+      "modality": "video",
+      "start_time": 1801.1417610645294,
+      "end_time": 1811.1416113376617,
+      "npy_file": "00158.npy"
+    },
+    {
+      "trial_key": "00159",
+      "stimulus_id": 148,
+      "modality": "video",
+      "start_time": 1811.1416113376617,
+      "end_time": 1821.1414830684662,
+      "npy_file": "00159.npy"
+    },
+    {
+      "trial_key": "00160",
+      "stimulus_id": 149,
+      "modality": "video",
+      "start_time": 1821.1414830684662,
+      "end_time": 1831.1413412094116,
+      "npy_file": "00160.npy"
+    },
+    {
+      "trial_key": "00161",
+      "stimulus_id": 150,
+      "modality": "video",
+      "start_time": 1831.1413412094116,
+      "end_time": 1841.141201019287,
+      "npy_file": "00161.npy"
+    },
+    {
+      "trial_key": "00162",
+      "stimulus_id": 151,
+      "modality": "video",
+      "start_time": 1841.141201019287,
+      "end_time": 1851.141065120697,
+      "npy_file": "00162.npy"
+    },
+    {
+      "trial_key": "00163",
+      "stimulus_id": 152,
+      "modality": "video",
+      "start_time": 1851.141065120697,
+      "end_time": 1861.1575832366943,
+      "npy_file": "00163.npy"
+    },
+    {
+      "trial_key": "00164",
+      "stimulus_id": 153,
+      "modality": "video",
+      "start_time": 1861.1575832366943,
+      "end_time": 1871.1741189956665,
+      "npy_file": "00164.npy"
+    },
+    {
+      "trial_key": "00165",
+      "stimulus_id": 154,
+      "modality": "video",
+      "start_time": 1871.1741189956665,
+      "end_time": 1881.1739780902863,
+      "npy_file": "00165.npy"
+    },
+    {
+      "trial_key": "00166",
+      "stimulus_id": 155,
+      "modality": "video",
+      "start_time": 1881.1739780902863,
+      "end_time": 1891.1905071735382,
+      "npy_file": "00166.npy"
+    },
+    {
+      "trial_key": "00167",
+      "stimulus_id": 156,
+      "modality": "video",
+      "start_time": 1891.1905071735382,
+      "end_time": 1901.1903731822968,
+      "npy_file": "00167.npy"
+    },
+    {
+      "trial_key": "00168",
+      "stimulus_id": 157,
+      "modality": "video",
+      "start_time": 1901.1903731822968,
+      "end_time": 1911.1902203559875,
+      "npy_file": "00168.npy"
+    },
+    {
+      "trial_key": "00169",
+      "stimulus_id": 158,
+      "modality": "video",
+      "start_time": 1911.1902203559875,
+      "end_time": 1921.1900889873505,
+      "npy_file": "00169.npy"
+    },
+    {
+      "trial_key": "00170",
+      "stimulus_id": 159,
+      "modality": "video",
+      "start_time": 1921.1900889873505,
+      "end_time": 1936.206552028656,
+      "npy_file": "00170.npy"
+    },
+    {
+      "trial_key": "00171",
+      "stimulus_id": 160,
+      "modality": "video",
+      "start_time": 1936.206552028656,
+      "end_time": 1951.2229974269867,
+      "npy_file": "00171.npy"
+    },
+    {
+      "trial_key": "00172",
+      "stimulus_id": 161,
+      "modality": "video",
+      "start_time": 1951.2229974269867,
+      "end_time": 1966.2394649982452,
+      "npy_file": "00172.npy"
+    },
+    {
+      "trial_key": "00173",
+      "stimulus_id": 162,
+      "modality": "video",
+      "start_time": 1966.2394649982452,
+      "end_time": 1981.255923986435,
+      "npy_file": "00173.npy"
+    },
+    {
+      "trial_key": "00174",
+      "stimulus_id": 163,
+      "modality": "video",
+      "start_time": 1981.255923986435,
+      "end_time": 1991.255784034729,
+      "npy_file": "00174.npy"
+    },
+    {
+      "trial_key": "00175",
+      "stimulus_id": 164,
+      "modality": "video",
+      "start_time": 1991.255784034729,
+      "end_time": 2001.2556431293488,
+      "npy_file": "00175.npy"
+    },
+    {
+      "trial_key": "00176",
+      "stimulus_id": 165,
+      "modality": "video",
+      "start_time": 2001.2556431293488,
+      "end_time": 2011.2555041313171,
+      "npy_file": "00176.npy"
+    },
+    {
+      "trial_key": "00177",
+      "stimulus_id": 166,
+      "modality": "video",
+      "start_time": 2011.2555041313171,
+      "end_time": 2021.25537109375,
+      "npy_file": "00177.npy"
+    },
+    {
+      "trial_key": "00178",
+      "stimulus_id": 167,
+      "modality": "video",
+      "start_time": 2021.25537109375,
+      "end_time": 2031.2552289962769,
+      "npy_file": "00178.npy"
+    },
+    {
+      "trial_key": "00179",
+      "stimulus_id": 168,
+      "modality": "video",
+      "start_time": 2031.2552289962769,
+      "end_time": 2041.2550823688507,
+      "npy_file": "00179.npy"
+    },
+    {
+      "trial_key": "00180",
+      "stimulus_id": 41,
+      "modality": "video",
+      "start_time": 2041.2550823688507,
+      "end_time": 2051.254956007004,
+      "npy_file": "00180.npy"
+    },
+    {
+      "trial_key": "00181",
+      "stimulus_id": 42,
+      "modality": "video",
+      "start_time": 2051.254956007004,
+      "end_time": 2061.254813194275,
+      "npy_file": "00181.npy"
+    },
+    {
+      "trial_key": "00182",
+      "stimulus_id": 43,
+      "modality": "video",
+      "start_time": 2061.254813194275,
+      "end_time": 2071.2713344097137,
+      "npy_file": "00182.npy"
+    },
+    {
+      "trial_key": "00183",
+      "stimulus_id": 44,
+      "modality": "video",
+      "start_time": 2071.2713344097137,
+      "end_time": 2081.2712001800537,
+      "npy_file": "00183.npy"
+    },
+    {
+      "trial_key": "00184",
+      "stimulus_id": 45,
+      "modality": "video",
+      "start_time": 2081.2712001800537,
+      "end_time": 2091.2710552215576,
+      "npy_file": "00184.npy"
+    },
+    {
+      "trial_key": "00185",
+      "stimulus_id": 46,
+      "modality": "video",
+      "start_time": 2091.2710552215576,
+      "end_time": 2101.287582397461,
+      "npy_file": "00185.npy"
+    },
+    {
+      "trial_key": "00186",
+      "stimulus_id": 169,
+      "modality": "video",
+      "start_time": 2101.287582397461,
+      "end_time": 2116.3040540218353,
+      "npy_file": "00186.npy"
+    },
+    {
+      "trial_key": "00187",
+      "stimulus_id": 170,
+      "modality": "video",
+      "start_time": 2116.3040540218353,
+      "end_time": 2131.3205120563507,
+      "npy_file": "00187.npy"
+    },
+    {
+      "trial_key": "00188",
+      "stimulus_id": 171,
+      "modality": "video",
+      "start_time": 2131.3205120563507,
+      "end_time": 2146.336965084076,
+      "npy_file": "00188.npy"
+    },
+    {
+      "trial_key": "00189",
+      "stimulus_id": 172,
+      "modality": "video",
+      "start_time": 2146.336965084076,
+      "end_time": 2161.3534231185913,
+      "npy_file": "00189.npy"
+    },
+    {
+      "trial_key": "00190",
+      "stimulus_id": 173,
+      "modality": "video",
+      "start_time": 2161.3534231185913,
+      "end_time": 2171.369943380356,
+      "npy_file": "00190.npy"
+    },
+    {
+      "trial_key": "00191",
+      "stimulus_id": 174,
+      "modality": "video",
+      "start_time": 2171.369943380356,
+      "end_time": 2181.3864693641663,
+      "npy_file": "00191.npy"
+    },
+    {
+      "trial_key": "00192",
+      "stimulus_id": 175,
+      "modality": "video",
+      "start_time": 2181.3864693641663,
+      "end_time": 2191.386342048645,
+      "npy_file": "00192.npy"
+    },
+    {
+      "trial_key": "00193",
+      "stimulus_id": 176,
+      "modality": "video",
+      "start_time": 2191.386342048645,
+      "end_time": 2201.3862001895905,
+      "npy_file": "00193.npy"
+    },
+    {
+      "trial_key": "00194",
+      "stimulus_id": 177,
+      "modality": "video",
+      "start_time": 2201.3862001895905,
+      "end_time": 2211.386061191559,
+      "npy_file": "00194.npy"
+    },
+    {
+      "trial_key": "00195",
+      "stimulus_id": 178,
+      "modality": "video",
+      "start_time": 2211.386061191559,
+      "end_time": 2221.4025802612305,
+      "npy_file": "00195.npy"
+    },
+    {
+      "trial_key": "00196",
+      "stimulus_id": 179,
+      "modality": "video",
+      "start_time": 2221.4025802612305,
+      "end_time": 2236.4190402030945,
+      "npy_file": "00196.npy"
+    },
+    {
+      "trial_key": "00197",
+      "stimulus_id": 180,
+      "modality": "video",
+      "start_time": 2236.4190402030945,
+      "end_time": 2251.4355070590973,
+      "npy_file": "00197.npy"
+    },
+    {
+      "trial_key": "00198",
+      "stimulus_id": 181,
+      "modality": "video",
+      "start_time": 2251.4355070590973,
+      "end_time": 2266.4519572257996,
+      "npy_file": "00198.npy"
+    },
+    {
+      "trial_key": "00199",
+      "stimulus_id": 182,
+      "modality": "video",
+      "start_time": 2266.4519572257996,
+      "end_time": 2281.4850912094116,
+      "npy_file": "00199.npy"
+    },
+    {
+      "trial_key": "00200",
+      "stimulus_id": 183,
+      "modality": "video",
+      "start_time": 2281.4850912094116,
+      "end_time": 2296.5015490055084,
+      "npy_file": "00200.npy"
+    },
+    {
+      "trial_key": "00201",
+      "stimulus_id": 184,
+      "modality": "video",
+      "start_time": 2296.5015490055084,
+      "end_time": 2311.5180060863495,
+      "npy_file": "00201.npy"
+    },
+    {
+      "trial_key": "00202",
+      "stimulus_id": 185,
+      "modality": "video",
+      "start_time": 2311.5180060863495,
+      "end_time": 2326.534465074539,
+      "npy_file": "00202.npy"
+    },
+    {
+      "trial_key": "00203",
+      "stimulus_id": 186,
+      "modality": "video",
+      "start_time": 2326.534465074539,
+      "end_time": 2341.567578315735,
+      "npy_file": "00203.npy"
+    },
+    {
+      "trial_key": "00204",
+      "stimulus_id": 187,
+      "modality": "video",
+      "start_time": 2341.567578315735,
+      "end_time": 2356.5840451717377,
+      "npy_file": "00204.npy"
+    },
+    {
+      "trial_key": "00205",
+      "stimulus_id": 188,
+      "modality": "video",
+      "start_time": 2356.5840451717377,
+      "end_time": 2371.600503206253,
+      "npy_file": "00205.npy"
+    },
+    {
+      "trial_key": "00206",
+      "stimulus_id": 189,
+      "modality": "video",
+      "start_time": 2371.600503206253,
+      "end_time": 2386.616963148117,
+      "npy_file": "00206.npy"
+    },
+    {
+      "trial_key": "00207",
+      "stimulus_id": 190,
+      "modality": "video",
+      "start_time": 2386.616963148117,
+      "end_time": 2401.6334199905396,
+      "npy_file": "00207.npy"
+    },
+    {
+      "trial_key": "00208",
+      "stimulus_id": 191,
+      "modality": "video",
+      "start_time": 2401.6334199905396,
+      "end_time": 2411.6332800388336,
+      "npy_file": "00208.npy"
+    },
+    {
+      "trial_key": "00209",
+      "stimulus_id": 192,
+      "modality": "video",
+      "start_time": 2411.6332800388336,
+      "end_time": 2421.633136987686,
+      "npy_file": "00209.npy"
+    },
+    {
+      "trial_key": "00210",
+      "stimulus_id": 193,
+      "modality": "video",
+      "start_time": 2421.633136987686,
+      "end_time": 2431.6329922676086,
+      "npy_file": "00210.npy"
+    },
+    {
+      "trial_key": "00211",
+      "stimulus_id": 194,
+      "modality": "video",
+      "start_time": 2431.6329922676086,
+      "end_time": 2441.632858991623,
+      "npy_file": "00211.npy"
+    },
+    {
+      "trial_key": "00212",
+      "stimulus_id": 195,
+      "modality": "video",
+      "start_time": 2441.632858991623,
+      "end_time": 2451.6327221393585,
+      "npy_file": "00212.npy"
+    },
+    {
+      "trial_key": "00213",
+      "stimulus_id": 196,
+      "modality": "video",
+      "start_time": 2451.6327221393585,
+      "end_time": 2461.632583141327,
+      "npy_file": "00213.npy"
+    },
+    {
+      "trial_key": "00214",
+      "stimulus_id": 197,
+      "modality": "video",
+      "start_time": 2461.632583141327,
+      "end_time": 2476.6490421295166,
+      "npy_file": "00214.npy"
+    },
+    {
+      "trial_key": "00215",
+      "stimulus_id": 198,
+      "modality": "video",
+      "start_time": 2476.6490421295166,
+      "end_time": 2491.6654970645905,
+      "npy_file": "00215.npy"
+    },
+    {
+      "trial_key": "00216",
+      "stimulus_id": 199,
+      "modality": "video",
+      "start_time": 2491.6654970645905,
+      "end_time": 2506.6819591522217,
+      "npy_file": "00216.npy"
+    },
+    {
+      "trial_key": "00217",
+      "stimulus_id": 200,
+      "modality": "video",
+      "start_time": 2506.6819591522217,
+      "end_time": 2521.698417186737,
+      "npy_file": "00217.npy"
+    },
+    {
+      "trial_key": "00218",
+      "stimulus_id": 201,
+      "modality": "video",
+      "start_time": 2521.698417186737,
+      "end_time": 2531.7149312496185,
+      "npy_file": "00218.npy"
+    },
+    {
+      "trial_key": "00219",
+      "stimulus_id": 202,
+      "modality": "video",
+      "start_time": 2531.7149312496185,
+      "end_time": 2541.7147991657257,
+      "npy_file": "00219.npy"
+    },
+    {
+      "trial_key": "00220",
+      "stimulus_id": 203,
+      "modality": "video",
+      "start_time": 2541.7147991657257,
+      "end_time": 2551.714660167694,
+      "npy_file": "00220.npy"
+    },
+    {
+      "trial_key": "00221",
+      "stimulus_id": 204,
+      "modality": "video",
+      "start_time": 2551.714660167694,
+      "end_time": 2561.714515209198,
+      "npy_file": "00221.npy"
+    },
+    {
+      "trial_key": "00222",
+      "stimulus_id": 205,
+      "modality": "video",
+      "start_time": 2561.714515209198,
+      "end_time": 2571.7143881320953,
+      "npy_file": "00222.npy"
+    },
+    {
+      "trial_key": "00223",
+      "stimulus_id": 206,
+      "modality": "video",
+      "start_time": 2571.7143881320953,
+      "end_time": 2581.714245080948,
+      "npy_file": "00223.npy"
+    },
+    {
+      "trial_key": "00224",
+      "stimulus_id": 41,
+      "modality": "video",
+      "start_time": 2581.714245080948,
+      "end_time": 2591.7141003608704,
+      "npy_file": "00224.npy"
+    },
+    {
+      "trial_key": "00225",
+      "stimulus_id": 42,
+      "modality": "video",
+      "start_time": 2591.7141003608704,
+      "end_time": 2601.7139689922333,
+      "npy_file": "00225.npy"
+    },
+    {
+      "trial_key": "00226",
+      "stimulus_id": 43,
+      "modality": "video",
+      "start_time": 2601.7139689922333,
+      "end_time": 2611.7138311862946,
+      "npy_file": "00226.npy"
+    },
+    {
+      "trial_key": "00227",
+      "stimulus_id": 44,
+      "modality": "video",
+      "start_time": 2611.7138311862946,
+      "end_time": 2621.713695049286,
+      "npy_file": "00227.npy"
+    },
+    {
+      "trial_key": "00228",
+      "stimulus_id": 45,
+      "modality": "video",
+      "start_time": 2621.713695049286,
+      "end_time": 2631.7135560512543,
+      "npy_file": "00228.npy"
+    },
+    {
+      "trial_key": "00229",
+      "stimulus_id": 46,
+      "modality": "video",
+      "start_time": 2631.7135560512543,
+      "end_time": 2641.713413000107,
+      "npy_file": "00229.npy"
+    },
+    {
+      "trial_key": "00230",
+      "stimulus_id": 207,
+      "modality": "video",
+      "start_time": 2641.713413000107,
+      "end_time": 2651.7132790088654,
+      "npy_file": "00230.npy"
+    },
+    {
+      "trial_key": "00231",
+      "stimulus_id": 208,
+      "modality": "video",
+      "start_time": 2651.7132790088654,
+      "end_time": 2661.7131292819977,
+      "npy_file": "00231.npy"
+    },
+    {
+      "trial_key": "00232",
+      "stimulus_id": 209,
+      "modality": "video",
+      "start_time": 2661.7131292819977,
+      "end_time": 2671.7129950523376,
+      "npy_file": "00232.npy"
+    },
+    {
+      "trial_key": "00233",
+      "stimulus_id": 210,
+      "modality": "video",
+      "start_time": 2671.7129950523376,
+      "end_time": 2681.7295231819153,
+      "npy_file": "00233.npy"
+    },
+    {
+      "trial_key": "00234",
+      "stimulus_id": 211,
+      "modality": "video",
+      "start_time": 2681.7295231819153,
+      "end_time": 2691.7293910980225,
+      "npy_file": "00234.npy"
+    },
+    {
+      "trial_key": "00235",
+      "stimulus_id": 212,
+      "modality": "video",
+      "start_time": 2691.7293910980225,
+      "end_time": 2701.729250192642,
+      "npy_file": "00235.npy"
+    },
+    {
+      "trial_key": "00236",
+      "stimulus_id": 213,
+      "modality": "video",
+      "start_time": 2701.729250192642,
+      "end_time": 2716.74569940567,
+      "npy_file": "00236.npy"
+    },
+    {
+      "trial_key": "00237",
+      "stimulus_id": 214,
+      "modality": "video",
+      "start_time": 2716.74569940567,
+      "end_time": 2731.7621641159058,
+      "npy_file": "00237.npy"
+    },
+    {
+      "trial_key": "00238",
+      "stimulus_id": 215,
+      "modality": "video",
+      "start_time": 2731.7621641159058,
+      "end_time": 2746.7952921390533,
+      "npy_file": "00238.npy"
+    },
+    {
+      "trial_key": "00239",
+      "stimulus_id": 216,
+      "modality": "video",
+      "start_time": 2746.7952921390533,
+      "end_time": 2761.811747074127,
+      "npy_file": "00239.npy"
+    },
+    {
+      "trial_key": "00240",
+      "stimulus_id": 217,
+      "modality": "video",
+      "start_time": 2761.811747074127,
+      "end_time": 2771.828279018402,
+      "npy_file": "00240.npy"
+    },
+    {
+      "trial_key": "00241",
+      "stimulus_id": 218,
+      "modality": "video",
+      "start_time": 2771.828279018402,
+      "end_time": 2781.8281371593475,
+      "npy_file": "00241.npy"
+    },
+    {
+      "trial_key": "00242",
+      "stimulus_id": 219,
+      "modality": "video",
+      "start_time": 2781.8281371593475,
+      "end_time": 2791.827998161316,
+      "npy_file": "00242.npy"
+    },
+    {
+      "trial_key": "00243",
+      "stimulus_id": 220,
+      "modality": "video",
+      "start_time": 2791.827998161316,
+      "end_time": 2801.8278620243073,
+      "npy_file": "00243.npy"
+    },
+    {
+      "trial_key": "00244",
+      "stimulus_id": 221,
+      "modality": "video",
+      "start_time": 2801.8278620243073,
+      "end_time": 2811.8277220726013,
+      "npy_file": "00244.npy"
+    },
+    {
+      "trial_key": "00245",
+      "stimulus_id": 222,
+      "modality": "video",
+      "start_time": 2811.8277220726013,
+      "end_time": 2821.8275849819183,
+      "npy_file": "00245.npy"
+    },
+    {
+      "trial_key": "00246",
+      "stimulus_id": 223,
+      "modality": "video",
+      "start_time": 2821.8275849819183,
+      "end_time": 2831.8274421691895,
+      "npy_file": "00246.npy"
+    },
+    {
+      "trial_key": "00247",
+      "stimulus_id": 224,
+      "modality": "video",
+      "start_time": 2831.8274421691895,
+      "end_time": 2841.827303171158,
+      "npy_file": "00247.npy"
+    },
+    {
+      "trial_key": "00248",
+      "stimulus_id": 225,
+      "modality": "video",
+      "start_time": 2841.827303171158,
+      "end_time": 2851.827171087265,
+      "npy_file": "00248.npy"
+    },
+    {
+      "trial_key": "00249",
+      "stimulus_id": 226,
+      "modality": "video",
+      "start_time": 2851.827171087265,
+      "end_time": 2861.8270320892334,
+      "npy_file": "00249.npy"
+    },
+    {
+      "trial_key": "00250",
+      "stimulus_id": 227,
+      "modality": "video",
+      "start_time": 2861.8270320892334,
+      "end_time": 2871.8268921375275,
+      "npy_file": "00250.npy"
+    },
+    {
+      "trial_key": "00251",
+      "stimulus_id": 228,
+      "modality": "video",
+      "start_time": 2871.8268921375275,
+      "end_time": 2881.8267571926117,
+      "npy_file": "00251.npy"
+    },
+    {
+      "trial_key": "00252",
+      "stimulus_id": 229,
+      "modality": "video",
+      "start_time": 2881.8267571926117,
+      "end_time": 2896.8432111740112,
+      "npy_file": "00252.npy"
+    },
+    {
+      "trial_key": "00253",
+      "stimulus_id": 230,
+      "modality": "video",
+      "start_time": 2896.8432111740112,
+      "end_time": 2911.8596692085266,
+      "npy_file": "00253.npy"
+    },
+    {
+      "trial_key": "00254",
+      "stimulus_id": 231,
+      "modality": "video",
+      "start_time": 2911.8596692085266,
+      "end_time": 2926.8761270046234,
+      "npy_file": "00254.npy"
+    },
+    {
+      "trial_key": "00255",
+      "stimulus_id": 232,
+      "modality": "video",
+      "start_time": 2926.8761270046234,
+      "end_time": 2941.8925931453705,
+      "npy_file": "00255.npy"
+    },
+    {
+      "trial_key": "00256",
+      "stimulus_id": 233,
+      "modality": "video",
+      "start_time": 2941.8925931453705,
+      "end_time": 2951.8924481868744,
+      "npy_file": "00256.npy"
+    },
+    {
+      "trial_key": "00257",
+      "stimulus_id": 234,
+      "modality": "video",
+      "start_time": 2951.8924481868744,
+      "end_time": 2961.892310142517,
+      "npy_file": "00257.npy"
+    },
+    {
+      "trial_key": "00258",
+      "stimulus_id": 235,
+      "modality": "video",
+      "start_time": 2961.892310142517,
+      "end_time": 2971.908842086792,
+      "npy_file": "00258.npy"
+    },
+    {
+      "trial_key": "00259",
+      "stimulus_id": 236,
+      "modality": "video",
+      "start_time": 2971.908842086792,
+      "end_time": 2981.908702135086,
+      "npy_file": "00259.npy"
+    },
+    {
+      "trial_key": "00260",
+      "stimulus_id": 237,
+      "modality": "video",
+      "start_time": 2981.908702135086,
+      "end_time": 2991.90856218338,
+      "npy_file": "00260.npy"
+    },
+    {
+      "trial_key": "00261",
+      "stimulus_id": 238,
+      "modality": "video",
+      "start_time": 2991.90856218338,
+      "end_time": 3001.9084219932556,
+      "npy_file": "00261.npy"
+    },
+    {
+      "trial_key": "00262",
+      "stimulus_id": 239,
+      "modality": "video",
+      "start_time": 3001.9084219932556,
+      "end_time": 3016.9248871803284,
+      "npy_file": "00262.npy"
+    },
+    {
+      "trial_key": "00263",
+      "stimulus_id": 240,
+      "modality": "video",
+      "start_time": 3016.9248871803284,
+      "end_time": 3031.941344976425,
+      "npy_file": "00263.npy"
+    },
+    {
+      "trial_key": "00264",
+      "stimulus_id": 241,
+      "modality": "video",
+      "start_time": 3031.941344976425,
+      "end_time": 3046.9577922821045,
+      "npy_file": "00264.npy"
+    },
+    {
+      "trial_key": "00265",
+      "stimulus_id": 242,
+      "modality": "video",
+      "start_time": 3046.9577922821045,
+      "end_time": 3061.9742600917816,
+      "npy_file": "00265.npy"
+    },
+    {
+      "trial_key": "00266",
+      "stimulus_id": 243,
+      "modality": "video",
+      "start_time": 3061.9742600917816,
+      "end_time": 3071.9741220474243,
+      "npy_file": "00266.npy"
+    },
+    {
+      "trial_key": "00267",
+      "stimulus_id": 244,
+      "modality": "video",
+      "start_time": 3071.9741220474243,
+      "end_time": 3081.9739861488342,
+      "npy_file": "00267.npy"
+    },
+    {
+      "trial_key": "00268",
+      "stimulus_id": 245,
+      "modality": "video",
+      "start_time": 3081.9739861488342,
+      "end_time": 3091.973844051361,
+      "npy_file": "00268.npy"
+    },
+    {
+      "trial_key": "00269",
+      "stimulus_id": 246,
+      "modality": "video",
+      "start_time": 3091.973844051361,
+      "end_time": 3101.9737050533295,
+      "npy_file": "00269.npy"
+    },
+    {
+      "trial_key": "00270",
+      "stimulus_id": 247,
+      "modality": "video",
+      "start_time": 3101.9737050533295,
+      "end_time": 3111.9735622406006,
+      "npy_file": "00270.npy"
+    },
+    {
+      "trial_key": "00271",
+      "stimulus_id": 248,
+      "modality": "video",
+      "start_time": 3111.9735622406006,
+      "end_time": 3121.9734320640564,
+      "npy_file": "00271.npy"
+    },
+    {
+      "trial_key": "00272",
+      "stimulus_id": 159,
+      "modality": "video",
+      "start_time": 3121.9734320640564,
+      "end_time": 3136.9898812770844,
+      "npy_file": "00272.npy"
+    },
+    {
+      "trial_key": "00273",
+      "stimulus_id": 160,
+      "modality": "video",
+      "start_time": 3136.9898812770844,
+      "end_time": 3152.0230135917664,
+      "npy_file": "00273.npy"
+    },
+    {
+      "trial_key": "00274",
+      "stimulus_id": 161,
+      "modality": "video",
+      "start_time": 3152.0230135917664,
+      "end_time": 3167.039466381073,
+      "npy_file": "00274.npy"
+    },
+    {
+      "trial_key": "00275",
+      "stimulus_id": 162,
+      "modality": "video",
+      "start_time": 3167.039466381073,
+      "end_time": 3182.05593419075,
+      "npy_file": "00275.npy"
+    },
+    {
+      "trial_key": "00276",
+      "stimulus_id": 187,
+      "modality": "video",
+      "start_time": 3182.05593419075,
+      "end_time": 3197.0723943710327,
+      "npy_file": "00276.npy"
+    },
+    {
+      "trial_key": "00277",
+      "stimulus_id": 188,
+      "modality": "video",
+      "start_time": 3197.0723943710327,
+      "end_time": 3212.0888550281525,
+      "npy_file": "00277.npy"
+    },
+    {
+      "trial_key": "00278",
+      "stimulus_id": 189,
+      "modality": "video",
+      "start_time": 3212.0888550281525,
+      "end_time": 3227.1053013801575,
+      "npy_file": "00278.npy"
+    },
+    {
+      "trial_key": "00279",
+      "stimulus_id": 190,
+      "modality": "video",
+      "start_time": 3227.1053013801575,
+      "end_time": 3242.1217670440674,
+      "npy_file": "00279.npy"
+    },
+    {
+      "trial_key": "00280",
+      "stimulus_id": 249,
+      "modality": "video",
+      "start_time": 3242.1217670440674,
+      "end_time": 3252.1216311454773,
+      "npy_file": "00280.npy"
+    },
+    {
+      "trial_key": "00281",
+      "stimulus_id": 250,
+      "modality": "video",
+      "start_time": 3252.1216311454773,
+      "end_time": 3262.1214950084686,
+      "npy_file": "00281.npy"
+    },
+    {
+      "trial_key": "00282",
+      "stimulus_id": 251,
+      "modality": "video",
+      "start_time": 3262.1214950084686,
+      "end_time": 3272.121353149414,
+      "npy_file": "00282.npy"
+    },
+    {
+      "trial_key": "00283",
+      "stimulus_id": 252,
+      "modality": "video",
+      "start_time": 3272.121353149414,
+      "end_time": 3282.1212084293365,
+      "npy_file": "00283.npy"
+    },
+    {
+      "trial_key": "00284",
+      "stimulus_id": 253,
+      "modality": "video",
+      "start_time": 3282.1212084293365,
+      "end_time": 3292.121080160141,
+      "npy_file": "00284.npy"
+    },
+    {
+      "trial_key": "00285",
+      "stimulus_id": 254,
+      "modality": "video",
+      "start_time": 3292.121080160141,
+      "end_time": 3302.120943069458,
+      "npy_file": "00285.npy"
+    },
+    {
+      "trial_key": "00286",
+      "stimulus_id": 61,
+      "modality": "video",
+      "start_time": 3302.120943069458,
+      "end_time": 3317.1374011039734,
+      "npy_file": "00286.npy"
+    },
+    {
+      "trial_key": "00287",
+      "stimulus_id": 62,
+      "modality": "video",
+      "start_time": 3317.1374011039734,
+      "end_time": 3332.1538610458374,
+      "npy_file": "00287.npy"
+    },
+    {
+      "trial_key": "00288",
+      "stimulus_id": 63,
+      "modality": "video",
+      "start_time": 3332.1538610458374,
+      "end_time": 3347.1869792938232,
+      "npy_file": "00288.npy"
+    },
+    {
+      "trial_key": "00289",
+      "stimulus_id": 64,
+      "modality": "video",
+      "start_time": 3347.1869792938232,
+      "end_time": 3362.2034480571747,
+      "npy_file": "00289.npy"
+    },
+    {
+      "trial_key": "00290",
+      "stimulus_id": 197,
+      "modality": "video",
+      "start_time": 3362.2034480571747,
+      "end_time": 3377.2365741729736,
+      "npy_file": "00290.npy"
+    },
+    {
+      "trial_key": "00291",
+      "stimulus_id": 198,
+      "modality": "video",
+      "start_time": 3377.2365741729736,
+      "end_time": 3392.2696940898895,
+      "npy_file": "00291.npy"
+    },
+    {
+      "trial_key": "00292",
+      "stimulus_id": 199,
+      "modality": "video",
+      "start_time": 3392.2696940898895,
+      "end_time": 3407.2861580848694,
+      "npy_file": "00292.npy"
+    },
+    {
+      "trial_key": "00293",
+      "stimulus_id": 200,
+      "modality": "video",
+      "start_time": 3407.2861580848694,
+      "end_time": 3422.3026180267334,
+      "npy_file": "00293.npy"
+    },
+    {
+      "trial_key": "00294",
+      "stimulus_id": 229,
+      "modality": "video",
+      "start_time": 3422.3026180267334,
+      "end_time": 3437.319076061249,
+      "npy_file": "00294.npy"
+    },
+    {
+      "trial_key": "00295",
+      "stimulus_id": 230,
+      "modality": "video",
+      "start_time": 3437.319076061249,
+      "end_time": 3452.3355309963226,
+      "npy_file": "00295.npy"
+    },
+    {
+      "trial_key": "00296",
+      "stimulus_id": 231,
+      "modality": "video",
+      "start_time": 3452.3355309963226,
+      "end_time": 3467.351983308792,
+      "npy_file": "00296.npy"
+    },
+    {
+      "trial_key": "00297",
+      "stimulus_id": 232,
+      "modality": "video",
+      "start_time": 3467.351983308792,
+      "end_time": 3482.368453979492,
+      "npy_file": "00297.npy"
+    },
+    {
+      "trial_key": "00298",
+      "stimulus_id": 255,
+      "modality": "video",
+      "start_time": 3482.368453979492,
+      "end_time": 3492.3683140277863,
+      "npy_file": "00298.npy"
+    },
+    {
+      "trial_key": "00299",
+      "stimulus_id": 256,
+      "modality": "video",
+      "start_time": 3492.3683140277863,
+      "end_time": 3502.368175983429,
+      "npy_file": "00299.npy"
+    },
+    {
+      "trial_key": "00300",
+      "stimulus_id": 257,
+      "modality": "video",
+      "start_time": 3502.368175983429,
+      "end_time": 3512.3847391605377,
+      "npy_file": "00300.npy"
+    },
+    {
+      "trial_key": "00301",
+      "stimulus_id": 258,
+      "modality": "video",
+      "start_time": 3512.3847391605377,
+      "end_time": 3522.3846430778503,
+      "npy_file": "00301.npy"
+    },
+    {
+      "trial_key": "00302",
+      "stimulus_id": 259,
+      "modality": "video",
+      "start_time": 3522.3846430778503,
+      "end_time": 3532.38454413414,
+      "npy_file": "00302.npy"
+    },
+    {
+      "trial_key": "00303",
+      "stimulus_id": 260,
+      "modality": "video",
+      "start_time": 3532.38454413414,
+      "end_time": 3542.38445520401,
+      "npy_file": "00303.npy"
+    },
+    {
+      "trial_key": "00304",
+      "stimulus_id": 261,
+      "modality": "video",
+      "start_time": 3542.38445520401,
+      "end_time": 3552.384360074997,
+      "npy_file": "00304.npy"
+    },
+    {
+      "trial_key": "00305",
+      "stimulus_id": 262,
+      "modality": "video",
+      "start_time": 3552.384360074997,
+      "end_time": 3562.384251356125,
+      "npy_file": "00305.npy"
+    },
+    {
+      "trial_key": "00306",
+      "stimulus_id": 263,
+      "modality": "video",
+      "start_time": 3562.384251356125,
+      "end_time": 3572.3841671943665,
+      "npy_file": "00306.npy"
+    },
+    {
+      "trial_key": "00307",
+      "stimulus_id": 264,
+      "modality": "video",
+      "start_time": 3572.3841671943665,
+      "end_time": 3582.3840692043304,
+      "npy_file": "00307.npy"
+    },
+    {
+      "trial_key": "00308",
+      "stimulus_id": 265,
+      "modality": "video",
+      "start_time": 3582.3840692043304,
+      "end_time": 3592.3839700222015,
+      "npy_file": "00308.npy"
+    },
+    {
+      "trial_key": "00309",
+      "stimulus_id": 266,
+      "modality": "video",
+      "start_time": 3592.3839700222015,
+      "end_time": 3602.383860349655,
+      "npy_file": "00309.npy"
+    },
+    {
+      "trial_key": "00310",
+      "stimulus_id": 41,
+      "modality": "video",
+      "start_time": 3602.383860349655,
+      "end_time": 3612.383768081665,
+      "npy_file": "00310.npy"
+    },
+    {
+      "trial_key": "00311",
+      "stimulus_id": 42,
+      "modality": "video",
+      "start_time": 3612.383768081665,
+      "end_time": 3622.3836719989777,
+      "npy_file": "00311.npy"
+    },
+    {
+      "trial_key": "00312",
+      "stimulus_id": 43,
+      "modality": "video",
+      "start_time": 3622.3836719989777,
+      "end_time": 3632.383568048477,
+      "npy_file": "00312.npy"
+    },
+    {
+      "trial_key": "00313",
+      "stimulus_id": 44,
+      "modality": "video",
+      "start_time": 3632.383568048477,
+      "end_time": 3642.400134086609,
+      "npy_file": "00313.npy"
+    },
+    {
+      "trial_key": "00314",
+      "stimulus_id": 45,
+      "modality": "video",
+      "start_time": 3642.400134086609,
+      "end_time": 3652.400037050247,
+      "npy_file": "00314.npy"
+    },
+    {
+      "trial_key": "00315",
+      "stimulus_id": 46,
+      "modality": "video",
+      "start_time": 3652.400037050247,
+      "end_time": 3662.3999330997467,
+      "npy_file": "00315.npy"
+    },
+    {
+      "trial_key": "00316",
+      "stimulus_id": 173,
+      "modality": "video",
+      "start_time": 3662.3999330997467,
+      "end_time": 3672.399828195572,
+      "npy_file": "00316.npy"
+    },
+    {
+      "trial_key": "00317",
+      "stimulus_id": 174,
+      "modality": "video",
+      "start_time": 3672.399828195572,
+      "end_time": 3682.39972615242,
+      "npy_file": "00317.npy"
+    },
+    {
+      "trial_key": "00318",
+      "stimulus_id": 175,
+      "modality": "video",
+      "start_time": 3682.39972615242,
+      "end_time": 3692.3996250629425,
+      "npy_file": "00318.npy"
+    },
+    {
+      "trial_key": "00319",
+      "stimulus_id": 176,
+      "modality": "video",
+      "start_time": 3692.3996250629425,
+      "end_time": 3702.3995230197906,
+      "npy_file": "00319.npy"
+    },
+    {
+      "trial_key": "00320",
+      "stimulus_id": 177,
+      "modality": "video",
+      "start_time": 3702.3995230197906,
+      "end_time": 3712.399411201477,
+      "npy_file": "00320.npy"
+    },
+    {
+      "trial_key": "00321",
+      "stimulus_id": 178,
+      "modality": "video",
+      "start_time": 3712.399411201477,
+      "end_time": 3722.399309158325,
+      "npy_file": "00321.npy"
+    },
+    {
+      "trial_key": "00322",
+      "stimulus_id": 57,
+      "modality": "video",
+      "start_time": 3722.399309158325,
+      "end_time": 3737.4158182144165,
+      "npy_file": "00322.npy"
+    },
+    {
+      "trial_key": "00323",
+      "stimulus_id": 58,
+      "modality": "video",
+      "start_time": 3737.4158182144165,
+      "end_time": 3752.4323241710663,
+      "npy_file": "00323.npy"
+    },
+    {
+      "trial_key": "00324",
+      "stimulus_id": 59,
+      "modality": "video",
+      "start_time": 3752.4323241710663,
+      "end_time": 3767.448825120926,
+      "npy_file": "00324.npy"
+    },
+    {
+      "trial_key": "00325",
+      "stimulus_id": 60,
+      "modality": "video",
+      "start_time": 3767.448825120926,
+      "end_time": 3782.4653222560883,
+      "npy_file": "00325.npy"
+    },
+    {
+      "trial_key": "00326",
+      "stimulus_id": 183,
+      "modality": "video",
+      "start_time": 3782.4653222560883,
+      "end_time": 3797.4818320274353,
+      "npy_file": "00326.npy"
+    },
+    {
+      "trial_key": "00327",
+      "stimulus_id": 184,
+      "modality": "video",
+      "start_time": 3797.4818320274353,
+      "end_time": 3812.4983320236206,
+      "npy_file": "00327.npy"
+    },
+    {
+      "trial_key": "00328",
+      "stimulus_id": 185,
+      "modality": "video",
+      "start_time": 3812.4983320236206,
+      "end_time": 3827.5148379802704,
+      "npy_file": "00328.npy"
+    },
+    {
+      "trial_key": "00329",
+      "stimulus_id": 186,
+      "modality": "video",
+      "start_time": 3827.5148379802704,
+      "end_time": 3842.531341075897,
+      "npy_file": "00329.npy"
+    },
+    {
+      "trial_key": "00330",
+      "stimulus_id": 89,
+      "modality": "video",
+      "start_time": 3842.531341075897,
+      "end_time": 3852.531229019165,
+      "npy_file": "00330.npy"
+    },
+    {
+      "trial_key": "00331",
+      "stimulus_id": 90,
+      "modality": "video",
+      "start_time": 3852.531229019165,
+      "end_time": 3862.5311131477356,
+      "npy_file": "00331.npy"
+    },
+    {
+      "trial_key": "00332",
+      "stimulus_id": 91,
+      "modality": "video",
+      "start_time": 3862.5311131477356,
+      "end_time": 3872.5310051441193,
+      "npy_file": "00332.npy"
+    },
+    {
+      "trial_key": "00333",
+      "stimulus_id": 92,
+      "modality": "video",
+      "start_time": 3872.5310051441193,
+      "end_time": 3882.5308814048767,
+      "npy_file": "00333.npy"
+    },
+    {
+      "trial_key": "00334",
+      "stimulus_id": 93,
+      "modality": "video",
+      "start_time": 3882.5308814048767,
+      "end_time": 3892.5307791233063,
+      "npy_file": "00334.npy"
+    },
+    {
+      "trial_key": "00335",
+      "stimulus_id": 94,
+      "modality": "video",
+      "start_time": 3892.5307791233063,
+      "end_time": 3902.530662059784,
+      "npy_file": "00335.npy"
+    },
+    {
+      "trial_key": "00336",
+      "stimulus_id": 179,
+      "modality": "video",
+      "start_time": 3902.530662059784,
+      "end_time": 3917.5638270378113,
+      "npy_file": "00336.npy"
+    },
+    {
+      "trial_key": "00337",
+      "stimulus_id": 180,
+      "modality": "video",
+      "start_time": 3917.5638270378113,
+      "end_time": 3932.580321073532,
+      "npy_file": "00337.npy"
+    },
+    {
+      "trial_key": "00338",
+      "stimulus_id": 181,
+      "modality": "video",
+      "start_time": 3932.580321073532,
+      "end_time": 3947.5968160629272,
+      "npy_file": "00338.npy"
+    },
+    {
+      "trial_key": "00339",
+      "stimulus_id": 182,
+      "modality": "video",
+      "start_time": 3947.5968160629272,
+      "end_time": 3962.629974126816,
+      "npy_file": "00339.npy"
+    },
+    {
+      "trial_key": "00340",
+      "stimulus_id": 31,
+      "modality": "video",
+      "start_time": 3962.629974126816,
+      "end_time": 3977.6464681625366,
+      "npy_file": "00340.npy"
+    },
+    {
+      "trial_key": "00341",
+      "stimulus_id": 32,
+      "modality": "video",
+      "start_time": 3977.6464681625366,
+      "end_time": 3992.679613351822,
+      "npy_file": "00341.npy"
+    },
+    {
+      "trial_key": "00342",
+      "stimulus_id": 33,
+      "modality": "video",
+      "start_time": 3992.679613351822,
+      "end_time": 4007.696104288101,
+      "npy_file": "00342.npy"
+    },
+    {
+      "trial_key": "00343",
+      "stimulus_id": 34,
+      "modality": "video",
+      "start_time": 4007.696104288101,
+      "end_time": 4022.7126021385193,
+      "npy_file": "00343.npy"
+    },
+    {
+      "trial_key": "00344",
+      "stimulus_id": 267,
+      "modality": "video",
+      "start_time": 4022.7126021385193,
+      "end_time": 4032.7124881744385,
+      "npy_file": "00344.npy"
+    },
+    {
+      "trial_key": "00345",
+      "stimulus_id": 268,
+      "modality": "video",
+      "start_time": 4032.7124881744385,
+      "end_time": 4042.712366104126,
+      "npy_file": "00345.npy"
+    },
+    {
+      "trial_key": "00346",
+      "stimulus_id": 269,
+      "modality": "video",
+      "start_time": 4042.712366104126,
+      "end_time": 4052.7122461795807,
+      "npy_file": "00346.npy"
+    },
+    {
+      "trial_key": "00347",
+      "stimulus_id": 270,
+      "modality": "video",
+      "start_time": 4052.7122461795807,
+      "end_time": 4062.7121319770813,
+      "npy_file": "00347.npy"
+    },
+    {
+      "trial_key": "00348",
+      "stimulus_id": 271,
+      "modality": "video",
+      "start_time": 4062.7121319770813,
+      "end_time": 4072.7120130062103,
+      "npy_file": "00348.npy"
+    },
+    {
+      "trial_key": "00349",
+      "stimulus_id": 272,
+      "modality": "video",
+      "start_time": 4072.7120130062103,
+      "end_time": 4082.7118961811066,
+      "npy_file": "00349.npy"
+    },
+    {
+      "trial_key": "00350",
+      "stimulus_id": 201,
+      "modality": "video",
+      "start_time": 4082.7118961811066,
+      "end_time": 4092.7284440994263,
+      "npy_file": "00350.npy"
+    },
+    {
+      "trial_key": "00351",
+      "stimulus_id": 202,
+      "modality": "video",
+      "start_time": 4092.7284440994263,
+      "end_time": 4102.728317022324,
+      "npy_file": "00351.npy"
+    },
+    {
+      "trial_key": "00352",
+      "stimulus_id": 203,
+      "modality": "video",
+      "start_time": 4102.728317022324,
+      "end_time": 4112.728203058243,
+      "npy_file": "00352.npy"
+    },
+    {
+      "trial_key": "00353",
+      "stimulus_id": 204,
+      "modality": "video",
+      "start_time": 4112.728203058243,
+      "end_time": 4122.728082180023,
+      "npy_file": "00353.npy"
+    },
+    {
+      "trial_key": "00354",
+      "stimulus_id": 205,
+      "modality": "video",
+      "start_time": 4122.728082180023,
+      "end_time": 4132.727957010269,
+      "npy_file": "00354.npy"
+    },
+    {
+      "trial_key": "00355",
+      "stimulus_id": 206,
+      "modality": "video",
+      "start_time": 4132.727957010269,
+      "end_time": 4142.7278389930725,
+      "npy_file": "00355.npy"
+    },
+    {
+      "trial_key": "00356",
+      "stimulus_id": 41,
+      "modality": "video",
+      "start_time": 4142.7278389930725,
+      "end_time": 4152.727717161179,
+      "npy_file": "00356.npy"
+    },
+    {
+      "trial_key": "00357",
+      "stimulus_id": 42,
+      "modality": "video",
+      "start_time": 4152.727717161179,
+      "end_time": 4162.74426317215,
+      "npy_file": "00357.npy"
+    },
+    {
+      "trial_key": "00358",
+      "stimulus_id": 43,
+      "modality": "video",
+      "start_time": 4162.74426317215,
+      "end_time": 4172.744133234024,
+      "npy_file": "00358.npy"
+    },
+    {
+      "trial_key": "00359",
+      "stimulus_id": 44,
+      "modality": "video",
+      "start_time": 4172.744133234024,
+      "end_time": 4182.744022130966,
+      "npy_file": "00359.npy"
+    },
+    {
+      "trial_key": "00360",
+      "stimulus_id": 45,
+      "modality": "video",
+      "start_time": 4182.744022130966,
+      "end_time": 4192.760557413101,
+      "npy_file": "00360.npy"
+    },
+    {
+      "trial_key": "00361",
+      "stimulus_id": 46,
+      "modality": "video",
+      "start_time": 4192.760557413101,
+      "end_time": 4202.760442018509,
+      "npy_file": "00361.npy"
+    },
+    {
+      "trial_key": "00362",
+      "stimulus_id": 273,
+      "modality": "video",
+      "start_time": 4202.760442018509,
+      "end_time": 4212.760312318802,
+      "npy_file": "00362.npy"
+    },
+    {
+      "trial_key": "00363",
+      "stimulus_id": 274,
+      "modality": "video",
+      "start_time": 4212.760312318802,
+      "end_time": 4222.7601952552795,
+      "npy_file": "00363.npy"
+    },
+    {
+      "trial_key": "00364",
+      "stimulus_id": 275,
+      "modality": "video",
+      "start_time": 4222.7601952552795,
+      "end_time": 4232.776741981506,
+      "npy_file": "00364.npy"
+    },
+    {
+      "trial_key": "00365",
+      "stimulus_id": 276,
+      "modality": "video",
+      "start_time": 4232.776741981506,
+      "end_time": 4242.776620149612,
+      "npy_file": "00365.npy"
+    },
+    {
+      "trial_key": "00366",
+      "stimulus_id": 277,
+      "modality": "video",
+      "start_time": 4242.776620149612,
+      "end_time": 4252.776499032974,
+      "npy_file": "00366.npy"
+    },
+    {
+      "trial_key": "00367",
+      "stimulus_id": 278,
+      "modality": "video",
+      "start_time": 4252.776499032974,
+      "end_time": 4262.776367425919,
+      "npy_file": "00367.npy"
+    },
+    {
+      "trial_key": "00368",
+      "stimulus_id": 111,
+      "modality": "video",
+      "start_time": 4262.776367425919,
+      "end_time": 4277.792853116989,
+      "npy_file": "00368.npy"
+    },
+    {
+      "trial_key": "00369",
+      "stimulus_id": 112,
+      "modality": "video",
+      "start_time": 4277.792853116989,
+      "end_time": 4292.809338092804,
+      "npy_file": "00369.npy"
+    },
+    {
+      "trial_key": "00370",
+      "stimulus_id": 113,
+      "modality": "video",
+      "start_time": 4292.809338092804,
+      "end_time": 4307.825814008713,
+      "npy_file": "00370.npy"
+    },
+    {
+      "trial_key": "00371",
+      "stimulus_id": 114,
+      "modality": "video",
+      "start_time": 4307.825814008713,
+      "end_time": 4322.84229516983,
+      "npy_file": "00371.npy"
+    },
+    {
+      "trial_key": "00372",
+      "stimulus_id": 279,
+      "modality": "video",
+      "start_time": 4322.84229516983,
+      "end_time": 4332.842174053192,
+      "npy_file": "00372.npy"
+    },
+    {
+      "trial_key": "00373",
+      "stimulus_id": 280,
+      "modality": "video",
+      "start_time": 4332.842174053192,
+      "end_time": 4342.842045068741,
+      "npy_file": "00373.npy"
+    },
+    {
+      "trial_key": "00374",
+      "stimulus_id": 281,
+      "modality": "video",
+      "start_time": 4342.842045068741,
+      "end_time": 4352.858585119247,
+      "npy_file": "00374.npy"
+    },
+    {
+      "trial_key": "00375",
+      "stimulus_id": 282,
+      "modality": "video",
+      "start_time": 4352.858585119247,
+      "end_time": 4362.858465194702,
+      "npy_file": "00375.npy"
+    },
+    {
+      "trial_key": "00376",
+      "stimulus_id": 283,
+      "modality": "video",
+      "start_time": 4362.858465194702,
+      "end_time": 4372.858337163925,
+      "npy_file": "00376.npy"
+    },
+    {
+      "trial_key": "00377",
+      "stimulus_id": 284,
+      "modality": "video",
+      "start_time": 4372.858337163925,
+      "end_time": 4382.858211994171,
+      "npy_file": "00377.npy"
+    },
+    {
+      "trial_key": "00378",
+      "stimulus_id": 147,
+      "modality": "video",
+      "start_time": 4382.858211994171,
+      "end_time": 4392.85808801651,
+      "npy_file": "00378.npy"
+    },
+    {
+      "trial_key": "00379",
+      "stimulus_id": 148,
+      "modality": "video",
+      "start_time": 4392.85808801651,
+      "end_time": 4402.857961177826,
+      "npy_file": "00379.npy"
+    },
+    {
+      "trial_key": "00380",
+      "stimulus_id": 149,
+      "modality": "video",
+      "start_time": 4402.857961177826,
+      "end_time": 4412.857834100723,
+      "npy_file": "00380.npy"
+    },
+    {
+      "trial_key": "00381",
+      "stimulus_id": 150,
+      "modality": "video",
+      "start_time": 4412.857834100723,
+      "end_time": 4422.857705116272,
+      "npy_file": "00381.npy"
+    },
+    {
+      "trial_key": "00382",
+      "stimulus_id": 151,
+      "modality": "video",
+      "start_time": 4422.857705116272,
+      "end_time": 4432.857577085495,
+      "npy_file": "00382.npy"
+    },
+    {
+      "trial_key": "00383",
+      "stimulus_id": 152,
+      "modality": "video",
+      "start_time": 4432.857577085495,
+      "end_time": 4442.85745716095,
+      "npy_file": "00383.npy"
+    },
+    {
+      "trial_key": "00384",
+      "stimulus_id": 71,
+      "modality": "video",
+      "start_time": 4442.85745716095,
+      "end_time": 4452.857318401337,
+      "npy_file": "00384.npy"
+    },
+    {
+      "trial_key": "00385",
+      "stimulus_id": 72,
+      "modality": "video",
+      "start_time": 4452.857318401337,
+      "end_time": 4462.857196092606,
+      "npy_file": "00385.npy"
+    },
+    {
+      "trial_key": "00386",
+      "stimulus_id": 73,
+      "modality": "video",
+      "start_time": 4462.857196092606,
+      "end_time": 4472.857074022293,
+      "npy_file": "00386.npy"
+    },
+    {
+      "trial_key": "00387",
+      "stimulus_id": 74,
+      "modality": "video",
+      "start_time": 4472.857074022293,
+      "end_time": 4482.8569440841675,
+      "npy_file": "00387.npy"
+    },
+    {
+      "trial_key": "00388",
+      "stimulus_id": 75,
+      "modality": "video",
+      "start_time": 4482.8569440841675,
+      "end_time": 4492.856810331345,
+      "npy_file": "00388.npy"
+    },
+    {
+      "trial_key": "00389",
+      "stimulus_id": 76,
+      "modality": "video",
+      "start_time": 4492.856810331345,
+      "end_time": 4502.856695175171,
+      "npy_file": "00389.npy"
+    },
+    {
+      "trial_key": "00390",
+      "stimulus_id": 23,
+      "modality": "video",
+      "start_time": 4502.856695175171,
+      "end_time": 4517.889835119247,
+      "npy_file": "00390.npy"
+    },
+    {
+      "trial_key": "00391",
+      "stimulus_id": 24,
+      "modality": "video",
+      "start_time": 4517.889835119247,
+      "end_time": 4532.922975063324,
+      "npy_file": "00391.npy"
+    },
+    {
+      "trial_key": "00392",
+      "stimulus_id": 25,
+      "modality": "video",
+      "start_time": 4532.922975063324,
+      "end_time": 4547.939449071884,
+      "npy_file": "00392.npy"
+    },
+    {
+      "trial_key": "00393",
+      "stimulus_id": 26,
+      "modality": "video",
+      "start_time": 4547.939449071884,
+      "end_time": 4562.955926179886,
+      "npy_file": "00393.npy"
+    },
+    {
+      "trial_key": "00394",
+      "stimulus_id": 285,
+      "modality": "video",
+      "start_time": 4562.955926179886,
+      "end_time": 4572.9558000564575,
+      "npy_file": "00394.npy"
+    },
+    {
+      "trial_key": "00395",
+      "stimulus_id": 286,
+      "modality": "video",
+      "start_time": 4572.9558000564575,
+      "end_time": 4582.955662250519,
+      "npy_file": "00395.npy"
+    },
+    {
+      "trial_key": "00396",
+      "stimulus_id": 287,
+      "modality": "video",
+      "start_time": 4582.955662250519,
+      "end_time": 4592.955543041229,
+      "npy_file": "00396.npy"
+    },
+    {
+      "trial_key": "00397",
+      "stimulus_id": 288,
+      "modality": "video",
+      "start_time": 4592.955543041229,
+      "end_time": 4602.955406427383,
+      "npy_file": "00397.npy"
+    },
+    {
+      "trial_key": "00398",
+      "stimulus_id": 289,
+      "modality": "video",
+      "start_time": 4602.955406427383,
+      "end_time": 4612.955290079117,
+      "npy_file": "00398.npy"
+    },
+    {
+      "trial_key": "00399",
+      "stimulus_id": 290,
+      "modality": "video",
+      "start_time": 4612.955290079117,
+      "end_time": 4622.95516204834,
+      "npy_file": "00399.npy"
+    },
+    {
+      "trial_key": "00400",
+      "stimulus_id": 291,
+      "modality": "video",
+      "start_time": 4622.95516204834,
+      "end_time": 4632.955032110214,
+      "npy_file": "00400.npy"
+    },
+    {
+      "trial_key": "00401",
+      "stimulus_id": 292,
+      "modality": "video",
+      "start_time": 4632.955032110214,
+      "end_time": 4642.954902172089,
+      "npy_file": "00401.npy"
+    },
+    {
+      "trial_key": "00402",
+      "stimulus_id": 293,
+      "modality": "video",
+      "start_time": 4642.954902172089,
+      "end_time": 4652.9547662734985,
+      "npy_file": "00402.npy"
+    },
+    {
+      "trial_key": "00403",
+      "stimulus_id": 294,
+      "modality": "video",
+      "start_time": 4652.9547662734985,
+      "end_time": 4662.9546501636505,
+      "npy_file": "00403.npy"
+    },
+    {
+      "trial_key": "00404",
+      "stimulus_id": 295,
+      "modality": "video",
+      "start_time": 4662.9546501636505,
+      "end_time": 4672.954517126083,
+      "npy_file": "00404.npy"
+    },
+    {
+      "trial_key": "00405",
+      "stimulus_id": 296,
+      "modality": "video",
+      "start_time": 4672.954517126083,
+      "end_time": 4682.954392194748,
+      "npy_file": "00405.npy"
+    },
+    {
+      "trial_key": "00406",
+      "stimulus_id": 41,
+      "modality": "video",
+      "start_time": 4682.954392194748,
+      "end_time": 4692.954263210297,
+      "npy_file": "00406.npy"
+    },
+    {
+      "trial_key": "00407",
+      "stimulus_id": 42,
+      "modality": "video",
+      "start_time": 4692.954263210297,
+      "end_time": 4702.9541301727295,
+      "npy_file": "00407.npy"
+    },
+    {
+      "trial_key": "00408",
+      "stimulus_id": 43,
+      "modality": "video",
+      "start_time": 4702.9541301727295,
+      "end_time": 4712.953993320465,
+      "npy_file": "00408.npy"
+    },
+    {
+      "trial_key": "00409",
+      "stimulus_id": 44,
+      "modality": "video",
+      "start_time": 4712.953993320465,
+      "end_time": 4722.953864336014,
+      "npy_file": "00409.npy"
+    },
+    {
+      "trial_key": "00410",
+      "stimulus_id": 45,
+      "modality": "video",
+      "start_time": 4722.953864336014,
+      "end_time": 4732.9537353515625,
+      "npy_file": "00410.npy"
+    },
+    {
+      "trial_key": "00411",
+      "stimulus_id": 46,
+      "modality": "video",
+      "start_time": 4732.9537353515625,
+      "end_time": 4742.953615188599,
+      "npy_file": "00411.npy"
+    },
+    {
+      "trial_key": "00412",
+      "stimulus_id": 65,
+      "modality": "video",
+      "start_time": 4742.953615188599,
+      "end_time": 4752.95347738266,
+      "npy_file": "00412.npy"
+    },
+    {
+      "trial_key": "00413",
+      "stimulus_id": 66,
+      "modality": "video",
+      "start_time": 4752.95347738266,
+      "end_time": 4762.953356027603,
+      "npy_file": "00413.npy"
+    },
+    {
+      "trial_key": "00414",
+      "stimulus_id": 67,
+      "modality": "video",
+      "start_time": 4762.953356027603,
+      "end_time": 4772.953232049942,
+      "npy_file": "00414.npy"
+    },
+    {
+      "trial_key": "00415",
+      "stimulus_id": 68,
+      "modality": "video",
+      "start_time": 4772.953232049942,
+      "end_time": 4782.953097105026,
+      "npy_file": "00415.npy"
+    },
+    {
+      "trial_key": "00416",
+      "stimulus_id": 69,
+      "modality": "video",
+      "start_time": 4782.953097105026,
+      "end_time": 4792.952970981598,
+      "npy_file": "00416.npy"
+    },
+    {
+      "trial_key": "00417",
+      "stimulus_id": 70,
+      "modality": "video",
+      "start_time": 4792.952970981598,
+      "end_time": 4802.952838182449,
+      "npy_file": "00417.npy"
+    },
+    {
+      "trial_key": "00418",
+      "stimulus_id": 297,
+      "modality": "video",
+      "start_time": 4802.952838182449,
+      "end_time": 4812.952714204788,
+      "npy_file": "00418.npy"
+    },
+    {
+      "trial_key": "00419",
+      "stimulus_id": 298,
+      "modality": "video",
+      "start_time": 4812.952714204788,
+      "end_time": 4822.952580213547,
+      "npy_file": "00419.npy"
+    },
+    {
+      "trial_key": "00420",
+      "stimulus_id": 299,
+      "modality": "video",
+      "start_time": 4822.952580213547,
+      "end_time": 4832.952449083328,
+      "npy_file": "00420.npy"
+    },
+    {
+      "trial_key": "00421",
+      "stimulus_id": 300,
+      "modality": "video",
+      "start_time": 4832.952449083328,
+      "end_time": 4842.968978404999,
+      "npy_file": "00421.npy"
+    },
+    {
+      "trial_key": "00422",
+      "stimulus_id": 301,
+      "modality": "video",
+      "start_time": 4842.968978404999,
+      "end_time": 4852.985521316528,
+      "npy_file": "00422.npy"
+    },
+    {
+      "trial_key": "00423",
+      "stimulus_id": 302,
+      "modality": "video",
+      "start_time": 4852.985521316528,
+      "end_time": 4862.985386371613,
+      "npy_file": "00423.npy"
+    },
+    {
+      "trial_key": "00424",
+      "stimulus_id": 51,
+      "modality": "video",
+      "start_time": 4862.985386371613,
+      "end_time": 4872.985268115997,
+      "npy_file": "00424.npy"
+    },
+    {
+      "trial_key": "00425",
+      "stimulus_id": 52,
+      "modality": "video",
+      "start_time": 4872.985268115997,
+      "end_time": 4882.98512840271,
+      "npy_file": "00425.npy"
+    },
+    {
+      "trial_key": "00426",
+      "stimulus_id": 53,
+      "modality": "video",
+      "start_time": 4882.98512840271,
+      "end_time": 4892.984998226166,
+      "npy_file": "00426.npy"
+    },
+    {
+      "trial_key": "00427",
+      "stimulus_id": 54,
+      "modality": "video",
+      "start_time": 4892.984998226166,
+      "end_time": 4902.984876155853,
+      "npy_file": "00427.npy"
+    },
+    {
+      "trial_key": "00428",
+      "stimulus_id": 55,
+      "modality": "video",
+      "start_time": 4902.984876155853,
+      "end_time": 4912.984738349915,
+      "npy_file": "00428.npy"
+    },
+    {
+      "trial_key": "00429",
+      "stimulus_id": 56,
+      "modality": "video",
+      "start_time": 4912.984738349915,
+      "end_time": 4922.9846160411835,
+      "npy_file": "00429.npy"
+    },
+    {
+      "trial_key": "00430",
+      "stimulus_id": 13,
+      "modality": "video",
+      "start_time": 4922.9846160411835,
+      "end_time": 4938.001089096069,
+      "npy_file": "00430.npy"
+    },
+    {
+      "trial_key": "00431",
+      "stimulus_id": 14,
+      "modality": "video",
+      "start_time": 4938.001089096069,
+      "end_time": 4953.034228086472,
+      "npy_file": "00431.npy"
+    },
+    {
+      "trial_key": "00432",
+      "stimulus_id": 15,
+      "modality": "video",
+      "start_time": 4953.034228086472,
+      "end_time": 4968.067363977432,
+      "npy_file": "00432.npy"
+    },
+    {
+      "trial_key": "00433",
+      "stimulus_id": 16,
+      "modality": "video",
+      "start_time": 4968.067363977432,
+      "end_time": 4983.083834171295,
+      "npy_file": "00433.npy"
+    },
+    {
+      "trial_key": "00434",
+      "stimulus_id": 47,
+      "modality": "video",
+      "start_time": 4983.083834171295,
+      "end_time": 4998.1003041267395,
+      "npy_file": "00434.npy"
+    },
+    {
+      "trial_key": "00435",
+      "stimulus_id": 48,
+      "modality": "video",
+      "start_time": 4998.1003041267395,
+      "end_time": 5013.116780996323,
+      "npy_file": "00435.npy"
+    },
+    {
+      "trial_key": "00436",
+      "stimulus_id": 49,
+      "modality": "video",
+      "start_time": 5013.116780996323,
+      "end_time": 5028.133239269257,
+      "npy_file": "00436.npy"
+    },
+    {
+      "trial_key": "00437",
+      "stimulus_id": 50,
+      "modality": "video",
+      "start_time": 5028.133239269257,
+      "end_time": 5043.149722099304,
+      "npy_file": "00437.npy"
+    },
+    {
+      "trial_key": "00438",
+      "stimulus_id": 243,
+      "modality": "video",
+      "start_time": 5043.149722099304,
+      "end_time": 5053.149587154388,
+      "npy_file": "00438.npy"
+    },
+    {
+      "trial_key": "00439",
+      "stimulus_id": 244,
+      "modality": "video",
+      "start_time": 5053.149587154388,
+      "end_time": 5063.14945602417,
+      "npy_file": "00439.npy"
+    },
+    {
+      "trial_key": "00440",
+      "stimulus_id": 245,
+      "modality": "video",
+      "start_time": 5063.14945602417,
+      "end_time": 5073.14932513237,
+      "npy_file": "00440.npy"
+    },
+    {
+      "trial_key": "00441",
+      "stimulus_id": 246,
+      "modality": "video",
+      "start_time": 5073.14932513237,
+      "end_time": 5083.149192094803,
+      "npy_file": "00441.npy"
+    },
+    {
+      "trial_key": "00442",
+      "stimulus_id": 247,
+      "modality": "video",
+      "start_time": 5083.149192094803,
+      "end_time": 5093.149067163467,
+      "npy_file": "00442.npy"
+    },
+    {
+      "trial_key": "00443",
+      "stimulus_id": 248,
+      "modality": "video",
+      "start_time": 5093.149067163467,
+      "end_time": 5103.148935079575,
+      "npy_file": "00443.npy"
+    },
+    {
+      "trial_key": "00444",
+      "stimulus_id": 303,
+      "modality": "video",
+      "start_time": 5103.148935079575,
+      "end_time": 5113.148802995682,
+      "npy_file": "00444.npy"
+    },
+    {
+      "trial_key": "00445",
+      "stimulus_id": 304,
+      "modality": "video",
+      "start_time": 5113.148802995682,
+      "end_time": 5123.148675203323,
+      "npy_file": "00445.npy"
+    },
+    {
+      "trial_key": "00446",
+      "stimulus_id": 305,
+      "modality": "video",
+      "start_time": 5123.148675203323,
+      "end_time": 5133.148545026779,
+      "npy_file": "00446.npy"
+    },
+    {
+      "trial_key": "00447",
+      "stimulus_id": 306,
+      "modality": "video",
+      "start_time": 5133.148545026779,
+      "end_time": 5143.148411989212,
+      "npy_file": "00447.npy"
+    },
+    {
+      "trial_key": "00448",
+      "stimulus_id": 307,
+      "modality": "video",
+      "start_time": 5143.148411989212,
+      "end_time": 5153.148283004761,
+      "npy_file": "00448.npy"
+    },
+    {
+      "trial_key": "00449",
+      "stimulus_id": 308,
+      "modality": "video",
+      "start_time": 5153.148283004761,
+      "end_time": 5163.1481511592865,
+      "npy_file": "00449.npy"
+    },
+    {
+      "trial_key": "00450",
+      "stimulus_id": 41,
+      "modality": "video",
+      "start_time": 5163.1481511592865,
+      "end_time": 5173.148022174835,
+      "npy_file": "00450.npy"
+    },
+    {
+      "trial_key": "00451",
+      "stimulus_id": 42,
+      "modality": "video",
+      "start_time": 5173.148022174835,
+      "end_time": 5183.147891998291,
+      "npy_file": "00451.npy"
+    },
+    {
+      "trial_key": "00452",
+      "stimulus_id": 43,
+      "modality": "video",
+      "start_time": 5183.147891998291,
+      "end_time": 5193.147757053375,
+      "npy_file": "00452.npy"
+    },
+    {
+      "trial_key": "00453",
+      "stimulus_id": 44,
+      "modality": "video",
+      "start_time": 5193.147757053375,
+      "end_time": 5203.147629976273,
+      "npy_file": "00453.npy"
+    },
+    {
+      "trial_key": "00454",
+      "stimulus_id": 45,
+      "modality": "video",
+      "start_time": 5203.147629976273,
+      "end_time": 5213.147497177124,
+      "npy_file": "00454.npy"
+    },
+    {
+      "trial_key": "00455",
+      "stimulus_id": 46,
+      "modality": "video",
+      "start_time": 5213.147497177124,
+      "end_time": 5223.147358417511,
+      "npy_file": "00455.npy"
+    },
+    {
+      "trial_key": "00456",
+      "stimulus_id": 115,
+      "modality": "video",
+      "start_time": 5223.147358417511,
+      "end_time": 5238.16384100914,
+      "npy_file": "00456.npy"
+    },
+    {
+      "trial_key": "00457",
+      "stimulus_id": 116,
+      "modality": "video",
+      "start_time": 5238.16384100914,
+      "end_time": 5253.180309057236,
+      "npy_file": "00457.npy"
+    },
+    {
+      "trial_key": "00458",
+      "stimulus_id": 117,
+      "modality": "video",
+      "start_time": 5253.180309057236,
+      "end_time": 5268.196776151657,
+      "npy_file": "00458.npy"
+    },
+    {
+      "trial_key": "00459",
+      "stimulus_id": 118,
+      "modality": "video",
+      "start_time": 5268.196776151657,
+      "end_time": 5283.213252067566,
+      "npy_file": "00459.npy"
+    },
+    {
+      "trial_key": "00460",
+      "stimulus_id": 309,
+      "modality": "video",
+      "start_time": 5283.213252067566,
+      "end_time": 5293.229774236679,
+      "npy_file": "00460.npy"
+    },
+    {
+      "trial_key": "00461",
+      "stimulus_id": 310,
+      "modality": "video",
+      "start_time": 5293.229774236679,
+      "end_time": 5303.229653120041,
+      "npy_file": "00461.npy"
+    },
+    {
+      "trial_key": "00462",
+      "stimulus_id": 311,
+      "modality": "video",
+      "start_time": 5303.229653120041,
+      "end_time": 5313.229523181915,
+      "npy_file": "00462.npy"
+    },
+    {
+      "trial_key": "00463",
+      "stimulus_id": 312,
+      "modality": "video",
+      "start_time": 5313.229523181915,
+      "end_time": 5323.229392051697,
+      "npy_file": "00463.npy"
+    },
+    {
+      "trial_key": "00464",
+      "stimulus_id": 313,
+      "modality": "video",
+      "start_time": 5323.229392051697,
+      "end_time": 5333.2292630672455,
+      "npy_file": "00464.npy"
+    },
+    {
+      "trial_key": "00465",
+      "stimulus_id": 314,
+      "modality": "video",
+      "start_time": 5333.2292630672455,
+      "end_time": 5343.2291350364685,
+      "npy_file": "00465.npy"
+    },
+    {
+      "trial_key": "00466",
+      "stimulus_id": 101,
+      "modality": "video",
+      "start_time": 5343.2291350364685,
+      "end_time": 5353.229001998901,
+      "npy_file": "00466.npy"
+    },
+    {
+      "trial_key": "00467",
+      "stimulus_id": 102,
+      "modality": "video",
+      "start_time": 5353.229001998901,
+      "end_time": 5363.228869199753,
+      "npy_file": "00467.npy"
+    },
+    {
+      "trial_key": "00468",
+      "stimulus_id": 103,
+      "modality": "video",
+      "start_time": 5363.228869199753,
+      "end_time": 5373.22873711586,
+      "npy_file": "00468.npy"
+    },
+    {
+      "trial_key": "00469",
+      "stimulus_id": 104,
+      "modality": "video",
+      "start_time": 5373.22873711586,
+      "end_time": 5383.245278120041,
+      "npy_file": "00469.npy"
+    },
+    {
+      "trial_key": "00470",
+      "stimulus_id": 105,
+      "modality": "video",
+      "start_time": 5383.245278120041,
+      "end_time": 5393.245145082474,
+      "npy_file": "00470.npy"
+    },
+    {
+      "trial_key": "00471",
+      "stimulus_id": 106,
+      "modality": "video",
+      "start_time": 5393.245145082474,
+      "end_time": 5403.245017051697,
+      "npy_file": "00471.npy"
+    },
+    {
+      "trial_key": "00472",
+      "stimulus_id": 213,
+      "modality": "video",
+      "start_time": 5403.245017051697,
+      "end_time": 5418.261482000351,
+      "npy_file": "00472.npy"
+    },
+    {
+      "trial_key": "00473",
+      "stimulus_id": 214,
+      "modality": "video",
+      "start_time": 5418.261482000351,
+      "end_time": 5433.294620037079,
+      "npy_file": "00473.npy"
+    },
+    {
+      "trial_key": "00474",
+      "stimulus_id": 215,
+      "modality": "video",
+      "start_time": 5433.294620037079,
+      "end_time": 5448.311089992523,
+      "npy_file": "00474.npy"
+    },
+    {
+      "trial_key": "00475",
+      "stimulus_id": 216,
+      "modality": "video",
+      "start_time": 5448.311089992523,
+      "end_time": 5463.32756114006,
+      "npy_file": "00475.npy"
+    },
+    {
+      "trial_key": "00476",
+      "stimulus_id": 35,
+      "modality": "video",
+      "start_time": 5463.32756114006,
+      "end_time": 5473.327430009842,
+      "npy_file": "00476.npy"
+    },
+    {
+      "trial_key": "00477",
+      "stimulus_id": 36,
+      "modality": "video",
+      "start_time": 5473.327430009842,
+      "end_time": 5483.3272960186005,
+      "npy_file": "00477.npy"
+    },
+    {
+      "trial_key": "00478",
+      "stimulus_id": 37,
+      "modality": "video",
+      "start_time": 5483.3272960186005,
+      "end_time": 5493.327162981033,
+      "npy_file": "00478.npy"
+    },
+    {
+      "trial_key": "00479",
+      "stimulus_id": 38,
+      "modality": "video",
+      "start_time": 5493.327162981033,
+      "end_time": 5503.327037096024,
+      "npy_file": "00479.npy"
+    },
+    {
+      "trial_key": "00480",
+      "stimulus_id": 39,
+      "modality": "video",
+      "start_time": 5503.327037096024,
+      "end_time": 5513.326905012131,
+      "npy_file": "00480.npy"
+    },
+    {
+      "trial_key": "00481",
+      "stimulus_id": 40,
+      "modality": "video",
+      "start_time": 5513.326905012131,
+      "end_time": 5523.343429327011,
+      "npy_file": "00481.npy"
+    },
+    {
+      "trial_key": "00482",
+      "stimulus_id": 1,
+      "modality": "video",
+      "start_time": 5523.343429327011,
+      "end_time": 5533.359976053238,
+      "npy_file": "00482.npy"
+    },
+    {
+      "trial_key": "00483",
+      "stimulus_id": 2,
+      "modality": "video",
+      "start_time": 5533.359976053238,
+      "end_time": 5543.359844207764,
+      "npy_file": "00483.npy"
+    },
+    {
+      "trial_key": "00484",
+      "stimulus_id": 3,
+      "modality": "video",
+      "start_time": 5543.359844207764,
+      "end_time": 5553.359703302383,
+      "npy_file": "00484.npy"
+    },
+    {
+      "trial_key": "00485",
+      "stimulus_id": 4,
+      "modality": "video",
+      "start_time": 5553.359703302383,
+      "end_time": 5563.35958313942,
+      "npy_file": "00485.npy"
+    },
+    {
+      "trial_key": "00486",
+      "stimulus_id": 5,
+      "modality": "video",
+      "start_time": 5563.35958313942,
+      "end_time": 5573.359451055527,
+      "npy_file": "00486.npy"
+    },
+    {
+      "trial_key": "00487",
+      "stimulus_id": 6,
+      "modality": "video",
+      "start_time": 5573.359451055527,
+      "end_time": 5583.375992059708,
+      "npy_file": "00487.npy"
+    },
+    {
+      "trial_key": "00488",
+      "stimulus_id": 169,
+      "modality": "video",
+      "start_time": 5583.375992059708,
+      "end_time": 5598.392455101013,
+      "npy_file": "00488.npy"
+    },
+    {
+      "trial_key": "00489",
+      "stimulus_id": 170,
+      "modality": "video",
+      "start_time": 5598.392455101013,
+      "end_time": 5613.408928155899,
+      "npy_file": "00489.npy"
+    },
+    {
+      "trial_key": "00490",
+      "stimulus_id": 171,
+      "modality": "video",
+      "start_time": 5613.408928155899,
+      "end_time": 5628.425388336182,
+      "npy_file": "00490.npy"
+    },
+    {
+      "trial_key": "00491",
+      "stimulus_id": 172,
+      "modality": "video",
+      "start_time": 5628.425388336182,
+      "end_time": 5643.441858291626,
+      "npy_file": "00491.npy"
+    },
+    {
+      "trial_key": "00492",
+      "stimulus_id": 95,
+      "modality": "video",
+      "start_time": 5643.441858291626,
+      "end_time": 5653.44171333313,
+      "npy_file": "00492.npy"
+    },
+    {
+      "trial_key": "00493",
+      "stimulus_id": 96,
+      "modality": "video",
+      "start_time": 5653.44171333313,
+      "end_time": 5663.458225011826,
+      "npy_file": "00493.npy"
+    },
+    {
+      "trial_key": "00494",
+      "stimulus_id": 97,
+      "modality": "video",
+      "start_time": 5663.458225011826,
+      "end_time": 5673.45806312561,
+      "npy_file": "00494.npy"
+    },
+    {
+      "trial_key": "00495",
+      "stimulus_id": 98,
+      "modality": "video",
+      "start_time": 5673.45806312561,
+      "end_time": 5683.474570035934,
+      "npy_file": "00495.npy"
+    },
+    {
+      "trial_key": "00496",
+      "stimulus_id": 99,
+      "modality": "video",
+      "start_time": 5683.474570035934,
+      "end_time": 5693.491077184677,
+      "npy_file": "00496.npy"
+    },
+    {
+      "trial_key": "00497",
+      "stimulus_id": 100,
+      "modality": "video",
+      "start_time": 5693.491077184677,
+      "end_time": 5703.507580041885,
+      "npy_file": "00497.npy"
+    },
+    {
+      "trial_key": "00498",
+      "stimulus_id": 41,
+      "modality": "video",
+      "start_time": 5703.507580041885,
+      "end_time": 5713.524083137512,
+      "npy_file": "00498.npy"
+    },
+    {
+      "trial_key": "00499",
+      "stimulus_id": 42,
+      "modality": "video",
+      "start_time": 5713.524083137512,
+      "end_time": 5723.523925065994,
+      "npy_file": "00499.npy"
+    },
+    {
+      "trial_key": "00500",
+      "stimulus_id": 43,
+      "modality": "video",
+      "start_time": 5723.523925065994,
+      "end_time": 5733.523768186569,
+      "npy_file": "00500.npy"
+    },
+    {
+      "trial_key": "00501",
+      "stimulus_id": 44,
+      "modality": "video",
+      "start_time": 5733.523768186569,
+      "end_time": 5743.523611068726,
+      "npy_file": "00501.npy"
+    },
+    {
+      "trial_key": "00502",
+      "stimulus_id": 45,
+      "modality": "video",
+      "start_time": 5743.523611068726,
+      "end_time": 5753.52344417572,
+      "npy_file": "00502.npy"
+    },
+    {
+      "trial_key": "00503",
+      "stimulus_id": 46,
+      "modality": "video",
+      "start_time": 5753.52344417572,
+      "end_time": 5763.523292064667,
+      "npy_file": "00503.npy"
+    },
+    {
+      "trial_key": "00504",
+      "stimulus_id": 191,
+      "modality": "video",
+      "start_time": 5763.523292064667,
+      "end_time": 5773.523131132126,
+      "npy_file": "00504.npy"
+    },
+    {
+      "trial_key": "00505",
+      "stimulus_id": 192,
+      "modality": "video",
+      "start_time": 5773.523131132126,
+      "end_time": 5783.5229642391205,
+      "npy_file": "00505.npy"
+    },
+    {
+      "trial_key": "00506",
+      "stimulus_id": 193,
+      "modality": "video",
+      "start_time": 5783.5229642391205,
+      "end_time": 5793.52281999588,
+      "npy_file": "00506.npy"
+    },
+    {
+      "trial_key": "00507",
+      "stimulus_id": 194,
+      "modality": "video",
+      "start_time": 5793.52281999588,
+      "end_time": 5803.522661209106,
+      "npy_file": "00507.npy"
+    },
+    {
+      "trial_key": "00508",
+      "stimulus_id": 195,
+      "modality": "video",
+      "start_time": 5803.522661209106,
+      "end_time": 5813.522495269775,
+      "npy_file": "00508.npy"
+    },
+    {
+      "trial_key": "00509",
+      "stimulus_id": 196,
+      "modality": "video",
+      "start_time": 5813.522495269775,
+      "end_time": 5823.522346019745,
+      "npy_file": "00509.npy"
+    },
+    {
+      "trial_key": "00510",
+      "stimulus_id": 107,
+      "modality": "video",
+      "start_time": 5823.522346019745,
+      "end_time": 5838.538770198822,
+      "npy_file": "00510.npy"
+    },
+    {
+      "trial_key": "00511",
+      "stimulus_id": 108,
+      "modality": "video",
+      "start_time": 5838.538770198822,
+      "end_time": 5853.55521607399,
+      "npy_file": "00511.npy"
+    },
+    {
+      "trial_key": "00512",
+      "stimulus_id": 109,
+      "modality": "video",
+      "start_time": 5853.55521607399,
+      "end_time": 5868.571649074554,
+      "npy_file": "00512.npy"
+    },
+    {
+      "trial_key": "00513",
+      "stimulus_id": 110,
+      "modality": "video",
+      "start_time": 5868.571649074554,
+      "end_time": 5883.58808016777,
+      "npy_file": "00513.npy"
+    },
+    {
+      "trial_key": "00514",
+      "stimulus_id": 153,
+      "modality": "video",
+      "start_time": 5883.58808016777,
+      "end_time": 5893.587926149368,
+      "npy_file": "00514.npy"
+    },
+    {
+      "trial_key": "00515",
+      "stimulus_id": 154,
+      "modality": "video",
+      "start_time": 5893.587926149368,
+      "end_time": 5903.587779998779,
+      "npy_file": "00515.npy"
+    },
+    {
+      "trial_key": "00516",
+      "stimulus_id": 155,
+      "modality": "video",
+      "start_time": 5903.587779998779,
+      "end_time": 5913.587619066238,
+      "npy_file": "00516.npy"
+    },
+    {
+      "trial_key": "00517",
+      "stimulus_id": 156,
+      "modality": "video",
+      "start_time": 5913.587619066238,
+      "end_time": 5923.587468147278,
+      "npy_file": "00517.npy"
+    },
+    {
+      "trial_key": "00518",
+      "stimulus_id": 157,
+      "modality": "video",
+      "start_time": 5923.587468147278,
+      "end_time": 5933.58731508255,
+      "npy_file": "00518.npy"
+    },
+    {
+      "trial_key": "00519",
+      "stimulus_id": 158,
+      "modality": "video",
+      "start_time": 5933.58731508255,
+      "end_time": 5943.587167978287,
+      "npy_file": "00519.npy"
+    },
+    {
+      "trial_key": "00520",
+      "stimulus_id": 239,
+      "modality": "video",
+      "start_time": 5943.587167978287,
+      "end_time": 5958.60359621048,
+      "npy_file": "00520.npy"
+    },
+    {
+      "trial_key": "00521",
+      "stimulus_id": 240,
+      "modality": "video",
+      "start_time": 5958.60359621048,
+      "end_time": 5973.620048999786,
+      "npy_file": "00521.npy"
+    },
+    {
+      "trial_key": "00522",
+      "stimulus_id": 241,
+      "modality": "video",
+      "start_time": 5973.620048999786,
+      "end_time": 5988.636489152908,
+      "npy_file": "00522.npy"
+    },
+    {
+      "trial_key": "00523",
+      "stimulus_id": 242,
+      "modality": "video",
+      "start_time": 5988.636489152908,
+      "end_time": 6003.652928113937,
+      "npy_file": "00523.npy"
+    },
+    {
+      "trial_key": "00524",
+      "stimulus_id": 143,
+      "modality": "video",
+      "start_time": 6003.652928113937,
+      "end_time": 6018.669366121292,
+      "npy_file": "00524.npy"
+    },
+    {
+      "trial_key": "00525",
+      "stimulus_id": 144,
+      "modality": "video",
+      "start_time": 6018.669366121292,
+      "end_time": 6033.68581199646,
+      "npy_file": "00525.npy"
+    },
+    {
+      "trial_key": "00526",
+      "stimulus_id": 145,
+      "modality": "video",
+      "start_time": 6033.68581199646,
+      "end_time": 6048.702253103256,
+      "npy_file": "00526.npy"
+    },
+    {
+      "trial_key": "00527",
+      "stimulus_id": 146,
+      "modality": "video",
+      "start_time": 6048.702253103256,
+      "end_time": 6063.718686342239,
+      "npy_file": "00527.npy"
+    },
+    {
+      "trial_key": "00528",
+      "stimulus_id": 77,
+      "modality": "video",
+      "start_time": 6063.718686342239,
+      "end_time": 6073.718545198441,
+      "npy_file": "00528.npy"
+    },
+    {
+      "trial_key": "00529",
+      "stimulus_id": 78,
+      "modality": "video",
+      "start_time": 6073.718545198441,
+      "end_time": 6083.718387365341,
+      "npy_file": "00529.npy"
+    },
+    {
+      "trial_key": "00530",
+      "stimulus_id": 79,
+      "modality": "video",
+      "start_time": 6083.718387365341,
+      "end_time": 6093.718242406845,
+      "npy_file": "00530.npy"
+    },
+    {
+      "trial_key": "00531",
+      "stimulus_id": 80,
+      "modality": "video",
+      "start_time": 6093.718242406845,
+      "end_time": 6103.718104124069,
+      "npy_file": "00531.npy"
+    },
+    {
+      "trial_key": "00532",
+      "stimulus_id": 81,
+      "modality": "video",
+      "start_time": 6103.718104124069,
+      "end_time": 6113.717954158783,
+      "npy_file": "00532.npy"
+    },
+    {
+      "trial_key": "00533",
+      "stimulus_id": 82,
+      "modality": "video",
+      "start_time": 6113.717954158783,
+      "end_time": 6123.7344653606415,
+      "npy_file": "00533.npy"
+    },
+    {
+      "trial_key": "00534",
+      "stimulus_id": 27,
+      "modality": "video",
+      "start_time": 6123.7344653606415,
+      "end_time": 6138.750921010971,
+      "npy_file": "00534.npy"
+    },
+    {
+      "trial_key": "00535",
+      "stimulus_id": 28,
+      "modality": "video",
+      "start_time": 6138.750921010971,
+      "end_time": 6153.784024238586,
+      "npy_file": "00535.npy"
+    },
+    {
+      "trial_key": "00536",
+      "stimulus_id": 29,
+      "modality": "video",
+      "start_time": 6153.784024238586,
+      "end_time": 6168.800477027893,
+      "npy_file": "00536.npy"
+    },
+    {
+      "trial_key": "00537",
+      "stimulus_id": 30,
+      "modality": "video",
+      "start_time": 6168.800477027893,
+      "end_time": 6183.816920995712,
+      "npy_file": "00537.npy"
+    },
+    {
+      "trial_key": "00538",
+      "stimulus_id": 315,
+      "modality": "video",
+      "start_time": 6183.816920995712,
+      "end_time": 6193.816769361496,
+      "npy_file": "00538.npy"
+    },
+    {
+      "trial_key": "00539",
+      "stimulus_id": 316,
+      "modality": "video",
+      "start_time": 6193.816769361496,
+      "end_time": 6203.81663107872,
+      "npy_file": "00539.npy"
+    },
+    {
+      "trial_key": "00540",
+      "stimulus_id": 317,
+      "modality": "video",
+      "start_time": 6203.81663107872,
+      "end_time": 6213.816488027573,
+      "npy_file": "00540.npy"
+    },
+    {
+      "trial_key": "00541",
+      "stimulus_id": 318,
+      "modality": "video",
+      "start_time": 6213.816488027573,
+      "end_time": 6223.816336393356,
+      "npy_file": "00541.npy"
+    },
+    {
+      "trial_key": "00542",
+      "stimulus_id": 319,
+      "modality": "video",
+      "start_time": 6223.816336393356,
+      "end_time": 6233.816196203232,
+      "npy_file": "00542.npy"
+    },
+    {
+      "trial_key": "00543",
+      "stimulus_id": 320,
+      "modality": "video",
+      "start_time": 6233.816196203232,
+      "end_time": 6243.79931306839,
+      "npy_file": "00543.npy"
+    },
+    {
+      "trial_key": "00544",
+      "stimulus_id": 0,
+      "modality": "blank",
+      "start_time": 6243.79931306839,
+      "end_time": 6243.81591296196,
+      "npy_file": null
+    }
+  ]
+}

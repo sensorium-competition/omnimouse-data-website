@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subsets &amp; References &middot; OmniMouse Dataset</title>
+    <meta name="description" content="Sub-datasets and reference papers that make up the OmniMouse dataset.">
+
+    <meta name="color-scheme" content="dark">
+    <link rel="icon" type="image/svg+xml" href="assets/logos/sensorium_bildmarke.svg">
+
+    <link rel="stylesheet" type="text/css" media="all" href="assets/stylesheets/omnimouse.css" />
+    <link href="assets/fontawesome-free-6.6.0-web/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="om-topbar">
+    <div class="om-topbar__row">
+        <div class="om-topbar__brands">
+            <a class="om-topbar__brand" href="index.html">
+                <img src="enigma_logo_temp.png" alt="Enigma">
+            </a>
+            <span class="om-topbar__collab" aria-label="in collaboration with" title="in collaboration with">🤝</span>
+            <a class="om-topbar__sensorium" href="https://sensorium-competition.net/" target="_blank" rel="noopener">
+                <img src="assets/logos/sensorium_logo_light.svg" alt="Sensorium">
+            </a>
+        </div>
+        <nav class="om-topbar__nav">
+            <a class="om-nav-link" href="index.html">Home</a>
+            <a class="om-nav-link active" href="subsets_and_references.html">Subsets &amp; References</a>
+            <a class="om-nav-link" href="dataset_details.html">Dataset Details</a>
+            <a class="om-nav-link" href="cite.html">How to cite</a>
+        </nav>
+        <div class="om-topbar__links">
+            <a class="om-topbar__link" href="https://openreview.net/forum?id=mEw4lhAn0F" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-lines"></i> Paper
+            </a>
+            <a class="om-topbar__link" href="https://huggingface.co/datasets/the-enigma-project/omnimouse-dataset" target="_blank" rel="noopener">
+                🤗 Dataset
+            </a>
+            <a class="om-topbar__link" href="https://enigma-brain.github.io/omnimouse/" target="_blank" rel="noopener">
+                <i class="fa-solid fa-bullhorn"></i> OmniMouse Blog
+            </a>
+        </div>
+    </div>
+</header>
+
+<main class="om-page">
+
+    <h1 class="om-title">Subsets and references</h1>
+    <p class="text">
+        The OmniMouse dataset combines newly recorded data with prior recordings from other projects. Below
+        are summaries of each source dataset, including experimental modalities and key recording
+        characteristics. For per-experiment metadata, see
+        <a href="dataset_details.html">Dataset Details</a>.
+    </p>
+    <p class="text" style="color:#666;">
+        All experiments were conducted in awake, head-fixed mice and approved by the Institutional Animal
+        Care and Use Committee of Baylor College of Medicine.
+    </p>
+
+    <!-- ============ OmniMouse ============ -->
+    <section class="om-source-card" id="omnimouse">
+        <div class="om-source-card__head">
+            <div class="om-source-card__title">
+                <strong>Willeke et al., 2026</strong>
+                <span class="om-source-card__paper">OmniMouse: Scaling properties of multi-modal, multi-task Brain Models on 150B Neural Tokens</span>
+            </div>
+            <button class="om-bib-btn" onclick="document.getElementById('cite-om').showModal()">BibTeX</button>
+        </div>
+        <div class="om-source-card__body">
+            <dl class="om-dl">
+                <dt>Role</dt>
+                <dd>Newly introduced OmniMouse recordings, combined with prior recordings listed below.</dd>
+
+                <dt>DOI OmniMouse dataset</dt>
+                <dd><a href="https://doi.org/10.57967/hf/8529" target="_blank" rel="noopener">10.57967/hf/8529</a></dd>
+
+                <dt>DOI OmniMouse paper</dt>
+                <dd><a href="https://openreview.net/forum?id=mEw4lhAn0F">openreview.net/forum?id=mEw4lhAn0F</a></dd>
+
+                <dt>Animals / recordings</dt>
+                <dd>78 unique mice overall (some appear in both training and evaluation), with 4,210&ndash;11,284 neurons per session and &gt;3 million single-unit recordings in total.</dd>
+
+                <dt>Neural data</dt>
+                <dd>Wide-field two-photon calcium imaging of excitatory neurons in layers 2&ndash;5 of right V1.</dd>
+
+                <dt>Stimuli</dt>
+                <dd>Naturalistic images (ImageNet) and videos (cinematic movies + Sports-1M), plus parametric and synthetic stimuli (e.g., static/drifting Gabors, directional pink noise, flashing Gaussian dots, random dot kinematograms, model-generated stimuli). Presented at 30&ndash;60 Hz; images shown for 500 ms with 300&ndash;500 ms blank intervals.</dd>
+
+                <dt>Behavior</dt>
+                <dd>Five aligned variables (locomotion speed, pupil size, pupil-size change, horizontal eye position, vertical eye position).</dd>
+            </dl>
+        </div>
+    </section>
+
+    <!-- ============ Sensorium 2022 ============ -->
+    <section class="om-source-card" id="sensorium-2022">
+        <div class="om-source-card__head">
+            <div class="om-source-card__title">
+                <strong>Willeke et al., 2022</strong>
+                <span class="om-source-card__paper">The Sensorium competition on predicting large-scale mouse primary visual cortex activity</span>
+            </div>
+            <button class="om-bib-btn" onclick="document.getElementById('cite-s22').showModal()">BibTeX</button>
+        </div>
+        <div class="om-source-card__body">
+            <dl class="om-dl">
+                <dt>DOI</dt>
+                <dd><a href="https://doi.org/10.48550/arXiv.2206.08666">10.48550/arXiv.2206.08666</a></dd>
+
+                <dt>Animals / recordings</dt>
+                <dd>7 behaving mice (7 recording sessions). Five &ldquo;pretraining&rdquo; recordings are released for training/generalization; two &ldquo;competition&rdquo; recordings are reserved for held-out evaluation (withheld responses for live and final test scoring).</dd>
+
+                <dt>Stimuli</dt>
+                <dd>Natural images sampled from ImageNet, converted to grayscale; presented for 500 ms with 300&ndash;500 ms blank intervals.</dd>
+
+                <dt>Neural data</dt>
+                <dd>Two-photon calcium imaging of excitatory neurons in layer 2/3 of right V1; responses aggregated 50&ndash;550 ms after stimulus onset (boxcar window).</dd>
+
+                <dt>Behavior</dt>
+                <dd>Five aligned variables (locomotion speed, pupil size, pupil-size change, horizontal eye position, vertical eye position).</dd>
+            </dl>
+        </div>
+    </section>
+
+    <!-- ============ Sensorium 2023 ============ -->
+    <section class="om-source-card" id="sensorium-2023">
+        <div class="om-source-card__head">
+            <div class="om-source-card__title">
+                <strong>Turishcheva et al., 2024</strong>
+                <span class="om-source-card__paper">The Dynamic Sensorium competition for predicting large-scale mouse visual cortex activity from videos</span>
+            </div>
+            <button class="om-bib-btn" onclick="document.getElementById('cite-s23').showModal()">BibTeX</button>
+        </div>
+        <div class="om-source-card__body">
+            <dl class="om-dl">
+                <dt>DOI</dt>
+                <dd><a href="https://doi.org/10.48550/arXiv.2305.19654">10.48550/arXiv.2305.19654</a></dd>
+
+                <dt>Animals / recordings</dt>
+                <dd>10 behaving mice (10 recording sessions). Five recordings are released fully as pretraining data; five additional recordings are used for held-out competition evaluation (live/final test responses withheld).</dd>
+
+                <dt>Stimuli</dt>
+                <dd>Grayscale dynamic natural movies (cinematic clips + Sports-1M) presented at 30 Hz (~8&ndash;11 s clips), plus out-of-domain stimuli (ImageNet images, flashing Gaussian dots, random dot kinematograms, directional pink noise, drifting Gabors).</dd>
+
+                <dt>Neural data</dt>
+                <dd>Wide-field two-photon calcium imaging of excitatory neurons in layers 2&ndash;5 of right V1.</dd>
+
+                <dt>Behavior</dt>
+                <dd>Four aligned behavioral variables (locomotion speed, pupil size, horizontal pupil position, vertical pupil position).</dd>
+            </dl>
+        </div>
+    </section>
+
+    <!-- ============ Functional connectomics (Bae/MICrONS) ============ -->
+    <section class="om-source-card" id="functional-connectomics-spanning-multiple-areas-of-mouse-visual-cortex">
+        <div class="om-source-card__head">
+            <div class="om-source-card__title">
+                <strong>Bae et al., 2025</strong>
+                <span class="om-source-card__paper">Functional connectomics spanning multiple areas of mouse visual cortex</span>
+            </div>
+            <button class="om-bib-btn" onclick="document.getElementById('cite-platinum').showModal()">BibTeX</button>
+        </div>
+        <div class="om-source-card__body">
+            <dl class="om-dl">
+                <dt>DOI</dt>
+                <dd><a href="https://doi.org/10.1038/s41586-025-08790-w">10.1038/s41586-025-08790-w</a></dd>
+
+                <dt>Companion site</dt>
+                <dd><a href="https://www.nature.com/immersive/d42859-025-00001-w/index.html" target="_blank" rel="noopener">MICrONS website</a></dd>
+
+                <dt>Animals / recordings</dt>
+                <dd>1 behaving mouse recorded over 12 sessions.</dd>
+
+                <dt>Stimuli</dt>
+                <dd>Trained on natural videos and tested on held-out natural videos as well as out-of-domain gratings.</dd>
+
+                <dt>Neural data</dt>
+                <dd>Wide-field two-photon calcium imaging of excitatory neurons in layers 2&ndash;5 of right V1.</dd>
+
+                <dt>Behavior</dt>
+                <dd>Four aligned behavioral variables (locomotion speed, pupil size, horizontal pupil position, vertical pupil position).</dd>
+            </dl>
+        </div>
+    </section>
+
+    <!-- ============ Functional connectomics (Ding 2025) ============ -->
+    <section class="om-source-card" id="functional-connectomics-reveals-general-wiring-rule-in-mouse-visual-cortex">
+        <div class="om-source-card__head">
+            <div class="om-source-card__title">
+                <strong>Ding et al., 2025</strong>
+                <span class="om-source-card__paper">Functional connectomics reveals general wiring rule in mouse visual cortex</span>
+            </div>
+            <button class="om-bib-btn" onclick="document.getElementById('cite-funccon').showModal()">BibTeX</button>
+        </div>
+        <div class="om-source-card__body">
+            <dl class="om-dl">
+                <dt>DOI</dt>
+                <dd><a href="https://doi.org/10.1038/s41586-025-08840-3">10.1038/s41586-025-08840-3</a></dd>
+
+                <dt>Animals / recordings</dt>
+                <dd>6 behaving mice recorded over 7 sessions.</dd>
+
+                <dt>Stimuli</dt>
+                <dd>Trained on natural videos and tested on held-out natural videos as well as out-of-domain gratings.</dd>
+
+                <dt>Neural data</dt>
+                <dd>Wide-field two-photon calcium imaging of excitatory neurons in layers 2&ndash;5 of right V1.</dd>
+
+                <dt>Behavior</dt>
+                <dd>Four aligned behavioral variables (locomotion speed, pupil size, horizontal pupil position, vertical pupil position).</dd>
+            </dl>
+        </div>
+    </section>
+
+    <!-- ============ Orientation map (Fahey 2019) ============ -->
+    <section class="om-source-card" id="a-global-map-of-orientation-tuning-in-mouse-visual-cortex">
+        <div class="om-source-card__head">
+            <div class="om-source-card__title">
+                <strong>Fahey et al., 2019</strong>
+                <span class="om-source-card__paper">A global map of orientation tuning in mouse visual cortex</span>
+            </div>
+            <button class="om-bib-btn" onclick="document.getElementById('cite-orimap').showModal()">BibTeX</button>
+        </div>
+        <div class="om-source-card__body">
+            <dl class="om-dl">
+                <dt>DOI</dt>
+                <dd><a href="https://doi.org/10.1101/745323">10.1101/745323</a></dd>
+
+                <dt>Animals / recordings</dt>
+                <dd>12 behaving mice recorded over 75 sessions.</dd>
+
+                <dt>Stimuli</dt>
+                <dd>Trained on natural videos and tested on held-out natural videos as well as out-of-domain gratings.</dd>
+
+                <dt>Neural data</dt>
+                <dd>Wide-field two-photon calcium imaging of excitatory neurons in layers 2&ndash;5 of right V1.</dd>
+
+                <dt>Behavior</dt>
+                <dd>Four aligned behavioral variables (locomotion speed, pupil size, horizontal pupil position, vertical pupil position).</dd>
+            </dl>
+        </div>
+    </section>
+
+    <!-- ============ Bipartite (Ding 2026) ============ -->
+    <section class="om-source-card" id="functional-bipartite-invariance-in-mouse-primary-visual-cortex-receptive-fields">
+        <div class="om-source-card__head">
+            <div class="om-source-card__title">
+                <strong>Ding et al., 2026</strong>
+                <span class="om-source-card__paper">Functional bipartite invariance in mouse primary visual cortex receptive fields</span>
+            </div>
+            <button class="om-bib-btn" onclick="document.getElementById('cite-bipartite').showModal()">BibTeX</button>
+        </div>
+        <div class="om-source-card__body">
+            <dl class="om-dl">
+                <dt>DOI</dt>
+                <dd><a href="https://doi.org/10.1038/s41593-026-02213-3">10.1038/s41593-026-02213-3</a></dd>
+
+                <dt>Animals / recordings</dt>
+                <dd>14 behaving mice recorded over 75 sessions.</dd>
+
+                <dt>Stimuli</dt>
+                <dd>Trained on natural videos and tested on held-out natural videos as well as out-of-domain gratings.</dd>
+
+                <dt>Neural data</dt>
+                <dd>Wide-field two-photon calcium imaging of excitatory neurons in layers 2&ndash;5 of right V1.</dd>
+
+                <dt>Behavior</dt>
+                <dd>Four aligned behavioral variables (locomotion speed, pupil size, horizontal pupil position, vertical pupil position).</dd>
+            </dl>
+        </div>
+    </section>
+
+    <!-- ============ Foundation model (Wang 2023) ============ -->
+    <section class="om-source-card" id="foundation-model-of-neural-activity-predicts-response-to-new-stimulus-types">
+        <div class="om-source-card__head">
+            <div class="om-source-card__title">
+                <strong>Wang et al., 2023</strong>
+                <span class="om-source-card__paper">Foundation model of neural activity predicts response to new stimulus types</span>
+            </div>
+            <button class="om-bib-btn" onclick="document.getElementById('cite-foundation').showModal()">BibTeX</button>
+        </div>
+        <div class="om-source-card__body">
+            <dl class="om-dl">
+                <dt>DOI</dt>
+                <dd><a href="https://doi.org/10.1038/s41586-025-08829-y">10.1038/s41586-025-08829-y</a></dd>
+
+                <dt>Animals / recordings</dt>
+                <dd>16 behaving mice (16 recording sessions). Eleven &ldquo;pretraining&rdquo; recordings are released for training/generalization; five recordings are reserved for held-out evaluation.</dd>
+
+                <dt>Stimuli</dt>
+                <dd>Trained on natural videos and tested on held-out natural videos as well as out-of-domain gratings.</dd>
+
+                <dt>Neural data</dt>
+                <dd>Wide-field two-photon calcium imaging of excitatory neurons in layers 2&ndash;5 of right V1.</dd>
+
+                <dt>Behavior</dt>
+                <dd>Four aligned behavioral variables (locomotion speed, pupil size, horizontal pupil position, vertical pupil position).</dd>
+            </dl>
+        </div>
+    </section>
+
+</main>
+
+<!-- ============ BibTeX dialogs ============ -->
+<dialog id="cite-om" class="om-cite-dialog">
+    <div class="om-cite-dialog-head">
+        <strong>Willeke et al., 2026 (OmniMouse)</strong>
+        <div class="om-cite-dialog-actions">
+            <button class="om-cite-copy" onclick="copyBibtex('bibtex-om', this)">Copy</button>
+            <button class="om-cite-close" onclick="document.getElementById('cite-om').close()">Close</button>
+        </div>
+    </div>
+    <div class="om-cite-dialog-body">
+<pre><code id="bibtex-om">@inproceedings{willeke2026omnimouse,
+  title={OmniMouse: Scaling properties of multi-modal, multi-task Brain Models on 150B Neural Tokens},
+  author={Konstantin Friedrich Willeke and Polina Turishcheva and Alex Gilbert and Goirik Chakrabarty and Hasan Atakan Bedel and Paul G. Fahey and Yongrong Qiu and Marissa A. Weis and Michaela Vystr{\v{c}}ilov{\'a} and Taliah Muhammad and Lydia Ntanavara and Rachel E Froebe and Kayla Ponder and Zheng Huan Tan and Emin Orhan and Erick Cobos and Sophia Sanborn and Katrin Franke and Fabian H. Sinz and Alexander S. Ecker and Andreas S. Tolias},
+  booktitle={The Fourteenth International Conference on Learning Representations},
+  year={2026},
+  url={https://openreview.net/forum?id=mEw4lhAn0F}
+}</code></pre>
+    </div>
+</dialog>
+
+<dialog id="cite-s22" class="om-cite-dialog">
+    <div class="om-cite-dialog-head">
+        <strong>Willeke et al., 2022 (Sensorium 2022)</strong>
+        <div class="om-cite-dialog-actions">
+            <button class="om-cite-copy" onclick="copyBibtex('bibtex-s22', this)">Copy</button>
+            <button class="om-cite-close" onclick="document.getElementById('cite-s22').close()">Close</button>
+        </div>
+    </div>
+    <div class="om-cite-dialog-body">
+<pre><code id="bibtex-s22">@misc{willeke2022sensoriumcompetitionpredictinglargescale,
+  title={The Sensorium competition on predicting large-scale mouse primary visual cortex activity},
+  author={Konstantin F. Willeke and Paul G. Fahey and Mohammad Bashiri and Laura Pede and Max F. Burg and Christoph Blessing and Santiago A. Cadena and Zhiwei Ding and Konstantin-Klemens Lurz and Kayla Ponder and Taliah Muhammad and Saumil S. Patel and Alexander S. Ecker and Andreas S. Tolias and Fabian H. Sinz},
+  year={2022},
+  eprint={2206.08666},
+  archivePrefix={arXiv},
+  primaryClass={q-bio.NC},
+  url={https://arxiv.org/abs/2206.08666}
+}</code></pre>
+    </div>
+</dialog>
+
+<dialog id="cite-s23" class="om-cite-dialog">
+    <div class="om-cite-dialog-head">
+        <strong>Turishcheva et al., 2024 (Sensorium 2023)</strong>
+        <div class="om-cite-dialog-actions">
+            <button class="om-cite-copy" onclick="copyBibtex('bibtex-s23', this)">Copy</button>
+            <button class="om-cite-close" onclick="document.getElementById('cite-s23').close()">Close</button>
+        </div>
+    </div>
+    <div class="om-cite-dialog-body">
+<pre><code id="bibtex-s23">@misc{turishcheva2024dynamicsensoriumcompetitionpredicting,
+  title={The Dynamic Sensorium competition for predicting large-scale mouse visual cortex activity from videos},
+  author={Polina Turishcheva and Paul G. Fahey and Laura Hansel and Rachel Froebe and Kayla Ponder and Michaela Vystrčilová and Konstantin F. Willeke and Mohammad Bashiri and Eric Wang and Zhiwei Ding and Andreas S. Tolias and Fabian H. Sinz and Alexander S. Ecker},
+  year={2024},
+  eprint={2305.19654},
+  archivePrefix={arXiv},
+  primaryClass={q-bio.NC},
+  url={https://arxiv.org/abs/2305.19654}
+}</code></pre>
+    </div>
+</dialog>
+
+<dialog id="cite-platinum" class="om-cite-dialog">
+    <div class="om-cite-dialog-head">
+        <strong>Bae et al., 2025 (MICrONS functional connectomics)</strong>
+        <div class="om-cite-dialog-actions">
+            <button class="om-cite-copy" onclick="copyBibtex('bibtex-platinum', this)">Copy</button>
+            <button class="om-cite-close" onclick="document.getElementById('cite-platinum').close()">Close</button>
+        </div>
+    </div>
+    <div class="om-cite-dialog-body">
+<pre><code id="bibtex-platinum">@article{microns2025functional,
+  title={Functional connectomics spanning multiple areas of mouse visual cortex},
+  journal={Nature},
+  volume={640},
+  number={8058},
+  pages={435--447},
+  year={2025},
+  publisher={Nature Publishing Group UK London}
+}</code></pre>
+    </div>
+</dialog>
+
+<dialog id="cite-funccon" class="om-cite-dialog">
+    <div class="om-cite-dialog-head">
+        <strong>Ding et al., 2025 (Functional connectomics)</strong>
+        <div class="om-cite-dialog-actions">
+            <button class="om-cite-copy" onclick="copyBibtex('bibtex-funccon', this)">Copy</button>
+            <button class="om-cite-close" onclick="document.getElementById('cite-funccon').close()">Close</button>
+        </div>
+    </div>
+    <div class="om-cite-dialog-body">
+<pre><code id="bibtex-funccon">@article{ding2025functional,
+  title={Functional connectomics reveals general wiring rule in mouse visual cortex},
+  author={Ding, Zhuokun and Fahey, Paul G and Papadopoulos, Stelios and Wang, Eric Y and Celii, Brendan and Papadopoulos, Christos and Chang, Andersen and Kunin, Alexander B and Tran, Dat and Fu, Jiakun and others},
+  journal={Nature},
+  volume={640},
+  number={8058},
+  pages={459--469},
+  year={2025},
+  publisher={Nature Publishing Group UK London}
+}</code></pre>
+    </div>
+</dialog>
+
+<dialog id="cite-orimap" class="om-cite-dialog">
+    <div class="om-cite-dialog-head">
+        <strong>Fahey et al., 2019 (Orientation map)</strong>
+        <div class="om-cite-dialog-actions">
+            <button class="om-cite-copy" onclick="copyBibtex('bibtex-orimap', this)">Copy</button>
+            <button class="om-cite-close" onclick="document.getElementById('cite-orimap').close()">Close</button>
+        </div>
+    </div>
+    <div class="om-cite-dialog-body">
+<pre><code id="bibtex-orimap">@article{fahey2019global,
+  title={A global map of orientation tuning in mouse visual cortex},
+  author={Fahey, Paul G and Muhammad, Taliah and Smith, Cameron and Froudarakis, Emmanouil and Cobos, Erick and Fu, Jiakun and Walker, Edgar Y and Yatsenko, Dimitri and Sinz, Fabian H and Reimer, Jacob and others},
+  journal={bioRxiv},
+  pages={745323},
+  year={2019},
+  publisher={Cold Spring Harbor Laboratory}
+}</code></pre>
+    </div>
+</dialog>
+
+<dialog id="cite-bipartite" class="om-cite-dialog">
+    <div class="om-cite-dialog-head">
+        <strong>Ding et al., 2026 (Bipartite invariance)</strong>
+        <div class="om-cite-dialog-actions">
+            <button class="om-cite-copy" onclick="copyBibtex('bibtex-bipartite', this)">Copy</button>
+            <button class="om-cite-close" onclick="document.getElementById('cite-bipartite').close()">Close</button>
+        </div>
+    </div>
+    <div class="om-cite-dialog-body">
+<pre><code id="bibtex-bipartite">@article{ding2026functional,
+  title={Functional bipartite invariance in mouse primary visual cortex receptive fields},
+  author={Ding, Zhiwei and Tran, Dat and Ponder, Kayla and Ding, Zhuokun and Froebe, Rachel and Ntanavara, Lydia and Fahey, Paul G and Cobos, Erick and Baroni, Luca and Diamantaki, Maria and others},
+  journal={Nature Neuroscience},
+  pages={1--13},
+  year={2026},
+  publisher={Nature Publishing Group US New York}
+}</code></pre>
+    </div>
+</dialog>
+
+<dialog id="cite-foundation" class="om-cite-dialog">
+    <div class="om-cite-dialog-head">
+        <strong>Wang et al., 2023 (Foundation model)</strong>
+        <div class="om-cite-dialog-actions">
+            <button class="om-cite-copy" onclick="copyBibtex('bibtex-foundation', this)">Copy</button>
+            <button class="om-cite-close" onclick="document.getElementById('cite-foundation').close()">Close</button>
+        </div>
+    </div>
+    <div class="om-cite-dialog-body">
+<pre><code id="bibtex-foundation">@article{wang2023foundation,
+  title   = {Foundation model of neural activity predicts response to new stimulus types},
+  author  = {Wang, E.Y. and Fahey, P.G. and Ding, Z. and others},
+  journal = {Nature},
+  year    = {2025},
+  doi     = {10.1038/s41586-025-08829-y}
+}</code></pre>
+    </div>
+</dialog>
+
+<script>
+async function copyBibtex(codeId, button) {
+    const codeEl = document.getElementById(codeId);
+    if (!codeEl) return;
+    const text = codeEl.innerText;
+    try {
+        await navigator.clipboard.writeText(text);
+        const original = button.textContent;
+        button.textContent = 'Copied';
+        setTimeout(() => { button.textContent = original; }, 1200);
+    } catch (err) {
+        const original = button.textContent;
+        button.textContent = 'Failed';
+        setTimeout(() => { button.textContent = original; }, 1200);
+    }
+}
+</script>
+
+<footer class="om-attribution">
+    <div class="om-attribution__inner">
+        <div class="om-attribution__row">
+            <span><span class="om-attribution__label">Project Lead and Corresponding Author:</span> Paul Fahey (<a href="mailto:paulgfahey@gmail.com">paulgfahey@gmail.com</a>)</span>
+        </div>
+        <div class="om-attribution__row">
+            <span><span class="om-attribution__label">Data release and website lead:</span> Tom Olschewski, Polina Turishcheva, Fabian Sinz</span>
+        </div>
+        <div class="om-attribution__credit">
+            This website is built on the Clarity Template, designed by <a href="https://shikun.io/" target="_blank" rel="noopener">Shikun Liu</a>.
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

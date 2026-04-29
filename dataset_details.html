@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataset Details &middot; OmniMouse Dataset</title>
+    <meta name="description" content="Interactive, per-experiment metadata explorer for the OmniMouse dataset.">
+
+    <meta name="color-scheme" content="dark">
+    <link rel="icon" type="image/svg+xml" href="assets/logos/sensorium_bildmarke.svg">
+
+    <link rel="stylesheet" type="text/css" media="all" href="assets/stylesheets/omnimouse.css" />
+    <link href="assets/fontawesome-free-6.6.0-web/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="om-topbar">
+    <div class="om-topbar__row">
+        <div class="om-topbar__brands">
+            <a class="om-topbar__brand" href="index.html">
+                <img src="enigma_logo_temp.png" alt="Enigma">
+            </a>
+            <span class="om-topbar__collab" aria-label="in collaboration with" title="in collaboration with">🤝</span>
+            <a class="om-topbar__sensorium" href="https://sensorium-competition.net/" target="_blank" rel="noopener">
+                <img src="assets/logos/sensorium_logo_light.svg" alt="Sensorium">
+            </a>
+        </div>
+        <nav class="om-topbar__nav">
+            <a class="om-nav-link" href="index.html">Home</a>
+            <a class="om-nav-link" href="subsets_and_references.html">Subsets &amp; References</a>
+            <a class="om-nav-link active" href="dataset_details.html">Dataset Details</a>
+            <a class="om-nav-link" href="cite.html">How to cite</a>
+        </nav>
+        <div class="om-topbar__links">
+            <a class="om-topbar__link" href="https://openreview.net/forum?id=mEw4lhAn0F" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-lines"></i> Paper
+            </a>
+            <a class="om-topbar__link" href="https://huggingface.co/datasets/the-enigma-project/omnimouse-dataset" target="_blank" rel="noopener">
+                🤗 Dataset
+            </a>
+            <a class="om-topbar__link" href="https://enigma-brain.github.io/omnimouse/" target="_blank" rel="noopener">
+                <i class="fa-solid fa-bullhorn"></i> OmniMouse Blog
+            </a>
+        </div>
+    </div>
+</header>
+
+<main class="om-page">
+
+    <h1 class="om-title">Dataset details</h1>
+    <p class="text">
+        Search and filter all OmniMouse recording sessions by animal, modality, and source. The
+        <em>Introduced in</em> column links back to the source paper summary on
+        <a href="subsets_and_references.html">Subsets &amp; References</a>.
+    </p>
+
+    <div id="metadata-container">
+        <div class="search-controls">
+            <input type="text" id="query" class="box-styled" placeholder="Enter Experiment ID..." onkeypress="if(event.key==='Enter') searchMetadata()">
+
+            <button class="btn btn-search box-styled" onclick="searchMetadata()">Search</button>
+            <button class="btn btn-all box-styled" onclick="showAllMetadata()">View All</button>
+            <button class="btn btn-clear box-styled" onclick="clearResults()">Clear</button>
+            <button id="filter-btn" class="btn box-styled" onclick="openFilterDialog()" disabled>Filters</button>
+
+            <a id="download-meta"
+               class="btn box-styled"
+               href="#"
+               download="cleaned_full_combined_meta.json"
+               aria-disabled="true"
+               style="pointer-events:none; opacity:.6;">
+               Download metadata JSON
+            </a>
+        </div>
+
+        <div id="status" class="status-msg">Loading metadata...</div>
+
+        <div id="table-wrapper" class="box-styled">
+            <table id="result-table">
+                <thead id="table-head"></thead>
+                <tbody id="table-body"></tbody>
+            </table>
+        </div>
+    </div>
+
+</main>
+
+<dialog id="filter-dialog" class="filter-dialog">
+    <div class="filter-dialog-head">
+        <strong>Filter metadata</strong>
+        <button class="filter-close" onclick="closeFilterDialog()">Close</button>
+    </div>
+
+    <div class="filter-dialog-body">
+        <div id="filter-container" class="filter-grid"></div>
+    </div>
+
+    <div class="filter-dialog-footer">
+        <div class="filter-footer-actions">
+            <button class="btn box-styled" onclick="applyFilters()">Apply filters</button>
+            <button class="btn box-styled" onclick="resetFilters()">Reset filters</button>
+        </div>
+        <span id="filter-summary" class="filter-count"></span>
+    </div>
+</dialog>
+
+<script>
+let metadata = {};
+let animalSourceLookup = {};
+let filterConfig = {};
+let activeFilters = {};
+let filterModes = {
+    modalities: "inclusive"
+};
+
+const baseURL = window.location.origin + window.location.pathname.replace(/\/[^\/]*\/?$/, '');
+const meta_path = `${baseURL}/experiment_metadata/cleaned_full_combined_meta.json`;
+const animal_source_path = `${baseURL}/experiment_metadata/cite.json`;
+
+// Internal cite.json label -> "First author et al., YEAR" display label.
+const LABEL_DISPLAY_MAP = {
+    "Platinum":           "Bae et al., 2025",
+    "FunConn":            "Ding et al., 2025",
+    "OriMap":             "Fahey et al., 2019",
+    "Bipartite":          "Ding et al., 2026",
+    "Foundational Model": "Wang et al., 2023",
+    "OmniMouse":          "Willeke et al., 2026",
+    "Sensorium 2022":     "Willeke et al., 2022",
+    "Sensorium 2023":     "Turishcheva et al., 2024"
+};
+
+function displayLabel(rawLabel) {
+    if (!rawLabel) return rawLabel;
+    return LABEL_DISPLAY_MAP[rawLabel] ?? rawLabel;
+}
+
+const FILTER_FIELDS = {
+  animal_id:      { path: ["scan_key", "animal_id"] },
+  session:        { path: ["scan_key", "session"] },
+  scan_idx:       { path: ["scan_key", "scan_idx"] },
+  genotype:       { path: ["scan_key", "genotype_clean"] },
+  sex:            { path: ["scan_key", "sex"] },
+  modalities:     { path: ["screen", "modalities"] },
+  introduced_in:  { derived: "introduced_in" }
+};
+
+Promise.all([
+  fetch(meta_path).then(response => {
+    if (!response.ok) throw new Error('Metadata file not found');
+    return response.json();
+  }),
+  fetch(animal_source_path).then(response => {
+    if (!response.ok) throw new Error('Animal source lookup file not found');
+    return response.json();
+  })
+])
+.then(([metaData, sourceData]) => {
+    metadata = metaData || {};
+    animalSourceLookup = sourceData || {};
+
+    document.getElementById('status').textContent = "Database synced successfully.";
+
+    const dl = document.getElementById('download-meta');
+    dl.href = meta_path;
+    dl.style.pointerEvents = "auto";
+    dl.style.opacity = "1";
+    dl.removeAttribute("aria-disabled");
+
+    buildFilterConfig();
+    document.getElementById('filter-btn').disabled = false;
+
+    showAllMetadata();
+})
+.catch(err => {
+    document.getElementById('status').textContent = "⚠️ Error: Metadata file not found.";
+});
+
+function getFieldValue(obj, pathOrConfig) {
+    if (pathOrConfig?.derived === "introduced_in") {
+        const lookupKey = getExperimentLookupKey(obj);
+        if (!lookupKey || !animalSourceLookup?.[lookupKey]) return null;
+
+        const entry = animalSourceLookup[lookupKey];
+
+        if (typeof entry === "string") return displayLabel(entry);
+
+        let primarySource = null;
+
+        if (Array.isArray(entry)) {
+            primarySource = entry.flat().find(
+                item => item && typeof item === "object" && !Array.isArray(item)
+            );
+        } else if (entry && Array.isArray(entry.sources)) {
+            primarySource = entry.sources[0] ?? null;
+        } else if (entry && typeof entry === "object") {
+            primarySource = entry;
+        }
+
+        const raw = primarySource?.label ?? primarySource?.name ?? null;
+        return raw ? displayLabel(raw) : null;
+    }
+
+    if (!pathOrConfig?.path) return null;
+
+    return pathOrConfig.path.reduce(
+        (acc, key) => (acc && acc[key] !== undefined ? acc[key] : null),
+        obj
+    );
+}
+
+function normalizeValue(val) {
+    if (val === null || val === undefined) return null;
+
+    if (Array.isArray(val)) {
+        const cleaned = val
+            .map(v => normalizeValue(v))
+            .filter(v => v !== null);
+        return cleaned.length ? cleaned : null;
+    }
+
+    const str = String(val).trim();
+    return str === "" ? null : str;
+}
+
+function buildFilterConfig() {
+    filterConfig = {};
+
+    for (const [field, cfg] of Object.entries(FILTER_FIELDS)) {
+        const values = new Set();
+
+        for (const exp of Object.values(metadata)) {
+            const raw = getFieldValue(exp, cfg);
+            const normalized = normalizeValue(raw);
+
+            if (normalized === null) continue;
+
+            if (Array.isArray(normalized)) {
+                normalized.forEach(v => values.add(v));
+            } else {
+                values.add(normalized);
+            }
+        }
+
+        const sorted = Array.from(values).sort((a, b) =>
+            a.localeCompare(b, undefined, { numeric: true, sensitivity: "base" })
+        );
+
+        if (sorted.length > 0) {
+            filterConfig[field] = sorted;
+        }
+    }
+
+    renderFilterUI();
+}
+
+function renderFilterUI() {
+    const container = document.getElementById('filter-container');
+    let html = "";
+
+    for (const [field, values] of Object.entries(filterConfig)) {
+        html += `<div class="filter-group">`;
+        html += `<h4>${field}</h4>`;
+
+        if (field === "modalities") {
+            const mode = filterModes.modalities ?? "inclusive";
+            html += `
+              <div class="filter-mode">
+                <label>
+                  <input type="radio" name="modalities-mode" value="inclusive" ${mode === "inclusive" ? "checked" : ""}>
+                  includes any selected
+                </label>
+                <label>
+                  <input type="radio" name="modalities-mode" value="exclusive" ${mode === "exclusive" ? "checked" : ""}>
+                  exact set only
+                </label>
+              </div>
+            `;
+        }
+
+        html += `<div class="filter-options">`;
+
+        values.forEach(value => {
+            const checked = activeFilters[field]?.has(value) ? "checked" : "";
+            const safeId = `filter-${field}-${String(value).replace(/[^a-zA-Z0-9_-]/g, "_")}`;
+            html += `
+              <label for="${safeId}">
+                <input type="checkbox" id="${safeId}" data-field="${field}" value="${escapeHtml(value)}" ${checked}>
+                ${escapeHtml(value)}
+              </label>
+            `;
+        });
+
+        html += `</div></div>`;
+    }
+
+    container.innerHTML = html;
+    updateFilterSummary();
+}
+
+function openFilterDialog() {
+    renderFilterUI();
+    document.documentElement.classList.add("filter-open");
+    document.body.classList.add("filter-open");
+    document.getElementById('filter-dialog').showModal();
+}
+
+function closeFilterDialog() {
+    document.documentElement.classList.remove("filter-open");
+    document.body.classList.remove("filter-open");
+    document.getElementById('filter-dialog').close();
+}
+
+document.getElementById('filter-dialog').addEventListener('close', () => {
+    document.documentElement.classList.remove("filter-open");
+    document.body.classList.remove("filter-open");
+});
+
+function applyFilters() {
+    activeFilters = {};
+
+    const modalityModeInput = document.querySelector('input[name="modalities-mode"]:checked');
+    if (modalityModeInput) {
+        filterModes.modalities = modalityModeInput.value;
+    }
+
+    const inputs = document.querySelectorAll('#filter-container input[type="checkbox"]:checked');
+
+    inputs.forEach(input => {
+        const field = input.dataset.field;
+        const value = input.value;
+        if (!activeFilters[field]) activeFilters[field] = new Set();
+        activeFilters[field].add(value);
+    });
+
+    closeFilterDialog();
+    renderDynamicTable(getFilteredMetadata());
+}
+
+function resetFilters() {
+    activeFilters = {};
+    filterModes.modalities = "inclusive";
+    renderFilterUI();
+    renderDynamicTable(metadata);
+}
+
+function setsAreEqual(a, b) {
+    if (a.size !== b.size) return false;
+    for (const item of a) {
+        if (!b.has(item)) return false;
+    }
+    return true;
+}
+
+function getExperimentLookupKey(obj) {
+    const animal = obj?.scan_key?.animal_id;
+    const session = obj?.scan_key?.session;
+    const scanIdx = obj?.scan_key?.scan_idx;
+
+    if (animal == null || session == null || scanIdx == null) return null;
+    return `${animal}_${session}_${scanIdx}`;
+}
+
+function experimentMatchesFilters(expData) {
+    for (const [field, selectedValues] of Object.entries(activeFilters)) {
+        if (!selectedValues || selectedValues.size === 0) continue;
+
+        const cfg = FILTER_FIELDS[field];
+        const raw = getFieldValue(expData, cfg);
+        const normalized = normalizeValue(raw);
+
+        if (field === "modalities") {
+            if (normalized === null) return false;
+
+            const experimentValues = Array.isArray(normalized) ? new Set(normalized) : new Set([normalized]);
+
+            if ((filterModes.modalities ?? "inclusive") === "exclusive") {
+                if (!setsAreEqual(experimentValues, selectedValues)) return false;
+            } else {
+                let anyMatch = false;
+                for (const value of selectedValues) {
+                    if (experimentValues.has(value)) {
+                        anyMatch = true;
+                        break;
+                    }
+                }
+                if (!anyMatch) return false;
+            }
+
+            continue;
+        }
+
+        let match = false;
+
+        if (Array.isArray(normalized)) {
+            match = normalized.some(v => selectedValues.has(v));
+        } else if (normalized !== null) {
+            match = selectedValues.has(normalized);
+        }
+
+        if (!match) return false;
+    }
+    return true;
+}
+
+function getFilteredMetadata() {
+    const filtered = {};
+    for (const [id, expData] of Object.entries(metadata)) {
+        if (experimentMatchesFilters(expData)) {
+            filtered[id] = expData;
+        }
+    }
+    return filtered;
+}
+
+function updateFilterSummary() {
+    const parts = [];
+    for (const [field, values] of Object.entries(activeFilters)) {
+        if (values && values.size > 0) {
+            if (field === "modalities") {
+                parts.push(`${field} (${filterModes.modalities}): ${values.size}`);
+            } else {
+                parts.push(`${field}: ${values.size}`);
+            }
+        }
+    }
+    document.getElementById('filter-summary').textContent =
+        parts.length ? `Active filters — ${parts.join(" | ")}` : "No active filters";
+}
+
+function renderDynamicTable(dataObj) {
+    const wrapper = document.getElementById('table-wrapper');
+    const head = document.getElementById('table-head');
+    const body = document.getElementById('table-body');
+    const status = document.getElementById('status');
+
+    const keys = Object.keys(dataObj);
+
+    if (keys.length === 0) {
+        wrapper.style.display = "none";
+        status.textContent = "No matches found.";
+        updateFilterSummary();
+        return;
+    }
+
+    const importantFields = ["animal_id", "session", "scan_idx", "introduced in"];
+
+    let headHtml = `<tr><th>Experiment ID (click for details)</th>`;
+    importantFields.forEach(field => { headHtml += `<th>${field}</th>`; });
+    headHtml += `</tr>`;
+    head.innerHTML = headHtml;
+
+    let bodyHtml = "";
+    keys.forEach(id => {
+        const expData = dataObj[id] || {};
+        const scan = expData.scan_key || {};
+
+        const animal = scan.animal_id ?? "-";
+        const session = scan.session ?? "-";
+        const scanIdx = scan.scan_idx ?? "-";
+
+        let sourceCell = "-";
+        const lookupKey = getExperimentLookupKey(expData);
+
+        function renderSourceEntry(entry) {
+            if (typeof entry === "string") {
+                return escapeHtml(displayLabel(entry));
+            }
+
+            if (!entry || typeof entry !== "object") {
+                return "";
+            }
+
+            const rawLabel = entry.label ?? entry.name ?? "introduced in";
+            const label = displayLabel(rawLabel);
+
+            let url = "#";
+            if (entry.url) {
+                url = entry.url;
+            } else if (entry.anchor) {
+                url = `subsets_and_references.html#${entry.anchor}`;
+            } else {
+                url = `subsets_and_references.html`;
+            }
+
+            return `<a href="${url}">${escapeHtml(label)}</a>`;
+        }
+
+        if (lookupKey && animalSourceLookup && animalSourceLookup[lookupKey]) {
+            const entry = animalSourceLookup[lookupKey];
+
+            if (typeof entry === "string") {
+                sourceCell = escapeHtml(displayLabel(entry));
+            } else {
+                let primarySource = null;
+
+                if (Array.isArray(entry)) {
+                    primarySource = entry.flat().find(
+                        item => item && typeof item === "object" && !Array.isArray(item)
+                    );
+                } else if (entry && Array.isArray(entry.sources)) {
+                    primarySource = entry.sources[0] ?? null;
+                } else if (entry && typeof entry === "object") {
+                    primarySource = entry;
+                }
+
+                const rendered = renderSourceEntry(primarySource);
+                if (rendered) {
+                    sourceCell = rendered;
+                }
+            }
+        }
+
+        const encodedId = encodeURIComponent(id);
+        bodyHtml += `<tr>`;
+        bodyHtml += `<td><a href="experiment.html?id=${encodedId}"><strong>${escapeHtml(id)}</strong></a></td>`;
+        bodyHtml += `<td>${animal}</td>`;
+        bodyHtml += `<td>${session}</td>`;
+        bodyHtml += `<td>${scanIdx}</td>`;
+        bodyHtml += `<td>${sourceCell}</td>`;
+        bodyHtml += `</tr>`;
+    });
+
+    body.innerHTML = bodyHtml;
+    wrapper.style.display = "block";
+
+    const activeCount = Object.values(activeFilters).reduce((n, s) => n + (s?.size || 0), 0);
+    status.textContent = activeCount > 0
+        ? `Showing ${keys.length} filtered result(s).`
+        : `Showing ${keys.length} result(s).`;
+
+    updateFilterSummary();
+}
+
+function searchMetadata() {
+    let q = document.getElementById('query').value.trim();
+    if (!q) {
+        renderDynamicTable(getFilteredMetadata());
+        return;
+    }
+    q = q.padStart(3, '0');
+    const filtered = getFilteredMetadata();
+    const result = filtered[q];
+    renderDynamicTable(result ? { [q]: result } : {});
+}
+
+function showAllMetadata() {
+    renderDynamicTable(getFilteredMetadata());
+}
+
+function clearResults() {
+    document.getElementById('query').value = "";
+    activeFilters = {};
+    filterModes.modalities = "inclusive";
+    document.getElementById('table-wrapper').style.display = "none";
+    document.getElementById('status').textContent = "Database synced successfully.";
+    updateFilterSummary();
+}
+
+function escapeHtml(str) {
+    return String(str)
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#39;");
+}
+</script>
+
+<footer class="om-attribution">
+    <div class="om-attribution__inner">
+        <div class="om-attribution__row">
+            <span><span class="om-attribution__label">Project Lead and Corresponding Author:</span> Paul Fahey (<a href="mailto:paulgfahey@gmail.com">paulgfahey@gmail.com</a>)</span>
+        </div>
+        <div class="om-attribution__row">
+            <span><span class="om-attribution__label">Data release and website lead:</span> Tom Olschewski, Polina Turishcheva, Fabian Sinz</span>
+        </div>
+        <div class="om-attribution__credit">
+            This website is built on the Clarity Template, designed by <a href="https://shikun.io/" target="_blank" rel="noopener">Shikun Liu</a>.
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

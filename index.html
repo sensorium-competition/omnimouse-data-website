@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
+    <title>OmniMouse Dataset</title>
+    <meta name="description" content="OmniMouse Dataset: one of the largest single-neuron datasets to date. Visual stimuli, neural responses, and behavior from mice across hundreds of experiments.">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="robots" content="all">
+    <meta content="en_EN" property="og:locale">
+    <meta content="website" property="og:type">
+    <meta content="OmniMouse Dataset" property="og:title">
+    <meta content="OmniMouse Dataset: one of the largest single-neuron datasets to date." property="og:description">
+
+    <link rel="icon" type="image/svg+xml" href="assets/logos/sensorium_bildmarke.svg">
+
+    <link rel="stylesheet" type="text/css" media="all" href="assets/stylesheets/omnimouse.css" />
+    <link href="assets/fontawesome-free-6.6.0-web/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="om-topbar">
+    <div class="om-topbar__row">
+        <div class="om-topbar__brands">
+            <a class="om-topbar__brand" href="index.html">
+                <img src="enigma_logo_temp.png" alt="Enigma">
+            </a>
+            <span class="om-topbar__collab" aria-label="in collaboration with" title="in collaboration with">🤝</span>
+            <a class="om-topbar__sensorium" href="https://sensorium-competition.net/" target="_blank" rel="noopener">
+                <img src="assets/logos/sensorium_logo_light.svg" alt="Sensorium">
+            </a>
+        </div>
+        <nav class="om-topbar__nav">
+            <a class="om-nav-link active" href="index.html">Home</a>
+            <a class="om-nav-link" href="subsets_and_references.html">Subsets &amp; References</a>
+            <a class="om-nav-link" href="dataset_details.html">Dataset Details</a>
+            <a class="om-nav-link" href="cite.html">How to cite</a>
+        </nav>
+        <div class="om-topbar__links">
+            <a class="om-topbar__link" href="https://openreview.net/forum?id=mEw4lhAn0F" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-lines"></i> Paper
+            </a>
+            <a class="om-topbar__link" href="https://huggingface.co/datasets/the-enigma-project/omnimouse-dataset" target="_blank" rel="noopener">
+                🤗 Dataset
+            </a>
+            <a class="om-topbar__link" href="https://enigma-brain.github.io/omnimouse/" target="_blank" rel="noopener">
+                <i class="fa-solid fa-bullhorn"></i> OmniMouse Blog
+            </a>
+        </div>
+    </div>
+</header>
+
+<main class="om-page">
+
+    <h1 class="om-title">OmniMouse Dataset</h1>
+    <p class="text" style="font-size:1.02rem;color:#cfd1d8;max-width:760px;">
+        One of the largest single-neuron datasets to date. Visual stimuli, neural responses, and aligned
+        behavior from awake, head-fixed mice, combining newly recorded data with recordings from prior projects.
+    </p>
+    <p class="text" style="font-size:1.02rem;color:#cfd1d8;max-width:760px;">
+        This dataset was collected in the laboratory of Prof. <a href="https://toliaslab.org/" target="_blank" rel="noopener">Andreas Tolias</a>.
+    </p>
+    <p class="text" style="font-size:0.95rem;color:var(--om-text-muted);max-width:760px;">
+        Dataset DOI: <a href="https://doi.org/10.57967/hf/8529" target="_blank" rel="noopener">10.57967/hf/8529</a>
+        &middot; See the <a href="cite.html">How to cite</a> page for the BibTeX entry.
+    </p>
+
+    <h2>Get started</h2>
+    <div class="om-cards">
+        <a class="om-card-link" href="subsets_and_references.html">
+            <h3><i class="fa-solid fa-layer-group"></i> Subsets &amp; References</h3>
+            <p>Overview of the sub-datasets that make up OmniMouse, including sources, stimuli, and recording characteristics.</p>
+        </a>
+        <a class="om-card-link" href="dataset_details.html">
+            <h3><i class="fa-solid fa-table-list"></i> Dataset Details</h3>
+            <p>Interactive, per-experiment metadata explorer. Search and filter all recording sessions by animal, modality, and source.</p>
+        </a>
+        <a class="om-card-link" href="cite.html">
+            <h3><i class="fa-solid fa-quote-right"></i> How to cite</h3>
+            <p>BibTeX snippets for the OmniMouse dataset and each underlying data source.</p>
+        </a>
+    </div>
+
+    <h2>Resources</h2>
+    <div class="om-cards">
+        <a class="om-card-link" href="https://openreview.net/forum?id=mEw4lhAn0F" target="_blank" rel="noopener">
+            <h3><i class="fa-solid fa-file-lines"></i> Paper</h3>
+            <p>Willeke et al., 2026 &mdash; OmniMouse: Scaling properties of multi-modal, multi-task Brain Models on 150B Neural Tokens (ICLR 2026).</p>
+        </a>
+        <a class="om-card-link" href="https://huggingface.co/datasets/the-enigma-project/omnimouse-dataset" target="_blank" rel="noopener">
+            <h3>🤗 Dataset on HuggingFace</h3>
+            <p>Download the full OmniMouse dataset directly from the HuggingFace Hub. DOI: 10.57967/hf/8529.</p>
+        </a>
+        <a class="om-card-link" href="https://enigma-brain.github.io/omnimouse/" target="_blank" rel="noopener">
+            <h3><i class="fa-solid fa-bullhorn"></i> OmniMouse Blog</h3>
+            <p>Companion blog post introducing the OmniMouse model, results, and dataset motivation.</p>
+        </a>
+    </div>
+
+    <p class="text" style="margin-top:2.4rem;color:var(--om-text-dim);font-size:0.83rem;">
+        All experiments were conducted in awake, head-fixed mice and approved by the Institutional Animal
+        Care and Use Committee of Baylor College of Medicine.
+    </p>
+
+</main>
+
+<footer class="om-attribution">
+    <div class="om-attribution__inner">
+        <div class="om-attribution__row">
+            <span><span class="om-attribution__label">Project Lead and Corresponding Author:</span> Paul Fahey (<a href="mailto:paulgfahey@gmail.com">paulgfahey@gmail.com</a>)</span>
+        </div>
+        <div class="om-attribution__row">
+            <span><span class="om-attribution__label">Data release and website lead:</span> Tom Olschewski, Polina Turishcheva, Fabian Sinz</span>
+        </div>
+        <div class="om-attribution__credit">
+            This website is built on the Clarity Template, designed by <a href="https://shikun.io/" target="_blank" rel="noopener">Shikun Liu</a>.
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

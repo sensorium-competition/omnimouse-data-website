@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /Users/konsti/Documents/work/enigma/code/enigma-brain/omnimouse-data-release status -s)"
+    ]
+  }
+}
